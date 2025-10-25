@@ -1,0 +1,33 @@
+%\section{Introduction} \label{sec:X-ray Intro}
+%This is the first paper to adapt x-ray visualizations, specifically Saliency- and Edge-Based visualizations, to an OST display to better understand the impact
+%of different visualizations on the user's ability to place virtual objects in an augmented space.
+%Augmented Reality (AR) devices such as the Microsoft HoloLens allow us to overlay virtual information over the physical world. 
+When placing virtual objects behind or inside a physical world object, there are depth and spatial perception challenges when understanding their spatial relationship. 
+This investigation is focused on X-ray visualizations where there is a need for a tight coupling between the physical and virtual information, such that users perceive the virtual and physical information as one. 
+%The aim of this study to further build knowledge about x-ray visualizations with Optical See Through (OST) AR display technologies during a placement task. 
+
+Overlaying of three-dimensional virtual content on the physical world can be problematic in terms of aligning the perceived depth of the virtual and physical information in AR. 
+This is made worse when virtual objects are placed beyond physical objects~\cite{Bajura1992} as our sense of depth is influenced by our ability to recognize visual relationships. When visual cues in AR are not carefully designed, the user may perceive virtual objects to be smaller instead of further away~\cite{Berning2014a}. 
+X-ray vision is one approach that has been explored to address some of the challenges of correctly perceiving where virtual objects are positioned in the physical world.
+
+X-ray vision in AR is defined as the use of partial occlusion to provide an understanding of the depth of virtual objects that are rendered behind physical world objects~\cite {Avery2008}. 
+There are three main approaches to X-ray vision that can be used individually or together. 
+One can render a texture over the surface that creates a degree of occlusion that the user can relate to~\cite{Kalkofen2007, Sandor2010, Otsuki2015}, create a visualization that conveys to the user the distance through objects such as a tunnel~\cite{Avery2009}, or show objects that are hidden in the physical world by rendering them as virtual objects~\cite{Bajura1992, Santos2015, Lerotic2007}.
+
+X-ray vision can improve the merging of the physical and the virtual objects, as people are able to perceive the distance of an object by using occlusion or in reference to a boundary \cite{Kalkofen2007, Sandor2010, Otsuki2015}.
+Virtual cues can manipulate the user's sense of depth to understand where virtual objects are placed in the physical world. 
+For example, if an object is partially occluded, the user can assume the object is behind the other object.
+Typically, visual cues remove or highlight areas of interest in the real world and can manifest as geometric patterns calibrated to the physical world~\cite{Zollmann2020}.
+
+X-ray vision in augmented reality has been explored in many domains: in medical applications for diagnosis and surgery\cite{Bajura1992, Bichlmeier2007, Kalia2019, Phillips2021},
+in firefighting to allow firemen to see through smoke~\cite{pretz_2021}, 
+in construction to view and look through walls to better understand a building's layout or understand the alternative interior layouts~\cite{Phillips2021, Ventura2009, Feiner, Rompapas2014},
+and guidance activities~\cite{DePaolis2017, Zollmann2014}.
+
+Users who navigate a complex object require adequate depth information regarding the position of objects so that they can decide which actions to take.
+% Talking about limitations to superimposition
+The importance of accurate relative spatial perception can be seen in the work by Sielhorst et al.\cite{Sielhorst2006} and Pratt et al.\cite{Pratt2018} who explored AR for 3D surgical guidance without using partial occlusion to aid in depth perception. 
+%These works highlighted this technology's potential and current limitation in the field.
+Pratt et~al.~\cite{Pratt2018} mentioned the difficulties related to calibrating medical images superimposed on the patient while achieving correct spatial perception in the practitioner's view.
+Sielhorst et al.~\cite{Sielhorst2006} found that simulating a virtual window into the physical object was better than superimposing information on the patient's skin. 
+X-ray vision techniques were later integrated into this work by Bichlmeier et~al.~\cite{Bichlmeier2007a}.

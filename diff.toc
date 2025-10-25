@@ -1,0 +1,268 @@
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{Acronyms}{vii}{section*.3}%
+\contentsline {chapter}{Glossary}{xi}{section*.5}%
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Motivations}{5}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Siemens Internship: Holographic Overlay System}{6}{subsection.1.1.1}%
+\contentsline {section}{\numberline {1.2}Research Goal}{10}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Research Questions}{11}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Contributions}{12}{section.1.4}%
+\contentsline {section}{\numberline {1.5}List Of Publications}{12}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Dissertation Structure}{14}{section.1.6}%
+\contentsline {chapter}{\numberline {2}Background}{15}{chapter.2}%
+\contentsline {section}{\numberline {2.1}\DIFaddbegin {\color {blue}\uwave {Human }}\DIFaddend Perception and \DIFdelbegin {\color {red}\sout@orig {How it Relates to Augmented Reality (AR) and Virtual Reality (VR)}}\DIFdelend \DIFaddbegin {\color {blue}\uwave {Depth Perception}}\DIFaddend }{15}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Depth Perception Fundamentals}{16}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}{\color {blue}\uwave {Research into the Depth Perception of Color}}}{21}{subsection.2.1.2}%
+\contentsline {section}{\numberline {2.2}{\color {blue}\uwave {Illustrative Rendering Techniques}}}{22}{section.2.2}%
+\contentsline {subsubsection}{{\color {blue}\uwave {Hatching}}}{23}{section*.20}%
+\contentsline {subsubsection}{{\color {blue}\uwave {Stippling}}}{25}{section*.21}%
+\contentsline {subsubsection}{{\color {blue}\uwave {Halo}}}{26}{section*.23}%
+\contentsline {subsection}{\numberline {2.2.1}{\color {blue}\uwave {Volumetric Illustrative Rendering Techniques}}}{26}{subsection.2.2.1}%
+\contentsline {section}{\numberline {2.3}{\color {blue}\uwave {Direct Volume Rendering (DVR)}}}{28}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}{\color {blue}\uwave {Visualizing Volumetric Data}}}{28}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}{\color {blue}\uwave {Use Cases for Direct Volume Rendering}}}{30}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}{\color {blue}\uwave {Human Computer Interaction (HCI) Experiments Using Direct Volume Rendering (DVR)}}}{31}{subsection.2.3.3}%
+\contentsline {section}{\numberline {2.4}An introduction to Augmented Reality (AR) and Virtual Reality (VR)}{37}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Mixed Reality (MR) Hardware}{37}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Designing Applications for Stereoscopic Displays}{41}{subsection.2.4.2}%
+\contentsline {section}{\numberline {2.5}{\color {red}\sout@orig {Perception and Depth Perception tasks in Augmented Reality (AR) and Virtual Reality (VR) Head Mounted Displays}}}{43}{section.2.5}%
+\contentsline {subsection}{\numberline {2.4.1}{\color {blue}\uwave {Volume Rendering In Mixed Reality}}}{43}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}{\color {red}\sout@orig {Depth Perception User Studies on Ocular See Through (OST) Augmented Reality (AR) displays}}}{45}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.2}{\color {red}\sout@orig {Research into the Depth Perception of Color}}}{51}{subsection.2.4.2}%
+\contentsline {section}{\numberline {2.5}Augmented Reality Enabled X-ray Vision}{52}{section.2.5}%
+\contentsline {subsubsection}{{\color {blue}\uwave {Eligibility Criteria}}}{52}{section*.32}%
+\contentsline {subsection}{\numberline {2.5.1}Observations from Systematic Literature Review}{53}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Research Exploring X-ray Vision}{54}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}X-ray Vision Techniques}{55}{subsection.2.5.3}%
+\contentsline {subsubsection}{\gls {X-ray Vision} Effects}{57}{section*.36}%
+\contentsline {paragraph}{Auxiliary Augmentation}{57}{section*.37}%
+\contentsline {paragraph}{\DIFdelbegin {\color {red}\sout@orig {Vengeance}}\DIFdelend \DIFaddbegin {\color {blue}\uwave {Vergence}}\DIFaddend }{57}{section*.38}%
+\contentsline {subsubsection}{Transparency Based X-ray Visualizations}{58}{section*.39}%
+\contentsline {subsubsection}{``Hole in the World'' X-ray Visualizations}{58}{section*.40}%
+\contentsline {paragraph}{Virtual Box/Hole:}{59}{figure.caption.43}%
+\contentsline {paragraph}{Cutaways and Tunnelling:}{60}{figure.caption.46}%
+\contentsline {paragraph}{Virtual Windows:}{62}{section*.48}%
+\contentsline {subsubsection}{Real-World Overlays}{63}{section*.49}%
+\contentsline {paragraph}{Grids:}{64}{section*.51}%
+\contentsline {paragraph}{Random Dot:}{65}{section*.53}%
+\contentsline {paragraph}{Halo and the Silhouette:}{65}{figure.caption.55}%
+\contentsline {subsubsection}{Computer Vision-Enabled Techniques}{66}{section*.56}%
+\contentsline {paragraph}{Edge-Based:}{67}{section*.58}%
+\contentsline {paragraph}{Saliency:}{67}{section*.59}%
+\contentsline {paragraph}{Ghosting:}{67}{section*.60}%
+\contentsline {subsubsection}{Comparisons Of X-ray Vision Effects}{68}{section*.62}%
+\contentsline {subsection}{\numberline {2.5.4}Applications of X-ray Vision}{71}{subsection.2.5.4}%
+\contentsline {paragraph}{{\color {red}\sout@orig {Medicine:}}}{71}{section*.65}%
+\contentsline {paragraph}{{\color {red}\sout@orig {Construction and Maintenance:}}}{72}{section*.66}%
+\contentsline {paragraph}{{\color {red}\sout@orig {Security:}}}{73}{section*.67}%
+\contentsline {paragraph}{{\color {red}\sout@orig {Navigation and Tourism}}}{74}{section*.68}%
+\contentsline {paragraph}{{\color {red}\sout@orig {Education:}}}{75}{section*.69}%
+\contentsline {paragraph}{{\color {red}\sout@orig {Video Games:}}}{75}{section*.70}%
+\contentsline {subsection}{\numberline {2.5.5}Hardware For X-ray Vision}{75}{subsection.2.5.5}%
+\contentsline {subsubsection}{Displays}{76}{section*.73}%
+\contentsline {subsubsection}{Comparison of Displays}{78}{section*.76}%
+\contentsline {subsubsection}{Sensors Utilized}{79}{section*.78}%
+\contentsline {section}{\numberline {2.6}\DIFdelbegin {\color {red}\sout@orig {Illustrative Rendering Techniques}}\DIFdelend \DIFaddbegin {\color {blue}\uwave {Perception and Depth Perception tasks in Augmented Reality (AR) and Virtual Reality (VR) Head Mounted Displays}}\DIFaddend }{83}{section.2.6}%
+\contentsline {subsubsection}{{\color {red}\sout@orig {Hatching}}}{84}{section*.80}%
+\contentsline {subsubsection}{{\color {red}\sout@orig {Stippling}}}{86}{section*.81}%
+\contentsline {subsubsection}{{\color {red}\sout@orig {Halo}}}{88}{section*.82}%
+\contentsline {subsection}{\numberline {2.6.1}{\color {blue}\uwave {Depth Perception User Studies on Ocular See Through (OST) Augmented Reality (AR) displays}}}{88}{subsection.2.6.1}%
+\contentsline {subsection}{\numberline {2.6.2}{\color {red}\sout@orig {Volumetric Illustrative Rendering Techniques}}}{89}{subsection.2.6.2}%
+\contentsline {section}{\numberline {2.7}{\color {red}\sout@orig {Direct Volume Rendering (DVR)}}}{91}{section.2.7}%
+\contentsline {subsection}{\numberline {2.6.1}{\color {red}\sout@orig {Visulizing Volumetric Data}}}{91}{subsection.2.6.1}%
+\contentsline {subsection}{\numberline {2.6.1}{\color {red}\sout@orig {Use Cases for Direct Volume Rendering}}}{93}{subsection.2.6.1}%
+\contentsline {subsection}{\numberline {2.6.1}{\color {red}\sout@orig {Human Computer Interaction (HCI) Experiments Using Direct Volume Rendering (DVR)}}}{95}{subsection.2.6.1}%
+\contentsline {subsection}{\numberline {2.6.1}{\color {red}\sout@orig {Volume Rendering In Mixed Reality}}}{102}{subsection.2.6.1}%
+\contentsline {section}{\numberline {2.7}Research Gap}{104}{section.2.7}%
+\contentsline {chapter}{\numberline {3}Spatial Estimation In Augmented Reality Aided X-Ray Vision}{107}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Updates Since Running This Study}{108}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Adopting X-ray Visualizations for Augmented Reality}{109}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Random Dot X-ray Visualization}{111}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Tessellation X-ray Visualization}{111}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Edge-based}{112}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Saliency}{113}{subsection.3.2.4}%
+\contentsline {section}{\numberline {3.3}Rendering Considerations}{115}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Video Image Overlay Method}{115}{subsection.3.3.1}%
+\contentsline {section}{\numberline {3.4}Pilot Study}{120}{section.3.4}%
+\contentsline {section}{\numberline {3.5}User Study}{121}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Research Questions}{122}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Hypotheses}{122}{subsection.3.5.2}%
+\contentsline {subsubsection}{Placement of the Object}{123}{section*.94}%
+\contentsline {subsubsection}{User Movement and Task Completion}{124}{section*.95}%
+\contentsline {subsubsection}{Subjective Analysis}{124}{section*.96}%
+\contentsline {subsection}{\numberline {3.5.3}Participants}{124}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.5.4}Study Design}{125}{subsection.3.5.4}%
+\contentsline {subsubsection}{Vive Controller Set Up}{126}{section*.98}%
+\contentsline {subsubsection}{3D printed mounts}{126}{section*.99}%
+\contentsline {subsubsection}{Environment and Apparatus}{128}{section*.102}%
+\contentsline {subsection}{\numberline {3.5.5}Study Variables}{129}{subsection.3.5.5}%
+\contentsline {subsubsection}{Independent Variables}{129}{section*.104}%
+\contentsline {subsubsection}{Dependent Variables}{130}{section*.105}%
+\contentsline {paragraph}{Quantitative Variables}{130}{section*.106}%
+\contentsline {paragraph}{Subjective Variables}{130}{section*.107}%
+\contentsline {subsection}{\numberline {3.5.6}Task}{131}{subsection.3.5.6}%
+\contentsline {section}{\numberline {3.6}Results}{133}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Quantitative Results}{133}{subsection.3.6.1}%
+\contentsline {subsubsection}{Accuracy of Placement (H.1)}{136}{section*.114}%
+\contentsline {paragraph}{Placement Accuracy from User Viewpoint by Axis (H.2 \& H.3):}{136}{section*.115}%
+\contentsline {subsection}{\numberline {3.6.2}Time Required (H.5)}{138}{subsection.3.6.2}%
+\contentsline {paragraph}{Time Required for task completion (H.5): }{138}{section*.117}%
+\contentsline {paragraph}{Time Participants Spent Moving the Object (H.5)}{139}{figure.caption.119}%
+\contentsline {subsubsection}{User Behaviour Results (H.6 \& H.7)}{140}{section*.121}%
+\contentsline {paragraph}{Distance Moved (H.6):}{140}{section*.122}%
+\contentsline {paragraph}{Distance from Box (H.7)}{140}{figure.caption.124}%
+\contentsline {paragraph}{Speed Object Was Moved (H.6)}{141}{section*.125}%
+\contentsline {subsection}{\numberline {3.6.3}Subjective Results (H.8 \& H.9)}{142}{subsection.3.6.3}%
+\contentsline {section}{\numberline {3.7}Discussion}{144}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}Accuracy of Placement (H.1)}{144}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {3.7.2}Placement Accuracy from User Viewpoint by Axis (H.2 \& H.3)}{144}{subsection.3.7.2}%
+\contentsline {subsection}{\numberline {3.7.3}Time Required (H.5)}{145}{subsection.3.7.3}%
+\contentsline {subsection}{\numberline {3.7.4}User Behaviour Results (H.6 \& H.7)}{146}{subsection.3.7.4}%
+\contentsline {subsection}{\numberline {3.7.5}Subjective Results (H.8 \& H.9)}{146}{subsection.3.7.5}%
+\contentsline {subsection}{\numberline {3.7.6}Summary of Discussion}{147}{subsection.3.7.6}%
+\contentsline {section}{\numberline {3.8}Future Considerations}{147}{section.3.8}%
+\contentsline {section}{\numberline {3.9}Conclusion}{149}{section.3.9}%
+\contentsline {chapter}{\numberline {4}Designing X-ray Visualizations with Volume Rendering}{151}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Fundamentals of Volume Rendering}{153}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Technical Description of Volume Rendering}{153}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Visualizing Volume Data}{154}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Direct Volume Rendering (DVR)}{154}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}Light Simulation Using Direct Volume Rendering}{155}{subsection.4.1.4}%
+\contentsline {subsection}{\numberline {4.1.5}Cinematic Rendering}{155}{subsection.4.1.5}%
+\contentsline {subsection}{\numberline {4.1.6}Real Time Direct Volume Rendering}{156}{subsection.4.1.6}%
+\contentsline {subsubsection}{Optimization Methods}{157}{section*.131}%
+\contentsline {section}{\numberline {4.2}Display Hardware for Stereoscopic Direct Volume Rendering}{158}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Designing Direct Volume Rendering for Volumetric Displays}{158}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Autostereoscopic Displays}{160}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Stereoscopic Head Mounted Displays}{162}{subsection.4.2.3}%
+\contentsline {subsubsection}{Challenges Regarding Frame Rate}{162}{section*.136}%
+\contentsline {subsubsection}{Challenges related to Occular See-Through Head Mounted Devices}{163}{section*.137}%
+\contentsline {subsection}{\numberline {4.2.4}Implementation Details}{164}{subsection.4.2.4}%
+\contentsline {section}{\numberline {4.3}X-ray Vision Techniques for Direct Volume Rendering on Ocular See Through Augmented Reality Devices}{167}{section.4.3}%
+\contentsline {section}{\numberline {4.4}VIRT: Volumetric Illustrative Rendering Techniques}{170}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}X-ray Vision of Empirical Volumes}{170}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Halo}{171}{subsection.4.4.2}%
+\contentsline {subsubsection}{Implementation}{171}{section*.145}%
+\contentsline {subsection}{\numberline {4.4.3}Stippling}{172}{subsection.4.4.3}%
+\contentsline {subsubsection}{Implementation}{173}{section*.146}%
+\contentsline {subsection}{\numberline {4.4.4}Hatching}{174}{subsection.4.4.4}%
+\contentsline {subsubsection}{Implementation}{175}{section*.148}%
+\contentsline {section}{\numberline {4.5}Conclusion}{176}{section.4.5}%
+\contentsline {chapter}{\numberline {5}Random Volume Generator: Generating Irregular Hierarchical Objects for Controlled User Studies}{179}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Noisy Hierarchical Spheres}{181}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Random Volume Generator's System Design}{182}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}System Design}{183}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Voxel-Based Verification of Volume Requirements}{184}{subsection.5.2.2}%
+\contentsline {subsubsection}{Random Volume Generation System Outputs}{185}{section*.152}%
+\contentsline {subsection}{\numberline {5.2.3}Immersive User Interface Design}{186}{subsection.5.2.3}%
+\contentsline {section}{\numberline {5.3}Conclusion}{187}{section.5.3}%
+\contentsline {chapter}{\numberline {6}Perception of Volumetric Illustrative Effects Visualizations within OST AR}{189}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Volumetric Illustrative Rendering Techniques}{190}{section.6.1}%
+\contentsline {section}{\numberline {6.2}User Study}{191}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Research Questions}{191}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Tasks}{192}{subsection.6.2.2}%
+\contentsline {subsubsection}{Count All}{193}{section*.159}%
+\contentsline {subsubsection}{Count Nested}{193}{section*.160}%
+\contentsline {subsection}{\numberline {6.2.3}Hypotheses}{193}{subsection.6.2.3}%
+\contentsline {subsection}{\numberline {6.2.4}Participants}{194}{subsection.6.2.4}%
+\contentsline {subsection}{\numberline {6.2.5}Procedure}{194}{subsection.6.2.5}%
+\contentsline {subsubsection}{Task}{195}{section*.161}%
+\contentsline {subsubsection}{Pilot Study}{196}{section*.164}%
+\contentsline {subsection}{\numberline {6.2.6}Study Environment}{197}{subsection.6.2.6}%
+\contentsline {section}{\numberline {6.3}Results}{197}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Accuracy (H.1 \& H.3)}{198}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}Time Required (H.2 \& H.4)}{199}{subsection.6.3.2}%
+\contentsline {subsection}{\numberline {6.3.3}User Behavioural Analysis (H.5)}{200}{subsection.6.3.3}%
+\contentsline {subsubsection}{Subjective Results (H.6)}{203}{section*.172}%
+\contentsline {section}{\numberline {6.4}Discussion}{206}{section.6.4}%
+\contentsline {subsection}{\numberline {6.4.1}Accuracy (H.1 \& H.3)}{206}{subsection.6.4.1}%
+\contentsline {subsection}{\numberline {6.4.2}Time Required (H.2 \& H.4)}{207}{subsection.6.4.2}%
+\contentsline {subsection}{\numberline {6.4.3}Participant Behaviour (H.5)}{207}{subsection.6.4.3}%
+\contentsline {subsection}{\numberline {6.4.4}Subjective Results (H.6)}{208}{subsection.6.4.4}%
+\contentsline {section}{\numberline {6.5}Conclusion}{209}{section.6.5}%
+\contentsline {chapter}{\numberline {7}The Limits of Depth Perception when Using Volumetric Illustrative Rendering Techniques}{211}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Volumetric Illustrative Rendering Techniques Impact on Depth Perception on Ocluar See Though Devices}{213}{section.7.1}%
+\contentsline {section}{\numberline {7.2}User Study}{214}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Research Questions}{214}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}Hypothesis}{215}{subsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.2.3}Participants}{216}{subsection.7.2.3}%
+\contentsline {subsection}{\numberline {7.2.4}Study Design}{216}{subsection.7.2.4}%
+\contentsline {subsubsection}{Task}{217}{section*.179}%
+\contentsline {subsubsection}{Procedure}{217}{section*.181}%
+\contentsline {subsubsection}{Determining Maximum Thresholds}{218}{section*.182}%
+\contentsline {subsection}{\numberline {7.2.5}Study Environment}{219}{subsection.7.2.5}%
+\contentsline {subsection}{\numberline {7.2.6}Generation and Placement of Volumes}{220}{subsection.7.2.6}%
+\contentsline {section}{\numberline {7.3}Results}{221}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}Psychometric Analysis of Depth Perception}{221}{subsection.7.3.1}%
+\contentsline {subsubsection}{Psychometric Analysis(H.1 \& H.2)}{221}{section*.187}%
+\contentsline {subsubsection}{Time Required (H.3)}{223}{section*.189}%
+\contentsline {subsubsection}{User Behavioral Analysis (H.4)}{224}{section*.192}%
+\contentsline {subsubsection}{Subjective Results (H.5)}{226}{section*.196}%
+\contentsline {section}{\numberline {7.4}Discussion}{228}{section.7.4}%
+\contentsline {subsection}{\numberline {7.4.1}Psychometric Analysis (H.1 \& H.2)}{228}{subsection.7.4.1}%
+\contentsline {subsection}{\numberline {7.4.2}Time Required (H.3)}{229}{subsection.7.4.2}%
+\contentsline {subsection}{\numberline {7.4.3}User Behavioral Analysis (H.4)}{230}{subsection.7.4.3}%
+\contentsline {subsection}{\numberline {7.4.4}Subjective Results (H.5)}{230}{subsection.7.4.4}%
+\contentsline {section}{\numberline {7.5}Conclusion}{231}{section.7.5}%
+\contentsline {chapter}{\numberline {8}Conclusion}{233}{chapter.8}%
+\contentsline {section}{\numberline {8.1}X-ray Vision Evaluation}{233}{section.8.1}%
+\contentsline {section}{\numberline {8.2}X-ray Visualizations for Direct Volume Rendering}{234}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Evaluation of Volumetric Illustrative Rendering Techniques}{235}{section.8.3}%
+\contentsline {subsection}{\numberline {8.3.1}Perception}{235}{subsection.8.3.1}%
+\contentsline {subsection}{\numberline {8.3.2}Depth Perception}{236}{subsection.8.3.2}%
+\contentsline {section}{\numberline {8.4}Future Work}{236}{section.8.4}%
+\contentsline {subsection}{\numberline {8.4.1}Augmented Reality Enabled X-ray Vision}{237}{subsection.8.4.1}%
+\contentsline {subsection}{\numberline {8.4.2}Direct Volume Rendering Displayed Using Ocular See Through Augmented Reality}{237}{subsection.8.4.2}%
+\contentsline {subsection}{\numberline {8.4.3}Further Evaluations}{239}{subsection.8.4.3}%
+\contentsline {section}{\numberline {8.5}Final Remarks}{240}{section.8.5}%
+\contentsline {chapter}{List of Figures}{241}{chapter*.201}%
+\contentsline {chapter}{List of Tables}{249}{chapter*.202}%
+\contentsline {chapter}{\numberline {A}Holographic Overlay System Details}{251}{appendix.A}%
+\contentsline {chapter}{\numberline {B}X-ray Vision Literature Review Methodology}{253}{appendix.B}%
+\contentsline {subsubsection}{{\color {red}\sout@orig {Eligibility Criteria}}}{253}{section*.203}%
+\contentsline {chapter}{\numberline {C}Class Diagram for Random Generating Volumes}{255}{appendix.C}%
+\contentsline {chapter}{\numberline {D}Chapter 5: Counting Everything Post Hoc}{257}{appendix.D}%
+\contentsline {chapter}{\numberline {E}Chapter 3's Participant Comments on X-Ray Vision}{261}{appendix.E}%
+\contentsline {section}{\numberline {E.1}Favorite Visualizations and Why}{261}{section.E.1}%
+\contentsline {section}{\numberline {E.2}General Comments}{262}{section.E.2}%
+\contentsline {chapter}{\numberline {F}Feedback from Chapter 5 Examing the Effect of Perception on VIRTs}{265}{appendix.F}%
+\contentsline {section}{\numberline {F.1}Things That Were Liked and Disliked About VIRTs}{265}{section.F.1}%
+\contentsline {subsection}{\numberline {F.1.1}Halo}{265}{subsection.F.1.1}%
+\contentsline {subsubsection}{I liked this visualization because.}{265}{section*.209}%
+\contentsline {subsubsection}{I disliked this visualization because.}{266}{section*.210}%
+\contentsline {subsection}{\numberline {F.1.2}Hatching}{267}{subsection.F.1.2}%
+\contentsline {subsubsection}{I liked this visualization because.}{267}{section*.211}%
+\contentsline {subsubsection}{I disliked this visualization because.}{268}{section*.212}%
+\contentsline {subsection}{\numberline {F.1.3}No VIRT}{270}{subsection.F.1.3}%
+\contentsline {subsubsection}{I liked this visualization because.}{270}{section*.213}%
+\contentsline {subsubsection}{I disliked this visualization because.}{271}{section*.214}%
+\contentsline {subsection}{\numberline {F.1.4}Stippling}{272}{subsection.F.1.4}%
+\contentsline {subsubsection}{I liked this visualization because.}{272}{section*.215}%
+\contentsline {subsubsection}{I disliked this visualization because.}{273}{section*.216}%
+\contentsline {chapter}{\numberline {G}Feedback from Chapter 6 Examining the limits of Depth Perception}{275}{appendix.G}%
+\contentsline {section}{\numberline {G.1}Things That Were Liked and Disliked About VIRTs}{275}{section.G.1}%
+\contentsline {subsection}{\numberline {G.1.1}Halo}{275}{subsection.G.1.1}%
+\contentsline {subsubsection}{I liked this visualization because.}{275}{section*.217}%
+\contentsline {subsubsection}{I disliked this visualization because.}{277}{section*.218}%
+\contentsline {subsection}{\numberline {G.1.2}Hatching}{278}{subsection.G.1.2}%
+\contentsline {subsubsection}{I liked this visualization because.}{278}{section*.219}%
+\contentsline {subsubsection}{I disliked this visualization because.}{279}{section*.220}%
+\contentsline {subsection}{\numberline {G.1.3}No VIRT}{280}{subsection.G.1.3}%
+\contentsline {subsubsection}{I liked this visualization because.}{280}{section*.221}%
+\contentsline {subsubsection}{I disliked this visualization because.}{281}{section*.222}%
+\contentsline {subsection}{\numberline {G.1.4}Stippling}{283}{subsection.G.1.4}%
+\contentsline {subsubsection}{I liked this visualization because.}{283}{section*.223}%
+\contentsline {subsubsection}{I disliked this visualization because.}{284}{section*.224}%
+\contentsline {section}{\numberline {G.2}Validation for Answers Given in the Post-Study Questionaire}{285}{section.G.2}%
+\contentsline {subsection}{\numberline {G.2.1}What Made The Visualization Easy to use?}{285}{subsection.G.2.1}%
+\contentsline {subsection}{\numberline {G.2.2}What Made The Visualization Difficult to use?}{287}{subsection.G.2.2}%
+\contentsline {subsection}{\numberline {G.2.3}Why Do You Think You Performed Better With These Visualization?}{288}{subsection.G.2.3}%
+\contentsline {subsection}{\numberline {G.2.4}Why Do You Think You Performed Worse With These visualization?}{290}{subsection.G.2.4}%
+\contentsline {section}{\numberline {G.3}General Comments}{292}{section.G.3}%
+\contentsline {section}{\numberline {G.4}Validation for Answers Given in the Post-Study Questionaire}{293}{section.G.4}%
+\contentsline {subsection}{\numberline {G.4.1}What Made The Visualization Easy to use?}{293}{subsection.G.4.1}%
+\contentsline {subsection}{\numberline {G.4.2}What Made These visualization Difficult to use?}{294}{subsection.G.4.2}%
+\contentsline {subsection}{\numberline {G.4.3}Why Do You Think You Performed Better With These visualization?}{296}{subsection.G.4.3}%
+\contentsline {subsection}{\numberline {G.4.4}Why Do You Think You Performed Worse With These visualization?}{297}{subsection.G.4.4}%
+\contentsline {section}{\numberline {G.5}General Comments}{299}{section.G.5}%
+\contentsline {chapter}{\numberline {H}Statements of Authorship}{301}{appendix.H}%

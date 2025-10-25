@@ -1,0 +1,137 @@
+\babel@toc {english}{}\relax 
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Images of \gls {ct} and \gls {mri} films being utilized in a medical setting.}}{2}{figure.caption.8}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Two similar slices of different human heads.}}{3}{figure.caption.9}%
+\contentsline {figure}{\numberline {1.3}{\ignorespaces A image of Hanna et al.'s~\cite {Hanna2018} sterile system for \glspl {pathologist}}}{6}{figure.caption.10}%
+\contentsline {figure}{\numberline {1.4}{\ignorespaces The Holographic Overlay system in use with a CT scanner. \DIFaddbeginFL \fixme {Miss aligned is incorrectly spelled} \DIFaddendFL }}{7}{figure.caption.11}%
+\contentsline {figure}{\numberline {1.5}{\ignorespaces This is a image of a cube rendered to show the same data shown in \autoref {fig:HolographicOverlaySystem} but using \gls {dvr}.}}{9}{figure.caption.12}%
+\contentsline {figure}{\numberline {1.6}{\ignorespaces {\color {blue}\uwave {An example of where it is difficult to interpret depth due to the absence of depth cues. The circular object is a virtual object displayed against the wall in the next room. }}\textbf {{\color {blue}\uwave {Left}}}{\color {blue}\uwave {) shows the room with no X-ray vision; }}\textbf {{\color {blue}\uwave {center}}}{\color {blue}\uwave {) shows the same room with X-ray vision enabled. However, the lack of depth cues makes it impossible to determine where the circular object in the next room is located. }}\textbf {{\color {blue}\uwave {Right}}}{\color {blue}\uwave {) shows the same rooms as on the left, displayed using an isometric perspective to illustrate where the items are actually located. }}}}{11}{figure.caption.13}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces This graph of depth cues and distance provides guidelines for depth perception in relation to the distance and key perception parameters.}}{16}{figure.caption.14}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Several images showing various cases of Monoscopic forms of depth perception}}{17}{figure.caption.15}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Aerial Perspective, Relative Size, and Relative Density: An Image of a mountain view in Bavaria, Germany, with indicators to explain how monoscopic depth perception functions}}{18}{figure.caption.16}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Depth Cues and Motion: Schematic illustration of motion components arising from observer translation and scene-relative object motion.}}{19}{figure.caption.17}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces A depiction of how convergence and accommodation work in the real world using Mixed Reality and OST AR.}}{20}{figure.caption.18}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Three images of the Stanford bunny sitting behind a wall, each using a different \gls {X-ray Vision} effect.}}{21}{figure.caption.19}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Examples detailing the stippling algorithm created by Pastor and Strotthote~\cite {Pastor2004}.}}{26}{figure.caption.22}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces A example of Cuberilles.}}{29}{figure.caption.24}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Examples of Hui et al.'s cursors on 3D planes.}}{32}{figure.caption.25}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces The 6 datasets used in Grosset et al.'s~\cite {Grosset2013} research. }}{35}{figure.caption.26}%
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Conditions used in Englund et al.'s~\cite {Englund2016, Englund2018} studies.}}{36}{figure.caption.27}%
+\contentsline {figure}{\numberline {2.12}{\ignorespaces A simple view of \DIFdelbeginFL {\color {red}\sout@orig {Milgrims }}\DIFdelendFL \DIFaddbeginFL {\color {blue}\uwave {Milgram }}\DIFaddendFL et al.'s Mixed Reality Continuum~\cite {Milgram1994}.}}{38}{figure.caption.28}%
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Ivan Sutherland's~\cite {Sutherland1968} "The Sword of Damocles" one of the first head-mounted \gls {ar} systems.}}{39}{figure.caption.29}%
+\contentsline {figure}{\numberline {2.14}{\ignorespaces The virtual scene created by Cecotti et al.}}{46}{figure.caption.30}%
+\contentsline {figure}{\numberline {2.15}{\ignorespaces {\color {blue}\uwave {The protocol utilized for this literature review with the matching results. }}}}{53}{figure.caption.31}%
+\contentsline {figure}{\numberline {2.16}{\ignorespaces A bar graph representing the number of papers that were published between 1990 and 2023 focusing on \gls {X-ray Vision}.}}{54}{figure.caption.33}%
+\contentsline {figure}{\numberline {2.17}{\ignorespaces A plot showing the studies that have been run on \gls {X-ray Vision} by device type.}}{56}{figure.caption.34}%
+\contentsline {figure}{\numberline {2.18}{\ignorespaces Examples of \gls {X-ray Vision} techniques that don't function using traditional techniques but rather label or indicate where objects should be located.}}{57}{figure.caption.35}%
+\contentsline {figure}{\numberline {2.19}{\ignorespaces Armadillos sitting behind a corkboard in \gls {ar} with the same orientation using hole-in-the-worlds effects to function.}}{59}{figure.caption.41}%
+\contentsline {figure}{\numberline {2.20}{\ignorespaces A image of Bajura et al.'s~\cite {Bajura1992} \gls {X-ray Vision} technique.}}{60}{figure.caption.43}%
+\contentsline {figure}{\numberline {2.21}{\ignorespaces This image contains the \gls {X-ray Vision} study environment from Avveduto et al.~\cite {Avveduto2017}.}}{61}{figure.caption.44}%
+\contentsline {figure}{\numberline {2.22}{\ignorespaces The conditions used in Heinrich et al.'s~\cite {Heinrich2019} investigation in to \gls {sar} based virtual holes.}}{61}{figure.caption.46}%
+\contentsline {figure}{\numberline {2.23}{\ignorespaces A image of the tunneling x-ray visualization used to look through multiple walls.}}{62}{figure.caption.47}%
+\contentsline {figure}{\numberline {2.24}{\ignorespaces Wireframe, Random Dot, and Grid \gls {X-ray Visualization} over colorful patterned box with a virtual cube, sphere icosahedron, and a Stanford bunny rendered inside.}}{64}{figure.caption.50}%
+\contentsline {figure}{\numberline {2.25}{\ignorespaces The conditions utilized for Heinrich et al.'s~\cite {Heinrich2022} research.}}{65}{figure.caption.52}%
+\contentsline {figure}{\numberline {2.26}{\ignorespaces Ozgur et al.'s~\cite {Ozgur2017} \gls {X-ray Vision} system using Halos.}}{66}{figure.caption.55}%
+\contentsline {figure}{\numberline {2.27}{\ignorespaces \gls {X-ray Vision} showing alpha blending, Saliency, and edge-based Visualizations (Shown left to right) looking through a building.}}{67}{figure.caption.57}%
+\contentsline {figure}{\numberline {2.28}{\ignorespaces A description of the \gls {X-ray Vision} system used by Kalkofen et al.~\cite {Kalkofen2013}}}{68}{figure.caption.61}%
+\contentsline {figure}{\numberline {2.29}{\ignorespaces A heat map illustrating how often different \gls {X-ray Vision} effects are compared to each other in the literature.}}{69}{figure.caption.63}%
+\contentsline {figure}{\numberline {2.30}{\ignorespaces Eren et al.'s~\cite {Eren2013} different visualizations of underground pipe networks using \gls {X-ray Vision} techniques.}}{71}{figure.caption.64}%
+\contentsline {figure}{\numberline {2.31}{\ignorespaces A promotional Image from Dr Grordborts Invaders made by Weta Workshop for the Magic Leap.}}{76}{figure.caption.71}%
+\contentsline {figure}{\numberline {2.32}{\ignorespaces A bar graph of the type of display used to visualize the various \gls {X-ray Vision} effects.}}{76}{figure.caption.72}%
+\contentsline {figure}{\numberline {2.33}{\ignorespaces A bar graph displaying The types of \gls {ar} that was used to visualize the different types of \gls {X-ray Vision} effects.}}{77}{figure.caption.75}%
+\contentsline {figure}{\numberline {2.34}{\ignorespaces Devices examined for X-ray vision across the literature over time.}}{79}{figure.caption.77}%
+\contentsline {figure}{\numberline {2.35}{\ignorespaces A plot showing nine devices found in the literature.}}{81}{figure.caption.79}%
+\contentsline {figure}{\numberline {2.36}{\ignorespaces The \gls {ost} \gls {ar} display was utilized for Swan et al.'s~\cite {Swan2007} study.}}{89}{figure.caption.83}%
+\contentsline {figure}{\numberline {2.37}{\ignorespaces Swan et al.'s~\cite {Swan2015} study design.}}{92}{figure.caption.84}%
+\contentsline {figure}{\numberline {2.38}{\ignorespaces \gls {ost} \gls {ar} \gls {hmd} which was utilized in Singh et al.~\cite {Singh2018} experiments.}}{95}{figure.caption.85}%
+\contentsline {figure}{\numberline {2.39}{\ignorespaces Several images from Al-Kalbani et al.'s~\cite {Al-Kalbani2019} study set up. }}{98}{figure.caption.86}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces a) Otuski et al.'s~\cite {Otsuki2015} version Random Dot b) A image of the \textit {Random Dot} visualization used in this chapter.}}{110}{figure.caption.87}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces a) Livingston et al.'s~\cite {Livingston2003} initial version of the wireframe \gls {X-ray Vision} effect b) A image of the \textit {Tessellation} visualization used in this chapter.}}{111}{figure.caption.88}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces a) Kalkofen et al.'s~\cite {Kalkofen2007} version of \gls {X-ray Vision} b) A image of the \textit {Edge-Based} Visualization used in this study.}}{113}{figure.caption.89}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Two images that use saliency detection. a) Sandor et al.'s~\cite {Sandor2010} version of Saliency. b) An image of the \textit {Saliency} Visualization used in this study}}{114}{figure.caption.90}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces This image illustrates how different fields of view (FOV) were managed to work with each other.}}{116}{figure.caption.91}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces This diagram explains the frame-by-frame process that the system used to process images}}{118}{figure.caption.92}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces A image of the Baseline (\textit {None}) condition}}{121}{figure.caption.93}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces A image of the hardware used for this study on a glass mannequin head from three different angles.}}{125}{figure.caption.97}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces A image of the prototype models developed to prototype the final ZED MINI camera mount}}{127}{figure.caption.100}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces A diagram of the base dimensions for the HoloLens2 calculated utilizing 3D prototyping. The top of the HoloLens2 Mount can be seen shaded in yellow.}}{127}{figure.caption.101}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces The study environment used for spatial estimation experiment.}}{128}{figure.caption.103}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces A top down view of the study setup for the spatial estimation experiment color coded in to the different areas of note}}{131}{figure.caption.108}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces A graph representing the accuracy of participants' placement based on the distance the object was placed from the goal position within the large physical cube with a Voronoi pattern using the \glspl {X-ray Visualization}.}}{134}{figure.caption.109}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces A Graphs representing the accuracy of participants' placement based on the distance they are from the goal position on the X-axis within the large, physical cube with a Voronoi pattern}}{135}{figure.caption.111}%
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Graphs representing the accuracy of participants' placement based on the distance they are from the goal position on the Y-axis within the large physical cube with a Voronoi pattern.}}{136}{figure.caption.112}%
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Graphs representing the accuracy of participants' placement based on the distance the object was placed from the goal position on the X-axis within the large physical cube with a Voronoi pattern}}{137}{figure.caption.113}%
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Two box plots analyzing the time it took to complete the task compared between different (Right) \glspl {X-ray Visualization} and (Left) with and without the reference objects.}}{138}{figure.caption.116}%
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Graphs representing the percentage of time participants spent moving the icosahedron for each task for each \gls {X-ray Vision} effect.}}{139}{figure.caption.119}%
+\contentsline {figure}{\numberline {3.19}{\ignorespaces The distance participants walked for each when (Left) different \glspl {X-ray Visualization} were displayed to them or (Right) the differences when reference objects were or were not available.}}{140}{figure.caption.120}%
+\contentsline {figure}{\numberline {3.20}{\ignorespaces Box plots represent the distance participants walked for each iteration.}}{141}{figure.caption.124}%
+\contentsline {figure}{\numberline {3.21}{\ignorespaces Box plots representing the speed/velocity in which the object was moved based on the icosahedron.}}{142}{figure.caption.126}%
+\contentsline {figure}{\numberline {3.22}{\ignorespaces Three plots displaying the subjective results collected throughout the course of this study.}}{143}{figure.caption.127}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces A patient receiving a scan in the \gls {ct} scanner}}{151}{figure.caption.128}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Left) \gls {mri} of a skull; Center) Cerebral angiography, arteria vertebralis sinister injection; Right) CT scan of human lungs.}}{152}{figure.caption.129}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces An example of cinematic rendering of a \gls {ct} scan of a patient with a sinus frontalis frontal bone fracture from different angles.}}{156}{figure.caption.130}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Two different methods of moving along a ray.}}{158}{figure.caption.132}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces An image of a set of bones from a CT scan displayed as an iso-surface on a volumetric display (the Voxon).}}{159}{figure.caption.133}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces A series of images showing the looking glass prototype utalizing \gls {dvr}.}}{160}{figure.caption.134}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces A third person view of Direct Volume Rendering using three different polygonal meshes.}}{163}{figure.caption.135}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces This figure shows images from a computer monitor, an AR overlaid image, and the HoloLens2's display directly, featuring a box with a wireframe version of \gls {X-ray Vision} that can cast a shadow over the unseen area.}}{164}{figure.caption.138}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces This image showcases some examples of what is possible for real-time volume-rendered graphics working on an immersive \gls {mr} \gls {hmd} running at 60 fps on a GeForce RTX 2700 \gls {gpu}.}}{165}{figure.caption.139}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces A diagram of how ray marching works regarding this implementation of SDFs.}}{166}{figure.caption.140}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces A 2D example of empty space skipping using a grid-based approach.}}{167}{figure.caption.141}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Artistic images of anatomical images displayed as an \gls {X-ray Visualization} by Dr Joshua Luke Ameliorate.}}{169}{figure.caption.142}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Examples of hand-drawn illustrations using the illustrative techniques that inspired the various \glspl {virt} as they would be depicted within art.}}{170}{figure.caption.143}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces The Halo \gls {virt} applied to the Visible Female data set overlaid over the 3D printed dataset to provide an \gls {X-ray Vision} effect.}}{171}{figure.caption.144}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces The \textit {Stippling} \gls {virt} applied to the Visible Female data set overlaid over the 3D printed dataset to provide an \gls {X-ray Vision} effect.}}{174}{figure.caption.147}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces The \textit {Hatching} \gls {virt} applied to the Visible Female data set overlaid over the 3D printed dataset to provide an \gls {X-ray Vision} effect.}}{176}{figure.caption.149}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces The types of volumes the Random Volume Generation System system can produce.}}{183}{figure.caption.150}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces An activity diagram showing the transition between the various states of the Random Volume Generation System}}{185}{figure.caption.151}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces A breakdown of the structures of the 3D meshes generated by the Random Volume Generator.}}{186}{figure.caption.153}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces (a) A 3D printed version of the model made from the Random Volume Generator's mesh output. (b and c) shows this model from the view of a Microsoft Hololens2 to create an \gls {X-ray Vision} effect using illustrative rendering.}}{187}{figure.caption.154}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces The HoloLens \gls {ui} of the random volume generation system. }}{188}{figure.caption.155}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces This image shows the study environment in which the study was found in and all four of the conditions listed in \autoref {Chap:VolumetricX-rayVision}.}}{190}{figure.caption.156}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces The conditions that were used in this study are displayed as the volumes they are represented as.}}{191}{figure.caption.157}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces A visual description of how the task users in this study were asked to conduct using a volume with 22 green artifacts.}}{192}{figure.caption.158}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces 5 volumes each using \textit {no \gls {virt}} each with a different number of green objects to count.}}{195}{figure.caption.162}%
+\contentsline {figure}{\numberline {6.5}{\ignorespaces The layout of the study area (the participants desk space) the participants had around them for the perception experiment.}}{196}{figure.caption.163}%
+\contentsline {figure}{\numberline {6.6}{\ignorespaces The accuracy, or difference between the participant's and real answers, when counting all green objects within the volume by the \glspl {virt} and the number of objects they were asked to count.}}{198}{figure.caption.165}%
+\contentsline {figure}{\numberline {6.7}{\ignorespaces The accuracy of participant responses when completing the \textit {Count Nested} task. The error bars indicate each \gls {X-ray Visualization}'s confidence levels (CL = 95\%). Significance bars have been omitted as all conditions are significant}}{199}{figure.caption.166}%
+\contentsline {figure}{\numberline {6.8}{\ignorespaces The time required to complete each interaction of a task for each \gls {virt} for both the \textit {Counting Everything} and \textit {Counting Nested} tasks.}}{200}{figure.caption.167}%
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Box plots showing how much each participant moved their head to view the volume between the different \gls {virt} conditions for both the \textit {Counting Everything} and \textit {Counting Nested} tasks.}}{201}{figure.caption.168}%
+\contentsline {figure}{\numberline {6.10}{\ignorespaces A graph showing the speed at which participants moved their hands in this experiment when the different \glspl {virt} were being utilized for both the \textit {Counting Everything} and \textit {Counting Nested} tasks.}}{202}{figure.caption.169}%
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Box plots relating to the speed at which participants moved over different eye gazes.}}{203}{figure.caption.170}%
+\contentsline {figure}{\numberline {6.12}{\ignorespaces A plot showing the difference in velocity between the user's eye movements when different amounts of objects existed for them to see when counting everything.}}{204}{figure.caption.171}%
+\contentsline {figure}{\numberline {6.13}{\ignorespaces Outcomes from the PAAS questionnaire in the counting study. Lower results indicate lower cognitive load and higher results indicate higher cognitive load.}}{205}{figure.caption.173}%
+\contentsline {figure}{\numberline {6.14}{\ignorespaces Results of the SUS questionnaire for the counting study.}}{205}{figure.caption.174}%
+\contentsline {figure}{\numberline {6.15}{\ignorespaces Results for the question \textit {"How easy was it to look at objects inside of other objects using this visualization?"}}}{206}{figure.caption.175}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {7.1}{\ignorespaces This figure shows the environment in which this study took place and presents each of the \gls {virt} conditions utalized in this study.}}{212}{figure.caption.176}%
+\contentsline {figure}{\numberline {7.2}{\ignorespaces The \glspl {virt} used for this study}}{215}{figure.caption.177}%
+\contentsline {figure}{\numberline {7.3}{\ignorespaces An example of what the volume looked like from the outside for each depth}}{216}{figure.caption.178}%
+\contentsline {figure}{\numberline {7.4}{\ignorespaces The furthest extremes of the visualization shown in enlarged using the \textit {No \gls {virt}} condition.}}{218}{figure.caption.180}%
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Top-down view of the layout of the participants' study area (their desk).}}{219}{figure.caption.183}%
+\contentsline {figure}{\numberline {7.6}{\ignorespaces An Example of Euclidean \gls {dvr} and non-Euclidean \gls {dvr} of the same volume.}}{220}{figure.caption.184}%
+\contentsline {figure}{\numberline {7.7}{\ignorespaces Four graphs which show impact to the depth perception caused by each condition in this study's response data, and sigmoid functions for each VIRT.}}{222}{figure.caption.185}%
+\contentsline {figure}{\numberline {7.8}{\ignorespaces Magnified view of the sigmoid functions showing the offset from zero and is the largest divergence for the JND at the 75\% line. }}{222}{figure.caption.186}%
+\contentsline {figure}{\numberline {7.9}{\ignorespaces The mean time required for each VIRT in the depth perception study.}}{224}{figure.caption.191}%
+\contentsline {figure}{\numberline {7.10}{\ignorespaces Box plots showing the average head movement velocity for each condition}}{224}{figure.caption.193}%
+\contentsline {figure}{\numberline {7.11}{\ignorespaces Box plots relating to the speed at which participants tended to move their hands.}}{225}{figure.caption.194}%
+\contentsline {figure}{\numberline {7.12}{\ignorespaces The difference in velocity between the participant's eye movements.}}{226}{figure.caption.195}%
+\contentsline {figure}{\numberline {7.13}{\ignorespaces Results from the PAAS questionnaire for the depth perception study.}}{227}{figure.caption.197}%
+\contentsline {figure}{\numberline {7.14}{\ignorespaces Results from the SUS questionnaire for depth perception study.}}{227}{figure.caption.198}%
+\contentsline {figure}{\numberline {7.15}{\ignorespaces Results for the question "\textit {How easy was it to look at objects inside of other objects using this visualization?}"}}{228}{figure.caption.199}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {8.1}{\ignorespaces A prototype of a new form of accommodation-convergence based X-ray effect designed for \gls {ost} \gls {ar} devices.}}{239}{figure.caption.200}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {C.1}{\ignorespaces The Class Diagram showing the main dependencies of the Random Generating Volumes System.}}{256}{figure.caption.204}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }

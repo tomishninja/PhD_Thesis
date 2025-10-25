@@ -1,0 +1,283 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% NOTE: THIS IS A ROUGH TEMPLATE THAT WILL MOST LIKELY NEED CHANGES TO
+% CONFORM TO YOUR INDIVIDUAL SITUATION
+% THERE IS NO GUARANTEE OF THE ACCURACY OR COMPLETENESS OF THE TEMPLATE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt,a4paper,twoside,openright,final,titlepage]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{layout}
+\usepackage{lscape}
+\usepackage{rotating}
+\usepackage{longtable}
+\usepackage{enumitem}
+\usepackage{cite}
+\usepackage{fixme}
+%\usepackage{todonotes}
+
+\setlength{\headheight}{15pt}
+
+%\usepackage[square,sort,numbers,authoryear]{natbib}
+%\usepackage{chapterbib}
+%\setlength\bibhang{.3in}
+
+% spacing info
+\usepackage{setspace}
+\usepackage{svg}
+\onehalfspacing
+
+\usepackage{fancyhdr}
+\usepackage[T1]{fontenc}     % Better handling of accented characters
+\usepackage{lmodern}         % Latin Modern fonts (an enhanced version of Computer Modern)
+
+\usepackage[labelfont=bf]{caption}
+\usepackage{enumitem}
+\usepackage[utf8]{inputenc}
+% For electronic submission use:
+\usepackage[a4paper,width=150mm,top=25mm,bottom=25mm]{geometry}
+% For printing use:
+%\usepackage[inner=4cm,outer=2cm,top=2cm=bottom=2cm]{geometry}
+\usepackage{tocbibind}
+\usepackage[automake,acronym,toc]{glossaries-extra}
+
+%
+% packages Added By Tom
+%
+\usepackage{comment}
+\usepackage[section]{placeins} % used for the appendix section to keep tables in the correct section
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage[hidelinks]{hyperref}[hyphens]
+\usepackage[percent]{overpic}
+\usepackage{xcolor}
+\usepackage{pdfpages}
+
+% to fix table of contents
+\newcommand{\nocontentsline}[3]{}
+\let\origcontentsline\addcontentsline
+\newcommand\stoptoc{\let\addcontentsline\nocontentsline}
+\newcommand\resumetoc{\let\addcontentsline\origcontentsline}
+
+%
+%
+%
+
+% reference packages need to be last as they read other packages
+\usepackage{cleveref}
+\usepackage{chngcntr}
+
+% for pusdo code
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+
+%
+% Commands Created By Tom
+%
+\makeatletter
+\newcommand{\thickhline}{%
+    \noalign {\ifnum 0=`}\fi \hrule height 1pt
+    \futurelet \reserved@a \@xhline
+}
+
+\newcolumntype{"}{!{\vrule width 1pt}}
+\makeatother
+%
+%
+%
+
+\renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{\thechapter. #1 }}{}}
+\renewcommand{\sectionmark}[1]{}
+\counterwithin{algorithm}{section} % Number algorithms by section
+\crefname{algorithm}{Algorithm}{Algorithms}
+
+\fancyhf{}
+\fancyhead[RO]{\bfseries\rightmark}
+\fancyhead[LE]{\bfseries\leftmark}
+\fancyfoot[C]{\thepage}
+\pagestyle{fancy}
+
+\usepackage[english]{babel}
+\addto\extrasenglish{
+  \def\subsectionautorefname{Subsection}
+}
+\addto\extrasenglish{
+  \def\sectionautorefname{Section}
+}
+\addto\extrasenglish{
+  \def\chapterautorefname{Chapter}
+}
+
+\newcommand\frontmatter{\pagenumbering{roman}}
+\newcommand\mainmatter{\cleardoublepage\pagenumbering{arabic}}
+
+\newenvironment{chapabstract}{%
+	\begin{center}%
+		\singlespacing
+		\bfseries ABSTRACT
+	\end{center}
+    }%
+
+
+\makeglossaries
+    
+\begin{document}
+
+\input{Glossary}
+%	\layout
+	\begin{titlepage}
+		\centering
+		\vfill
+		\vskip 1.75cm
+		{\bfseries\Large
+        %VIRTs: Volumetric Illustrative Rendering Techniques to support X-Ray Vision on Optical See Through Mixed Reality to impove Perception
+        
+        %VIRTs: Volumetric Illustrative Rendering Techniques to support the perception of X-Ray Vizulizsed  with Voxel Data on Optical See Through Mixed Reality
+        
+        %VIRTs: Volumetric Illustrative Rendering Techniques to support X-Ray Vision on Optical See Through Mixed to Optimize Perception of Voxel Data
+
+        VIRTs: Volumetric Illustrative Rendering Techniques to Improve X-Ray Vision Perception on Optical See Through Mixed Reality
+
+				%Visualizing Spatial Voxel Data with X-ray Visualizations on Optical See-Through Mixed Reality \\
+                }
+		\vskip 1.5cm
+
+		\LARGE{Thomas John Clarke}\\
+        \textit{\small BSoftwEng(Hons)}\\
+        \LARGE
+        
+		\vskip 2.25cm	
+            \large
+		\textit{A dissertation presented for the degree of\\DOCTOR OF PHILOSOPHY}\\
+		\vskip .05cm
+		\includegraphics[width=.40\linewidth]{unisaLogo.jpg}
+		\vskip .05cm
+		Australian Research Centre for Interactive\\and Virtual Environments\\
+		\vskip .25cm
+		  March 2025\\
+		\vskip 1.5cm
+		\textbf{Supervisors:} \\
+			A. Prof. Ross Smith (Coordinating)\\
+			A. Prof. Wolfgang Mayer\\
+			Dr. Joanne Zucco\\
+	\end{titlepage}
+	%\maketitle
+	\frontmatter
+%	\linenumbers
+	\clearpage
+	\thispagestyle{empty}
+	\phantom{a}
+	\vfill
+	\vfill
+
+
+        \Huge
+	\begin{abstract}
+        \normalsize
+    
+    
+            % Introduction - What issue is this thesis trying to 
+            Seeing through objects is a desirable trait not just for superheroes trying to escape from a burning building or locate a villain but for any professional who needs to consider what they cannot yet see. 
+            This can be related to a construction worker who needs to know what is going on the floor above them or a surgeon who needs to know where an object is within the human body. 
+
+
+            \gls{ar} X-ray vision can extend a user’s sight into concealed spaces and through virtual objects to reveal hidden areas in the real world.
+            However, this functionality hasn't been well explored using Optical See-Through (OST) Augmented Reality (AR). 
+            OST AR devices allow users to perceive both the real world and digital overlays, enhancing their value for context switching between tasks that require virtual and real-world information. 
+            % add display limitations of the equipment
+            The ability to see the real world and the digital overlay simultaneously makes occlusion difficult, which is further impacted by the limited color gamut of current OST AR displays, impacting colors like darker colors and blacks the worse. 
+            This is all because the OST AR display utilizes a projector, which projects light onto a transparent display. 
+            Less vibrant colors on a OST AR devices emit or reflect less light, making them appear dimmer on an optical see-through display.
+            The physical and computational constraints of current OST AR devices pose further challenges for realizing X-ray vision for volumetric information. These challenges raise significant questions about designing volumetric X-ray vision in OST AR while minimizing depth misinterpretation and enhancing alignment accuracy.
+            
+            To address these challenges, this dissertation aims to develop an effective method of X-ray vision on OST AR devices for displaying volumetric visualizations. 
+            It also examines how different visualization styles influence human depth perception in scenarios demanding precise spatial understanding. This research's findings establish a foundation for designing future X-ray vision visualizations and systems aimed at assisting humans in stressful and dangerous tasks where precise spatial comprehension is essential.
+            %This research evaluates the effectiveness of newly developed visualizations (VIRTs) and examines their impact on perception and depth of understanding through controlled studies.s
+
+            % Edit of Wolfgangs, talking about chapter 3 and 4
+            Discerning objects and understanding their shape is a key concern for X-ray visualizations, and the way objects are visualized can profoundly affect this ability. 
+            X-ray visualizations investigated in prior research were extended to use an Optical See Through (OST) Augmented Reality (AR) device. A study that examines the accuracy of depth perception and object placement in a mobile AR X-ray vision scenario between edge-based, saliency-based, and occlusion-based X-ray vision methods was investigated.
+            Demonstrating that occlusions provide significant cues for depth perception but may hinder accuracy in placement tasks
+
+            Inspiring the visualizations developed in this dissertation, I coined a new term called Volumetric Illustrative Rendering Techniques (VIRTs), which captures a new category of volumetric techniques for OST AR, which adapt illustrative techniques that convey the shape of objects in 2D illustrations.
+            The Hatching, Stippling, and Halo VIRTs are the first x-ray visualizations specifically designed for OST AR devices and used independently with direct volume rendering.
+            This thesis demonstrates that VIRTs can effectively enhance spatial understanding in X-ray vision on OST AR devices and showcases the efficient algorithms applied in a system that achieves these effects.
+            % below was taken from else where but is being placed back now.
+            
+            % Study 2 and 3
+            This dissertation conducts three controlled user studies focusing on depth perception, object recognition, and spatial accuracy in OST AR environments to evaluate the effectiveness of the visualizations. 
+            Through controlled user studies, it examines their effectiveness and impact on object placement, perception, and depth of understanding of X-ray visualizations and VIRTs.
+            %To evaluate the effectiveness of the visualizations, if the visualizations were developed in this dissertation, two controlled user studies were further done to test their impact on depth perception and object recognition in OST AR environments. 
+            The first study examines the accuracy of depth perception and object placement in a mobile AR X-ray vision scenario, demonstrating that occlusions provide significant cues for depth perception but may hinder accuracy in placement tasks. 
+            The perception study investigates spatial understanding in complex hierarchical scenarios, revealing that outline-based visualizations are the most effective for object identification among those examined in this thesis. 
+            The depth perception study assesses the limits of depth perception using visualizations, and the results indicate that users can discern differences in the depth placement of irregular objects at sub-centimeter resolution.
+
+            % Conclude the abstract
+            This dissertation lays the foundation for future innovations in OST AR based X-ray visualizations. 
+            Providing groundwork could enhance future X-ray applications, particularly in improving depth perception through adaptive rendering and advances in AR hardware. 
+            These advancements will enhance applications in medical imaging, remote inspections, and augmented training, making complex spatial tasks more intuitive and precise.
+            
+	       
+	\end{abstract}
+        \normalsize
+	
+	\include{Acknowledgments/acknowledgements}
+	
+    %\include{Declaration/author_declaration}
+    
+	\include{Declaration/declaration}
+    \printglossary[type=\acronymtype,title=Acronyms]
+    \printglossary[title=Glossary]
+    %\include{ListOfPublications}
+    
+\stoptoc
+    \setcounter{tocdepth}{2}
+    \tableofcontents
+\resumetoc
+    
+	\mainmatter
+	\raggedbottom
+    \glsresetall
+    %\include{DemoFolder/Intro}
+    \include{Chapter1/Introduction}
+    %\include{Chapter1/IntroductionBrief}
+    \glsresetall
+    \include{Chapter2/Background}
+    %\include{Chapter2/BackgroundBrief}
+    %\include{Chapter2/ReviewofX-rayVisualisationsinAugmentedReality}
+    \glsresetall
+    %\include{Chapter3/Chapter3Brief}
+    \include{Chapter3/Study1}
+    \glsresetall
+    %\include{Chapter4/Chapter4Brief}
+    \include{Chapter4/Chapter4}
+    \glsresetall
+    %\include{Chapter5/Chapter5Brief}
+    \include{Chapter5/Chapter5CountingStudy}
+    \glsresetall
+    %\include{Chapter6/Chapter6Brief}
+    \include{Chapter6/Chapter6DepthPerceptionStudy}
+    %\include{Chapter7/Chapter7Brief}
+    \glsresetall
+    %\include{ChapterFinal/ConclusionBrief}
+    \include{ChapterFinal/ConclusionBrief}
+    \glsresetall
+    
+    \bibliographystyle{IEEEtran}
+    \bibliography{bibliography}
+
+    \glsresetall
+    
+	\listoffigures
+	\listoftables
+    %\listofalgorithms
+
+    
+    \glsresetall
+    
+    \appendix
+    \include{Appendix/Appendix}
+    
+\end{document}
+

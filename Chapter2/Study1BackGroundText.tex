@@ -1,0 +1,57 @@
+An early application of X-ray vision was to visualize a fetus inside a woman's womb during an ultrasound~\cite{Bajura1992}. However, Bajura et al.\cite{Bajura1992} found that the fetus appeared to be between the patient and the viewer rather than inside the woman's body.
+To rectify the issue, they used occlusion by creating a virtual hole where the virtual image was occluded when viewed at certain angles~\cite{Bajura1992}. 
+%Like an open box.
+This was very effective because occlusion is a strong and effective visual cue\cite{Vishton1995, Cutting1997}, which has been used in recent studies~\cite{Blum2012, DePaolis2019, Phillips2021}.
+Virtual holes have been found to provide a relationship between virtual objects and the real world. Kytö et al.\cite{Kyto2013} found that users could better determine distance if they had a partially occluded object in the scene for users to use as a reference. 
+%Phillips et al.\cite{Phillips2021} build an OSTAR X-ray vision system using virtual holes on OSTAR devices. 
+
+% Uses for X-ray vision
+
+Furmanski et al.~\cite{Furmanski2002} tested the effectiveness of Bajura et al.'s~\cite{Bajura1992} virtual hole using video recordings users would watch the recordings in place of augmented reality while being asked to guess the locations of 3D objects within a space.
+The study found that the virtual hole was more effective with depth perception techniques like shading and that people are likely to believe that an object is in front of another object unless cues indicate the contrary. 
+Kameda et al.~\cite{Kameda2004} developed an x-ray vision system that showed the user what was through another object by rendering it on the other side. %This was later further evaluated by Tsuda et al.\cite{Tsuda2005}.
+Kameda et al.\cite{Kameda2004} and Tsuda et al.~\cite{Tsuda2005} found that if users could see through objects in the real world, their sense of depth would adjust to allow for the object to be behind the physical object rather than in front of it.
+
+Kalkofen et al.\cite{Kalkofen2007} created an x-ray vision effect by highlighting the edges of the real world.
+These edges highlight a foreground and obscure any object found behind it. 
+This is known as Edge-Based x-ray visualization.
+%The impact of this technique on depth perception has since been evaluated on VST AR devices by Dey et al.~\cite{Dey2014}. 
+Dey et al.~\cite{Dey2014} later evaluated this visualization's impact on depth perception.
+Avery et al.\cite{Avery2009} used a type of virtual box with no backplate called tunneling. 
+To give the user an accurate sense of depth through an object, the relative distance through that object was represented as a tunnel that helped the user understand the depth/distance between one point and another. 
+The Edge-Based effect was used to prevent the tunnel from appearing on top of the visualization. 
+
+Saliency is an x-ray visualization technique that removes elements of the scene of interest and allows users to see through an object~\cite{Sandor2010}.
+This creates areas of interest that are affected by x-ray vision and areas that are less interesting to the user (presented in the background based on Zollmann et al.’s\cite{Zollmann2010} ghosting x-ray visualization).
+%This gradient visualization produced a similar effect to effect as tunnelling\cite{Avery2009}. 
+Sandor et al.\cite{Sandor2010} found that this visualization was preferred over the previous Edge-Based techniques.
+Santos et al.\cite{Santos2016} compared Edge- and Saliency-based visualizations on mobile devices. 
+This study found a series of values for Edge and Saliency depending on the physical object the user was looking through and found that the more occlusion an object provided, the harder it was to see through. 
+
+Otsuki et al.\cite{Otsuki2015} created an effect that was fast to render and provided an occlusive cue that was not dependent on any optical cues and could take advantage of a depth map, allowing the user to rely on binocular disparities. 
+Their visualization used square dots that aligned with the user's real world view. 
+Otsuki et al.~\cite{Otsuki2016} found that larger dot sizes resulted in higher depth perception and enabled some transparency. 
+
+A wireframe visualization was first used by Tsuda et al.~\cite{Tsuda2005}, who found that a wireframe cue could help the user determine an object's relative position to the reference frame.
+The planes on this visualization would also darken everything found behind them, lowering the opacity of a virtual object behind it.
+Later on, it was found out that too much transparency could have a negative effect on depth perception when using a wireframe visualisation~\cite{Elmqvist2007}, and Gruenefeld et al.~\cite{Gruenefeld2020} therefore attempted to use a denser mesh of triangles or a Tessellation effect to represent the object being viewed into.
+
+
+\section{Updates since running this study}
+Gruenefeld et al.\cite{Gruenefeld2020} also produced one of the first depth perception studies done using an OST headset utilizing x-ray vision, including Grid and Cut-out effects. 
+The grid effect, placed on the ground and a perpendicular wall, could be used to approximate a relationship between the wall and the object. In contrast, the cut-out visualization provided a hole in the wall. The user could look through to get a sense of where the object was on the other side.
+%against a baseline that pointed participants to the object with a red arrow and displayed a perpendicular line going from the far point of the arrow to the bottom of the visualization. 
+Gruenefeld et al.'s~\cite{Gruenefeld2020} found that the weakest of the depth cues were the wireframe and the cut-out. This was probably since neither of these cues conveyed depth indications to the user.
+
+Martin-Gomez et al.~\cite{MartinGomez2021} studied the difference between several x-ray visualizations (None, virtual hole, ghosting, and Random Dot) on both VST AR and OST AR devices in the near field, which not many studies to this point have replicated. 
+They found that users better used X-ray vision on a VST AR headset than on an OST AR device.
+This prompted another study by Martin-Gomez et al.~\cite{MartinGomez2021} investigating different rendering techniques for x-ray vision (shading, hatching, ghosting) and brightness levels, finding that bright clear objects work best in OST AR.
+
+Interestingly, only a few studies in X-ray vision have handled within arms' reach X-ray vision, like Martin-Gomez et al.~\cite{MartinGomez2021} and Santos et al.~\cite{Santos2016} in X-ray vision. 
+Some work has Ozgur et al.~\cite{Ozgur2017} showed that highlighting an object as the user gets closer to it will improve the object's position in a surgical situation. 
+This lack of work may be because many of the depth perception tasks in the near field of AR use reaching and matching techniques that do not work as well with physical obstacles~\cite{Swan2015, Medeiros2016}.
+
+To date, the effects of Saliency and Edge-Based techniques have not been compared against Random Dot and wire-frame X-ray visualizations.
+Moreover, previous studies commonly restricted the user's movement while investigating the different approaches to depth cues. 
+However, real world tasks commonly require or allow users to move within the physical space.
+Hence, I was looking at a less restrictive solution to test the uses of various x-ray visualizations so that I could look at the users natural process for dealing with different types of occlusion.

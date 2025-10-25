@@ -1,0 +1,157 @@
+This background content contains three sections:
+
+A introduction in to the AR space and the types of abilities that this technology has.
+
+A systemic style literature review of the work done in X-ray vision cataloging all of the previous X-ray visualisation. 
+
+A review on research on the overlaying volumetric data over a augmented reality.
+
+\section{Augmented Reality}
+Mixed Reality devices represent a subset of Virtual Reality technologies that merge the real-world with virtual worlds \cite{Milgram1994}. Milgram et al.\cite{Milgram1994} stated that anything between but not including a completely virtual environment and the real-world can be considered Mixed Reality. 
+
+Figure 4 depicts Augmented Reality as one of the nearest versions of Mixed reality to the Real Environment. 
+This is useful for this project as it allows virtual objects to be placed in to the users real-world perception. 
+Making many working many industrial use cases possible \cite{VanSon2018, Cote2018, Pratt2018, Aaskov2019, DePaolis2019, Santos2015, Kameda2004, Iwai2006}. 
+%Allowing medical practitioners to focus on the real-world environment while being able to perceive the virtual data at the same time.
+
+Mixed reality can be displayed in many ways. 
+Phones, tablets televisions and computer monitors can produce a non-immersive monitor display\cite{Milgram1994}.
+
+Due to their increasing power there has been some interest in AR on Mobile devices of current years \cite{Kim2018}.
+
+It can also be achieved simply with a monitor showing real-world environments with virtual objects added \cite{Collins2014}. % needs citation
+Projectors can make augmented experiences in situ \cite{Kim2018, Heinrich2019}. % citations needed
+If the desired effect is opaque these will be placed on an opaque surface or if the desire is for them to be transparent, they tend to be displayed on slivered glass.
+
+% this paragraph will need more citations
+The area that this project will be focusing on however is Head Mounted Displays (HMD). 
+These can produce a completely immersive experience that can be achieved in virtual reality or they can augment the user's egocentric view point. 
+Augmented reality can use a video see though approach that has many of the advantages of VR while providing an augmented reality experience.
+There are also devices that work in a similar fashion to the projected slivered glass displays and provide a slightly transparent display. \cite{Milgram1994} 
+
+
+
+\subsubsection{Medical}
+The following papers represent a small sample size of medical AR papers. 
+A review by Guha et al.\cite{Guha2017} identifies AR as a significant concept within this space. 
+
+AR research within the medical space has mainly been focused on monitor based AR devices \cite{Guha2017, Milgram1994}, were the normal case study will include superimposing polygonal surfaces or wire frames over the user's body. 
+
+De Paolis and De Luca \cite{DePaolis2019} wanted to work with using 3D visualizations rather than 2D ones.
+
+This project was  based in the Augmented Vitality were real-world objects are used to augment a virtual environment \cite{Milgram1994} replicating real-world environments such as a surgical space into a 3D representation.
+
+A simpler and less computationally expensive approach was tried by Aaskov et al. \cite{Aaskov2019}.
+
+Who took a different approach to X-Ray vision by applying a 2D X-Ray visualization on to the back of a patient.
+In order to do this the X-Ray was taken and modeled to the shape of the back of the patient and the representation was made semi-transparent. 
+This visualization proved to have good results in regard to accuracy but work still needs to be done to correct the errors caused by overlaying a slice over a human volume. \cite{Aaskov2019}
+
+Pratt et al. \cite{Pratt2018} looked at overlaying patients with 3D data generated from using CT scanner data in polygonal format using the marching cubes algorithm.
+
+The marching cubes algorithm determines the appropriate set of triangles to generate the CT data \cite{LorensenMarchingCubes}. 
+
+There overlays used simple marching cube representations to generate them \cite{LorensenMarchingCubes} and were merged together and manually set over the patient.
+
+These graphics where then manually moved over the patients using the HoloLens default controls. 
+Five case studies were presented with different patients were a surgeon would wear a HoloLens and real surgeries where performed.
+The feedback from these studies was positive \cite{Pratt2018}.
+
+Currently augmented reality egocentric spatial awareness within AR applications is expected to exist within a 5mm range as they will be taking place within the user's personal space\cite{Al-Kalbani2019, Ping2020}. 
+
+This is not effective enough to propose for a medical application however since these effects need to be placed within a millimeter to be unobtrusive\cite{Sielhorst2006}.
+
+
+\subsubsection{Maintenance}
+Van Son et al. \cite{VanSon2018} created a 3D utility mapping software for subterranean systems.
+
+
+Rather than laying out its map like a schematic it uses a Virtual hole like the one found in Bajura et al.'s \cite{Bajura1992} work but also with a measuring tool present for the user.
+
+
+One major issue with this system was that it only allowed the user to investigate a small subsection of the data because the surrounding walls are required to maintain depth ques.
+
+Around the same times as Van Son et al.'s work, Côté and Mercier \cite{Cote2018} wanted to find overcome the limitations of this procedure and fix the visual conflicts by laying out the schematics on the ground where they should be.
+By using the same 2D data that is used for map-based schematics this allows for a clearer understanding of the data. 
+Their results indicated that this is an easy to use making it an easier system to use for people who have already been trained to use this type of schematic.
+The depth que of height did indicate to be a limitation of a naive approach to this implementation but there were two solutions to this. 
+They could just render what was close to the user the other one was to calculate for a drop in an object's height on the horizon.
+
+\subsubsection{Unseen Interactions}
+Lilija et al. \cite{Lilija2019} recently looked at allowing people to view objects from the other side of the object allowing them to interact with that object without needing to see it.
+
+They gave their uses a series of other tasks including pressing, rotating, dragging, plugging and placing various components they can't see. 
+
+The connection between Lilija et al.'s work and X-Ray vision is clear. 
+
+However, this paper focus on ways this style of interaction can work without X-Ray blending effects being mentioned. 
+The user was given vision by using five different views displayed on the HoloLens.
+One of these was a static camera image in the users view another.
+This was contrasted against a dynamic camera view that was connected to either the tip of the user's finger or the plug they would be holding.
+Another visualization was to view a 3D output of the problem space to the side of the user.
+The last visualization was to see a 3D model of the problem space on the back of the board. \cite{Lilija2019}
+
+1200 timed trails of these visualizations were compared against having no visualization at all and this showed that cloned 3D and see though views were most comfortable and fastest for the users. 
+Results report a static camera feed was better than having no visualization at all.
+The better visualization seems to have come from allowing users to be able to move their head and get a different perspective on this subject.
+Interestingly, results found that some people found them confusing compared to the static camera image While other seemed to find it quite intuitive. \cite{Lilija2019}
+
+\subsection{Depth Perception within Mixed Reality}
+Mixed reality seems to introduce a lot of variance in how we perceive depth compared to the real-world.
+Mixed reality causes people to underestimate depth \cite{Swan2007, Armbruster2008, Diaz2017, Gao2020}.
+
+This seems to be an effect that gets worse the more virtualized an augmented environment is \cite{Ping2020}. 
+
+It also seems to be the having proper lighting in the augmented environments plays a large role \cite{Ping2020}. 
+
+Shadows are very important for Mixed Reality depth perception\cite{Diaz2017, Al-Kalbani2019}
+realistic shadows will outperform nonrealistic shadows \cite{Gao2020} and nonrealistic shadows are found to be better than not having any shadows at all\cite{Diaz2017}.
+
+Objects will appear to the user as being on the ground when they are floating \cite{Rosales2019}. 
+
+By allowing users to move around a space freely they were able to determine exactly where they were located and demonstrated that the users were able to better perceive their sense of space \cite{Swan2007, Kelly2013, Siegel2017, Al-Kalbani2019}.
+
+Depth perception or egocentric spatial awareness is a challenging concept to research due to the difficulties of measuring it.
+Within mixed reality however several methods have been developed that have proven capable of working with the right level of depth perception. 
+One such technique requires the user walks to where they believe the visualization to be. 
+Users can also vocally state where the variation is.
+For judging far away distances a common technique is to use the mathematical bisection method to determine the approximate accuracy of the users. 
+The bisectional has been proven to be extremely effective when used with large amounts of people \cite{Lappin2006, Jamiy2019}.
+
+Given that movement helps depth perception and objects will usually appear to be on the ground rather than floating it would be fair to assume that gravity can aid depth perception.
+However, this assumption seems to be misguided\cite{HECHT1996}.
+
+After what seemed to be some positive progress early on in this field there has some evidence suggests the use of gravity is what helps us perceive depth \cite{Watson1992}.
+
+Although this was partially disproven by Hecht et al. \cite{HECHT1996} who made the hypothesis that if it were to match real gravity one to one then it might be possible. 
+
+Another instance of our depth perception not working being manipulated by gravity is the concept of kinetic perception.
+This is when one object spins around another object. 
+Even though these objects don't follow our regular motions of gravity on earth but rather a more complicated form of the concept.
+\cite{Vishton1995, Rosales2019}. 
+
+% However, it seems that unless kinetic perception is in play (one object is spinning around another object) the static attributes of object should be on the ground \cite{Vishton1995, Rosales2019}. 
+% However, it seems if these objects don't follow some real-world logic it can hamper our perception of the real world.
+
+The literature for VR exploring depth perception is vast while there is still more work to be done in AR before we can have a proper understanding of it \cite{Jamiy2019b}.
+
+However, it should theoretical be relatable, so experiments like ping et al.'s \cite{Ping2020} who linked Ocular See Though Augmented Reality (OSTAR) should help guide hypothesis regarding how various depth perception tasks can be linked between AR and VR.
+
+One study by Medeiros et al. \cite{Medeiros2016} has been found who analyzed OSTAR technologies against Video See Though (VSTAR) Technologies.
+
+They only found minor differences with the user's 3D precision with drawing the path from start to finish and their overall times between the two systems
+their users found the video see though device easier to use because of the larger view port.
+
+Depth perception in the peri-personal space is promising, However, current methods haven't yet made it as good as reality.
+Users are still more likely to underestimate their depth perception, but it is common to overestimate as well\cite{Armbruster2008}.
+
+It appears that participants on average can discern depth accurate up to approx. 5mm depending on the task \cite{Swan2015}.
+
+This is much better than studies that measured the action space \cite{Diaz2017, Gao2020, Swan2007}.
+
+A less explored study of depth perception in AR is the ability to superimpose objects over real world objects.
+This will cause an issue with your depth ques causing you try to tell the depth behind an object \cite{Avery2009}.
+
+This is similar to the phenomena of depicting floating object with no depth ques it will appear as if its further away and has also been known to happen in reverse \cite{Rosales2019, Ellis1998}.  
+
+If an occlusion depth que in not included were the user expects it to be, they will assume that it appears the most logical place for them \cite{Avery2009, Sandor2010}. 

@@ -1,0 +1,74 @@
+\chapter{Designing X-ray visualizations with Volume Rendering} \label{Chap:VolumetricX-rayVision}
+provide a high level description about what the term volume rendering encapuslates (2 - 3 paragraphs)
+
+\section{Volume Rendering Basics}
+this title should be changed.
+This section should talk about the basic algorithms behind volume rendering. pros and cons.
+
+This should also include a overview of the various algorithms used
+\begin{enumerate}
+    \item Different way to determine normals
+    \item Ray Marching
+    \item Sphere Marching
+    \item Empty Space Leaping
+\end{enumerate}
+
+\section{Transparent SDF Volume Rendering}
+Talk about the algorithm used for Studies 2 and One as they used SDF's as there volume rendering which was utalized for this.
+
+\section{non photo realistic volume rendering}
+
+This section should talk about what non photo realistic rendering is 1 - 2 paragraphs
+
+How it is different from the above (1 paragraph)
+
+What are various types of effects that have been utilized for this effect and why they where chosen. It could also include some effects that where not included, though I can't think of many(several paragraphs).
+
+%
+% Tom rambling on about iso surfaces:
+%
+
+% \begin{figure}[tb]
+%     \centering
+%     %\includesvg[width=\textwidth]{Chapter4/Images/Painter's_algorithm.svg}
+%     %\caption{A Image illustrating painters algorithm showing that how items are rendered from the back to the front (Left to Right). This image was Illustrated by Zapyon and is licenced under creative commons. and can be found at https://en.wikipedia.org/wiki/File:Painter\%27s_algorithm.svg}
+%     \includegraphics[width=\textwidth]{Chapter4/Images/Painter's_algorithm.png}
+%     \caption{A Image illustrating painters algorithm showing that how items are rendered from the back to the front (Left to Right).}
+%     \label{fig:Painters-Algorithm}
+% \end{figure}
+
+%% Explaining quickly how rendering is normally done
+% Technically it is impossible to render this data using traditional rendering methods which you would normally see in video games. 
+% Traditional rendering utilizes creates meshes that represent the shells of objects, only rendering the outside of the objects. 
+% This allows graphics to be more efficiently as only the faces facing the camera which are visible need to be rendered, lowering the amount of rendering required by ~50\%.
+% This is then further saved by using either the rendering the polygon that should be drawn by this pixel that is at the front.
+% This is usually either done by using visible surface determination algorithms like the painters algorithm~\cite{Newell1972} (illustrated in \autoref{fig:Painters-Algorithm}) or Z-buffer algorithm~\cite{Strasser1974}.
+
+%% Explaining how people look at 
+% Traditional rendering algorithms struggle quite a bit more when dealing with transparent objects since they don't have so they are normally drawn last and can not have effects like shading applied to them.
+% The methods that currently exist for shading transparent objects are computationally expensive. 
+% Modern examples like Ray Tracing~\cite{Purcell2002} are becoming a solution to this issue but still require a lot of computational power~\cite{Kelly2021}. 
+% Volume rendering doesn't use surfaces or occlude artifacts usually and they don't tend to have well defined surfaces, so it makes these forms of occlusion more difficult. 
+
+%% Why don't these algorithms work with volume rendering
+% There are two main methods of rendering volumes.
+% Iso-surfaces allow users to create define surfaces that represent a change in the voxel values. 
+% For an \gls{mri} or a \gls{ct} scan this would be the difference between different tissues. 
+% Since they create surfaces within a volume traditional rendering practices can now be utilized to view the selected surfaces using traditional rendering methods.
+% Making it a common method to using volume rendering~\cite{Baoquan2016, Lorensen}.
+
+% downsides of iso-surfaces
+% Iso surfaces have some down-sides though.
+% Due to volumes tending to have many voxels they can take a fair amount of time to process and create new volumes~\cite{Baoquan2016}.
+% This can be solved by compressing the volume at the cost of lowering the accuracy of the mesh and increasing the ambiguity of the model~\cite{Newman2006}.
+% Iso surface models are also prone to topological issues like not being ambiguous, inaccurate and inconsistent due to the natural manner of their creation~\cite{Newman2006}. % this can be split into more ciations
+% These issues still make iso-surfaces adequate for diagnosing some diseases but they do not show much of the real data and may result in slow processing times especially when noisy data~\cite{Dai2021}. 
+
+% % Explaining quickly how rendering is normally done
+% There are generally two ways of visualizing a volume, they can either be rendered directly or they can be pre-processed into a iso-surface. 
+% By creating an iso-surface it is possible to use more traditional graphical rendering methods to visualize the volume, allowing these visualizations to be viewed using less compuational at run time~\cite{Baoquan2016, Lorensen}.
+% It is even possible to lower the resulting of these volumes to allow them to work on even less powered devices~\cite{Newman2006}.
+% However, Preprocessing requires to run some time consuming processes and will decrease and warp the amount of information seen. 
+% Normally this type of visulization will be used to see only a few different surfaces of the volume~\cite{Newman2006}.
+% Showing multiple surfaces transperently also causes similar issues common traditional rendering, where if a object isn't completely in front of or behind of another another transparent object.
+% Iso-surfaces are adequate for diagnosing some diseases but for more accurate results \gls{dvr} is required~\cite{Dai2021}.

@@ -1,0 +1,75 @@
+
+
+The results in \autoref{sec:X-ray Quantitative Results} did not support \textbf{H.1} since Tessellation and \textit{None} achieved better accuracy than saliency.
+User feedback seems to infer that this was partially due to the occlusion that saliency provided. Interestingly saliency seemed to present the best depth perception based on the findings in Figure 3.11. However, our results \autoref{tab:1} and \autoref{fig:my_label} for the user's perceived X-axis had it performing much worse. 
+This showing that saliency is better for depth perception than the other visualizations but much harder to work within an ego-centric manner.
+This effect had several 
+% All other results were not statistically significant, but the results in \autoref{tab:1} and \autoref{fig:my_label} show that all other visualizations outperformed \textit{Saliency} in raw accuracy of placement.
+% This result, however, seems to stem primarily from the placement error on horizontal and vertical axes. In contrast, placement on the depth axis was more accurate as seen on \autoref{fig:my_label} (a) and in \autoref{tab:1}. This meant that \textit{saliency's} inaccuracy comes from the height and span of the user's object placement.
+
+
+
+The results are shown in \autoref{sec:X-ray Quantitative Results Viewpoint Placement Accuracy}, on the user's viewport Y axis, the \textit{Random Dot} and \textit{Saliency} performed significantly worse using this system (shown in \autoref{fig:my_label} (b)). 
+To some degree, this is also the case along the X axis (\autoref{fig:my_label} (c)), partially supporting \textbf{H.2}.
+This placement error on the Y-axis was probably caused by the occlusions these two visualizations provide since the \textit{Random Dot} and \textit{Saliency} effects produce much more occlusion (as seen in \autoref{tab:view-comparisons})(Y-axis).
+The results for the X axis seem to support \textbf{H.2}. Still, they seem to indicate a stronger impact regarding \textbf{H.4} because the results in \autoref{tab:view-comparisons-x})(X-axis) seem to indicate that this is much more to do with the presence of the reference objects. 
+All of the significant interaction effects really on the absence of reference objects in\autoref{tab:view-comparisons-y}(Y-axis) as users seem more accurate when there are more objects to focus on.
+
+
+\autoref{fig:my_label}(d) showed \textit{Saliency} was able to positively influence depth perception effect but \autoref{tab:view-comparisons-z} (Z-axis) only showed a significant interaction effect against the \textit{Edge-Based} condition without the presence of reference objects.
+This slightly supports \textbf{H.3}.
+This lack of significance is likely due to the high amount of variance our participants used to use this visualization, which can be seen in the difference between the mean and the median results for \textit{Saliency} for this condition in \autoref{tab:1}. 
+\textit{Edge-Based} did seem to perform better without the presence of reference objects using this measure. 
+\textit{Edge-Based} also performed similarly to \textit{Tessellation} and \textit{None} with no reference objects seemed to have similar results while \textit{Random Dot} and \textit{Saliency} were more effective than it. 
+This seems to indicate that more occlusion provides better depth perception which has been previously indicated by other studies\cite{Otsuki2017}.
+
+Overall it seems the presence of reference objects had a large impact on the placement of the virtual objects, as a significant difference was found in placement accuracy, as reported in \autoref{sec:X-ray Quantitative Results} (see \autoref{fig:my_label}).
+\autoref{tab:1} also shows increased accuracy between all conditions where reference objects were present.
+This supports \textbf{H.4}, since adding the reference objects seems to have helped the users' accuracy. Still, it seems to have resulted in an overall increase in accuracy to all visualizations, including \textit{None}. 
+This result led us to conjecture that users tended to ignore the X-ray visualizations and focused on reference objects when they were available.
+
+Reference objects seem to have had a slightly negative impact on the time it took participants to complete the tasks.
+\autoref{sec:X-ray Quantitative Results Placement Accuracy} When reference objects were present there is a slight but significant decrease in the time that is required for participants to place the objects. 
+This did not support \textbf{H.5}.
+Since the \textit{None} visualization also seems to take less time this seems to be due to the participants needing to observe the space and understand it. 
+There is a chance that this time loss may have been inflicted by participants requiring several seconds to understand where all three objects were rather than the one. 
+
+
+%
+% Needs editing below
+%
+\autoref{sec:X-ray Quantitative Results DistanceMoved} showed us that users would rely on motion to place the when there were more virtual objects in the scene while still allowing to place the virtual icosahedron accurately as seen in (\autoref{fig:DistanceMoved}).
+We only received variation when \textit{Random Dot} and \textit{Saliency} against \textit{Edge-Based} based, which is interesting. It seems this may be only to look around the occlusion.
+
+Indicated that participants were closer to the cube when reference objects were present (not supporting \textbf{H.6}). 
+Instead, I found that participants would move closer to the cube when the reference objects were presented in the scene.
+We believe that by moving closer, the participants could manipulate the HoloLens' focal plane to allow them to comfortably view the virtual objects rather than the real world.
+The amount of movement used between \textit{None} and 
+
+Results related to the distance moved presented in \autoref{sec:X-ray Quantitative Results Distance Stood Away From the Box} (\autoref{fig:DistanceFromBox}) showed that participants tended to move more when reference objects were present in the scene, not supporting \textbf{H.7}.
+Since participants spent longer in each iteration, their overall movement also increased for most conditions.
+However, for the \textit{Edge-Based} visualization, our results show significantly less when there was no difference and a much higher amount. 
+This might have been due to not feeling a need to as the  visualisation may have seemed more natural. 
+Moreover, I found that distances moved during the \textit{Saliency} condition exceeded those for the other visualizations when reference objects were present. This may be explained by the relatively small size of the virtual objects and the participants' desire to maintain awareness of where all the objects in the scene were throughout the tasks. 
+The HoloLens and likely many OST AR seem to struggle to show transparency and transparency may be an issue that needs to be a consideration when making these visualizations.
+One option may be to describe transparency in a similar way that artists do with paintings \cite{Adelson1990, Max1995}.
+When reference objects were absent, the distances moved were observed to be less than those in conditions where reference objects were present.
+% Below this is not good enough
+This may be due to a lack of spatial awareness caused by having no indicators where the front of the box was.
+
+%H2 partial H1
+% The placement accuracy results (shown in \autoref{fig:my_label}b,c) in section 5.1.3 indicate that participants placed objects further from the correct target position when there were no reference objects present in the \textit{Random Dot} and \textit{Saliency} conditions. This is maybe due to the amount of occlusion these visualizations provided. 
+% The placement error on the Y axis is probably due to the occlusion by \textit{Random Dot} and \textit{Saliency}, however, I are unsure why the X-axis is not affected equally. 
+% Since \textit{Random Dot} affected predominantly the Y axis, this result partially support H2. 
+% However, this effect was not noticeable when the reference objects were present. 
+% Reference objects in the scene improved the accuracy of all visualizations other than \textit{Tessellation}, where the statistical significance is not pronounced enough to make a confident conclusion.
+
+% The placement accuracy results which were observed (shown in \autoref{fig:my_label}a) in section 5.1.1 did not seem to support H1.
+% \textit{Saliency} seems to be less accurate than \textit{None} and \textit{Tessellation}. 
+% We did not collect enough significant information to determine its effect on depth perception. 
+% %We did observe Edge to be the most difficult judge depth when reference objects were absent.
+% %This may indicate that lines do not provide enough occlusion cue and that the random pattern of the edge base may come in to play. 
+
+%
+% Should be rewritten above.
+%

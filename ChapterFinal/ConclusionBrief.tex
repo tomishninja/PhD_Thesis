@@ -1,0 +1,190 @@
+\chapter{Conclusion}
+% Talk about the thesis overall
+This thesis adapted three new X-ray visualization techniques (Halo, Hatching, Stippling) for use in \gls{ar}, testing their strengths and weaknesses and showcasing the environments in which they can be used.
+The research in this dissertation shows that \glspl{virt} provides \glspl{X-ray Visualization}, which can both aid or hinder a user's comprehension of a volume. 
+% Road map.
+This chapter summarizes this thesis's novel contributions and is followed by potential future research and future research it has enabled.
+
+\section{X-ray Vision Evaluation}
+
+% Intro
+The field of \gls{ar} enabled \gls{X-ray Vision} is one of the oldest research areas in \gls{ar}. 
+This thesis has provided literature information on collating research done in prior fields to influence our choices regarding the research on \glspl{X-ray Visualization}. 
+Which informed the initial study presented in \autoref{Chap:X-ray Implemntion}
+Plenty of studies have researched depth perception. The initial goal of this research was to determine how \glspl{X-ray Visualization} affects a user in a more ecologically relevant scenario, leading us to answer the following question: 
+"What is the impact on spatial estimation when using \gls{X-ray Vision} effects who use different design methodologies?".
+
+This dissertation presents a study in \autoref{Chap:X-ray Implemntion} aimed at judging depth perception and how X-ray visualization affects a user's ability to place an object accurately. 
+This is one of the first to allow users to view computer vision-enabled (Saliency or Edge detection) \glspl{X-ray Visualization} on \gls{ost} \gls{ar} devices. 
+This experiment showed that \glspl{X-ray Visualization} hampered spatial estimation and that this effect grows larger as they occlude more.
+
+% Why Were the X-ray Visulizaitons Chosen
+\autoref{chap:Background} stated many different X-ray effects. 
+This dissertation focused on allowing users to experience as much visualization as possible without obscuring the data. 
+This is essential because Medical Data can be dangerous and expensive. Current procedures only allow data to work with what is currently possible. 
+To that end, this dissertation focused on visualizations that allowed the user to view most of the visualizations.
+A study focused on auxiliary effects was conducted, motivated by situations found in medical environments.  High and low occlusion models and different saliency techniques were compared. Four diverse visualizations were chosen, and a back face was applied to improve depth perception.
+
+% Talk about the system utilized to make this possible.
+Being able to adapt \gls{vst} \gls{ar} techniques to \gls{ost} \gls{ar} alone may allow for many extensions of many systems in the future.
+This system did allow us to utilize Computer Vision Enabled \gls{X-ray Vision} techniques.
+While improvements could be made to this system, it does show that it is possible to visualize Computer Vision Enabled \gls{X-ray Vision} techniques on \gls{ost} \gls{ar} displays. 
+
+% Evaluation of these methods
+To ensure this study's ecological relevance, a placement study was performed, which had participants accurately replicate a physical scene inside a large box. 
+% What was learned to answer the above question
+%To answer research question one: "What is the impact on spatial estimation when using \gls{X-ray Vision} effects who use different design methodologies?"
+This study showed that Auxiliary Augmentation effectively improved spatial estimation and provided an \gls{X-ray Vision} cue. 
+These results led us to learn that while visualizations that occluded more provided a better sense of depth perception, they did not, and the spatial awareness they provided was reduced. 
+It also became clear that the 90fps of the Microsoft HoloLens was not fast enough to provide a good user experience for the Computer Vision-Enabled \gls{X-ray Vision} Technologies.
+This told us that Real-world overlays were still required and could be tailored to provide more accuracy, but the participants' feedback also informed us that they did not require the whole visualization to be covered. 
+
+\section{X-ray Visualizations for Direct Volume Rendering}
+%R.2 How can Volumetric Illustrative Effects be adopted to become \gls{ost} \gls{ar} \gls{X-ray Vision} effects?
+The lessons learned from \autoref{Chap:X-ray Implemntion} and the lessons found in the prior literature in \autoref{chap:Background} several requirements were found that enforced the design of the \glspl{X-ray Visualization}. 
+\gls{dvr} also required visualizations that could take the effect of an object that utilized a ray-cast geometry rather than a polygonal one. 
+These constraints indicated the utility of specific \glspl{virt} that took inspiration from illustration techniques that could depict see-through or glass-like objects.
+
+This required modifying several illustrative techniques to work with \gls{dvr} and adjusting the parameters of \gls{X-ray Vision}.
+Resulting in the question of
+"How can Volumetric Illustrative Rendering Techniques be adopted to become \gls{ost} \gls{ost} \gls{X-ray Vision} effects for \gls{dvr} visualizations?"
+To answer this, the techniques of Saliency, Hatching, and Halo were adapted to work with \gls{ost} \gls{ar} \glspl{hmd}.
+Implementations of all these effects previously existed, but they needed to be extensively adapted to be displayed using \gls{dvr} and ready to use for \glspl{X-ray Visualization}.
+
+\section{Evaluation of Volumetric Illustrative Rendering Techniques}
+%How can Volumetric Illustrative Effects be adopted to become OST AR X-ray Vision effects?
+
+Volumetric data for quantitative evaluation makes it difficult to acquire the required data since finding unique but repeatable data is not realistic. 
+Furthermore, designing a set of initial products to scan and use is a time-consuming and expensive task that comes at the time of these in-demand machines.  
+To remedy this, this thesis contributes the design of the Random Volume Generation System, which was designed to produce pseudo-random generated volumes for use for \gls{hci} studies.
+These volumes were in the form of a hierarchical placement of random noisy spheres but could also be replaced with any required shape because this system was designed to be modular.
+This consideration was made to allow for easy modification in many different experiments.
+
+By using the Random Volume Generation System, it made it possible for two studies to be run using an \gls{ost} \gls{ar} \gls{hmd}. 
+One of these was focused on determining how well a person could recall information through these effects. 
+In contrast, the other determined the minimum threshold depth participants could reliably tell between two volumetric objects while using am \gls{ost} \gls{ar} \gls{hmd}.
+
+\subsection{Perception}
+%Can an X-ray Vision effect facilitate a user’s understanding of spatial relationships?
+Comments from the \gls{X-ray Vision} user study indicated that all of the \gls{X-ray Vision} effects impair the user's ability to view a system.
+This issue is one of the primary reasons for visualizing data using \gls{dvr}.
+This led us to ask the question, "Can an \gls{X-ray Vision} effect facilitate a user’s understanding of spatial relationships when using Direct Volume Rendering?"
+To determine what \glspl{virt} were better able to convey the information within the volume.
+
+Testing how clearly users could see into the volume when a \gls{virt} was applied to it, I conducted a test that could view a volume.
+The participants' perceptions were then evaluated by having them perform a counting task under two different conditions. 
+One had participants count all of the objects that fit the criteria within the volume, whereas the other had them count them while they were in a particular subgroup. 
+
+This study showed that the halo \gls{virt} could give users a more intuitive view of a volume.
+The results from this study seem to indicate that this effect will keep being useful even with complex datasets.
+The ability to accurately perceive what is inside of the volume is diminished when using Stippling and Hatching \glspl{virt}.
+However, this shows that it can improve a user's understanding of a volume while \gls{X-ray Vision} is utilized. 
+
+
+\subsection{Depth Perception}
+%R.4 Can Volumetric Illustrative Effects improve the perceived depth reported on virtual objects in \gls{ost} \gls{ar}?
+Depth perception plays an important role when interacting naturally with data as the user needs to be able to perceive their location within it. 
+To be able to ensure at what range depth perception is possible, depth perception of \gls{dvr} on immersive stereoscopic \glspl{hmd}, and if there is a way that \glspl{virt} can provide an even better quality of depth perception. 
+This led to the following question proposed: "Can Volumetric Illustrative Effects improve the perceived depth reported on virtual objects in \gls{ost} \gls{ar}?"
+The following experiment in this dissertation looked at how \glspl{virt} affects depth perception. 
+
+Depth perception using immersive stereoscopic \gls{hmd} had not been researched to this point. 
+Similar research had shown that the results on immersive stereoscopic \glspl{hmd} had far greater results, leading to our study needing to focus on at what given threshold on these devices what depth detectable and what impact \glspl{virt} provide. 
+A psycho-physical experiment was utilized, consisting of a \gls{twofc} questionnaire.
+By using this type of questionnaire, the lower limit where a user could decide on depth perception when using \gls{dvr} on an \gls{ost} \gls{ar} display was discovered.
+
+This study showed that the effect on \gls{virt} was very small (< 2mm), showing that while they may not have been beneficial to \gls{dvr}, they were not detrimental.
+However, both the Hatching and Stippling \glspl{virt} allowed participants to answer faster, indicating that the sense of depth was clearer when using \glspl{virt}.
+However, it was discovered that the Halo \gls{virt} seemed to reduce participants' ability to determine the depth within a volume and that users took longer to answer the questionnaire when it was available.
+
+\section{Future Work}
+This Dissertation has covered a lot of ground when it comes to working to find ways to integrate \gls{X-ray Vision} applications utilizing \gls{dvr} on \gls{ost} \gls{ar} devices.
+However, this is likely just the start of this work on all these topics. 
+This section first looks at the related work that can still be done in \gls{ar} enabled \gls{X-ray Vision}, \gls{dvr} on \gls{ost} \gls{ar} displays, and then an example of work that will be done for future work. 
+
+\subsection{Augmented Reality Enabled X-ray Vision}
+\gls{ar} \gls{X-ray Vision} is becoming a well-explored field of research.
+There is a reasonable understanding of how \glspl{X-ray Visualization} work, especially on mobile devices~\cite{Dey2014, Santos2016}. Previous literature showed what techniques were required to provide a user with the perceived ability to look through an object in AR~\cite{Ghasemi2018}. Several open research challenges with XRV seek to find methods to improve its presentation's precision, accuracy, and depth perception. 
+
+Recent research in the space has focused on XRV performance and our natural vision. This includes challenges like improving depth and spatial perception~\cite{Gruenefeld2020, Martin-Gomez2021} and the creation of new interaction techniques so people are better able to use XRV to support everyday work tasks and recreational activities~\cite{Wang2022}.
+
+Research on how to visualize other types of non-camera data, such as radar and sonar, will likely be important in the future. 
+This thesis has primarily looked at ways to visualize non-photo data like \gls{mri} and \gls{ct} scans behind \glspl{X-ray Visualization}. There are methods for viewing 3D Sonar and Radar~\cite{Gilliam1996, VanSon2018, Macdonald1997} that can be used to view things through walls and the surroundings of objects and could be translated to interfaces for summaries and other naval vessels. 
+Moreover, the recent findings of being able to visualize the interference from WIFI signals to allow for \gls{X-ray Vision} become a household utility~\cite{Adib2013}.
+
+The systemic literature review in \autoref{chap:Background} noted that there had been quite a lack of work on \gls{X-ray Vision} effects. This dissertation has tried to integrate the impact of having more than one item in the visible scene (Auxiliary Augmentation). Still, it may be fair to expect that using a combination of \glspl{X-ray Visualization} and other depth cues may provide much stronger effects for \gls{ost} \gls{ar} displays. 
+One that this thesis did not investigate in this thesis was vergence-based \gls{ar}; this requires much better eye tracking where it is possible to track the vergence and accommodation of the user's eyes, allowing users to control the \gls{ar} space naturally. 
+
+\subsection{Direct Volume Rendering Displayed Using Ocular See Through Augmented Reality}
+This work used synthetic data to create generalizable results across many volume data forms. They are designed to look like \gls{ct} or MRI scans, but there is a real chance that a sparse dataset like an angiogram might produce different results.
+Collecting this data may require using deep learning to generate a set of ventricles within a space that conforms to a set of given parameters~\cite{8885576}.
+However, more work is still required to ensure that these models can create models to a set of parameters to allow for a controlled study. 
+
+This thesis also did not investigate the effects of applying these effects to medical data to see if there was any real change. 
+In the future, I would prefer to use a set of participants with a more diverse skill set. 
+While this would be difficult to make into a controlled study, stable diffusion may offer a method to provide large enough datasets to enable a more controlled study than was previously possible~\cite{10049010}. 
+
+The work in this thesis marks the beginning of work in this field, and there is a plethora of studies possible with this technology, including:
+Introducing static noise~\cite{Ratcliff2010}, 4D objects~\cite{Langner2008}, and more complicated data would all be interesting areas for exploration in this space and could greatly impact the ways it is possible to visualize real-world data.% I would like to cite this
+Different styles of studies, like density observations or trying to analyze small imperfections using these visualizations, could also make for interesting research moving forward~\cite{Laha2016}. 
+While also looking into rendering these effects on different displays to more intuitive methods of viewing this data~\cite{Geng2013, Xiong2021}.
+
+% Some work attempted to create a volumetric X-ray vision system that blurs and lowers the foreground's occlusion slightly depending on depth out to provide a depth cue that did not use occlusion. A short pilot seems to indicate this does work for an X-ray vision technique. 
+
+% This work, however, presented several issues, like our need to have various points of focus within an object and a clear indication of where the user is looking. A large limitation of this system is that it would require a fast and accurate enough eye tracking system to be able to determine the point of focus a user is looking at in 3D and adapt to this. This is problematic since, in order for the user to view an area, their real accommodation needs to be faked. 
+
+% I have more information regarding this, but overall, this work was sidelined due to the large number of issues that would first need to be solved before bringing it to market. 
+
+A major limitation of this work is that the volumes that are used are solid and have properties similar to those of a cell or a medical scan. There is a real chance that a sparse dataset like an angiogram might produce different results.
+The acquisition of larger datasets for research use could be generated using deep learning to create a set of ventricles within a space that conforms to a set of given parameters~\cite{8885576}.
+However, more work is still required to ensure that these models can create models to a set of parameters to allow for a controlled study. 
+
+More research investigating the effects of applying \glspl{virt} to medical data is still required to investigate if there was any real change between the artificial noisy spheres and real data. 
+This could be arranged moving forward by recruiting participants with a more diverse skill set. 
+This would be difficult to make into a controlled study, so an empirical evaluation may be necessary. 
+If a controlled study is required, stable diffusion may offer a method to provide large enough datasets to be able to enable a more controlled study than was previously possible~\cite{10049010}. 
+
+This paper discusses the limitations of viewing volumetric data in augmented reality without utilizing real-world counterparts to determine the accuracy possible when viewing volumetric data on an \gls{ost} \gls{ar} device. 
+The next step that will be needed to be taken for this research would be to start working with studies like blind reaching and perceptual matching tasks to determine further what accuracy is possible when interacting with these volume renderings in the real world~\cite{Jamiy2019}.
+
+Introducing static noise~\cite{Ratcliff2010}, 4D objects~\cite{Langner2008}, and more complicated data would all be interesting areas for exploration in this space. 
+Different styles of studies, like density observations or trying to analyze small imperfections using these visualizations, could also make for interesting research moving forward~\cite{Laha2016}. 
+While also looking into rendering these effects on different displays to more intuitive methods of viewing this data~\cite{Geng2013, Xiong2021}.
+A plethora of research can still be done in this space.
+
+\subsection{Further Evaluations}
+To continue the research proposed in this thesis, I propose investigating if it is possible to incorporate using eye gazes to select aspects of an \gls{X-ray Visualization} while also distorting the binocular distortion, making the foreground and background lighter to create a similar effect as focusing on an object located in a fog. 
+This would enable the system to adapt the volumetric instances to the face they are looking at and lock them to the correct position of the user. This system would also need to be able to estimate the users' bones. Further work in this type of collaboration is essential. 
+
+This is based on previous research based on Zannoli et al.~\cite{Zannoli2016}, who looked at the benefits of blurring the foreground plane to enhance the viewer's depth perception.
+This technique resembles the effect of Accommodation and Convergence, so it is possible to improve depth perception further by mimicking the effect.
+By utilizing the equations laid out in their research, I hypothesize it is possible to extend the work done by Kitajima et al.~\cite{Kitajima2015} to create a vergence-based visualization and by utilizing similar interaction as mentioned in Jing et al.~\cite{Jing2021} research it should be possible to develop \glspl{virt} further to take advantage of the weakness of \gls{X-ray Vision}.
+
+This type of \gls{X-ray Vision} would utilize \glspl{virt} when the user was not focused on it but would then dissolve them to allow the user to navigate through the volume.
+This utilizes the vergence accommodation definancy (described in \autoref{Chap:VolumetricX-rayVision}) with \gls{ost} \gls{ar} \glspl{hmd}. 
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\columnwidth]{ChapterFinal/AccomdicationConvergenceXrayVision.png}
+    \caption[A prototype of a new form of accommodation-convergence based X-ray effect designed for \gls{ost} \gls{ar} devices.]{A prototype of a new form of accommodation-convergence based X-ray effect designed for \gls{ost} \gls{ar} devices. This image shows the effect that are focusing on the objects within the x-ray field., whereas the outside will grow more transparent and the inside will allow for a greater focus.}
+    \label{fig:AccomdicationConvergenceXrayVision}
+\end{figure}
+
+I have developed a prototype of this system, which works within a controlled environment. 
+\autoref{fig:AccomdicationConvergenceXrayVision} shows that this system uses the tesselation model and only utilizes a couple of shapes. 
+However, early tests have shown some promise using this technique. 
+However, this would need to be made to work both with the randomly generating spheres and with \gls{ct} and \gls{mri} data sets. 
+
+Moving forward, this technique should be expanded to work within a volumetric environment, and its impacts should be reviewed by user studies. 
+This research will enable us to understand how accommodation convergences can be simulated based on artifacts in space or if they need to be represented more closely with real-life phenomena.
+It could also look at verifying the hypothesis initially stated by Zannoli et al.~\cite{Zannoli2016}.
+
+\section{Final Remarks}
+This thesis set out to determine how \gls{X-ray Vision} on \gls{ost} \gls{ar} devices should be created and use that information to develop new ones.
+The systematic literature review in \autoref{chap:Background} and the user study comparing different \glspl{X-ray Visualization} in \autoref{Chap:X-ray Implemntion}.
+This required learning to calibrate a user's sight to the display itself, allowing the visualization to overlap the real world. 
+Real-time \gls{dvr} were tested and made for different stereoscopic displays, and then the lessons from comparing different \glspl{X-ray Visualization} was utilized to create the three \glspl{virt} (Halo, Hatching, and Stippling). 
+These \glspl{virt} were then tested the participant's ability to determine information from within the volume and the ability to locate a specific location within the volume.
+Moving beyond this research, utilizing and combining \glspl{virt} to find a method that enables users to convey information from the volume while still understanding the information regarding the depth perception of the object they are looking inside. 
+
+

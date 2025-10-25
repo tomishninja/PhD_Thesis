@@ -1,0 +1,54 @@
+%This section should contain a set of work that was experimented with though out my PhD and note a couple of ways forward. Highlight issues and problems as well as how to move though them
+\chapter{Future Work} \label{chap:FutureWork}
+
+This work all used synthetic data, and this was done to create results that were generalizable across many forms of volume data. They are designed to look like CT or MRI scans, but there is a real chance that a sparse dataset like an angiogram might produce different results.
+This can be handled by using deep learning to generate a set of ventricles within a space that conforms to a set of given parameters~\cite{8885576}.
+However, more work is still required to ensure that these models can create models to a set of given parameters to allow for a controlled study. 
+
+We also didn't look into the effects of applying these effects to medical data and seeing if there was any real change. 
+We would like to arrange this moving forward with participants with a more diverse skill set. 
+While this would be difficult to make into a controlled study, stable diffusion may offer a method to provide large enough datasets to be able to enable a more controlled study than was previously possible~\cite{10049010}. 
+
+The work in this Thesis marks the beginning of work in this field, There is a plethora of studies possible with this technology including:
+Introducing static noise~\cite{Ratcliff2010}, 4D objects~\cite{Langner2008}, and more complicated data would all be interesting areas for exploration in this space and could greatly impact the ways we visualize real world data.% I would like to cite this
+Different styles of studies, like density observations or trying to analyze small imperfections using these visualizations, could also make for interesting research moving forward~\cite{Laha2016}. 
+While also looking into rendering these effects on different displays to more intuitive methods of viewing this data~\cite{Geng2013, Xiong2021}.
+
+There are still a lot of areas left to explore regarding \gls{AugmentedRealityX-rayVision}. 
+The next section will take a deeper look into a possible future form of X-ray vision that I would like to see explored further. 
+
+
+\section{Accommodation enabled X-ray Vision}
+Some work was attempted to create a volumetric X-ray vision system that worked by blurring and lowering the occlusion the for-ground slightly depending on depth out to provide a depth cue that did not use occlusion. A short pilot seems to indicate this does work for a X-ray vision technique 
+
+This work however presented several issues like our need to have various points of focus within a object and a clear indication of where the user is looking. A large limitation of this system is that it would require a fast and accurate enough eye tracking system to be able to determine the point of focus a user is looking at in 3D and adapting to this. This is problematic since users in order for the user to view a area their real accommodation needed to be faked. 
+
+I have more information regarding this but overall this work was sidelines due to the large amount of issues that would first need to be solved before bringing it to market. 
+
+\section{Work that still needs to be done}
+We need to talk about the work that still needs to be done in this field.
+
+For instance, the ability to adapt the volumetric instances to the face they are looking at and be able to lock on to the correct position of the user. This system would also need to be able to estimate the users' bones. So further work in this type of collaboration is essential. 
+
+\section{Volume Rendering Studies}
+A major limitation of this work is that the volumes that are used are solid and have similar properties to a cell or a medical scan. There is a real chance that a sparse dataset like an angiogram might produce different results.
+This can be handled by using deep learning to generate a set of ventricles within a space that conforms to a set of given parameters~\cite{8885576}.
+However, more work is still required to ensure that these models can create models to a set of given parameters to allow for a controlled study. 
+
+We also didn't look into the effects of applying these effects to medical data and seeing if there was any real change. 
+We would like to arrange this moving forward with participants with a more diverse skill set. 
+While this would be difficult to make into a controlled study, stable diffusion may offer a method to provide large enough datasets to be able to enable a more controlled study than was previously possible~\cite{10049010}. 
+%As previously mentioned in \autoref{sec: SDf Implmention} Implementing these visualizations can be in a similar manner can be achieved by using  Rocha et al's.~\cite{Rocha2011} implementation of translating surfaces normal's to a volume. Another method to implement this would be to set this visualization to a type of intensity or data within a volume like ~\cite{Interrante1997}.
+
+This paper discusses the limitations of viewing volumetric data in augmented reality without utilizing real-world counterparts to determine the accuracy possible when viewing volumetric data on an OSTAR device. 
+The next step that will be needed to be taken for this research would be to start working with studies like blind reaching and perceptual matching tasks to further determine what accuracy is possible when interacting with these volume renderings in the real world~\cite{Jamiy2019}.
+
+%\item Adaptive sampling and testing the removing components could be an interesting study.
+%Rocha et al.~\cite{Rocha2011} in their method specifics a method of utilizing a similar type of normal to what we have described in this paper.
+%The methods described in this paper can be implemented with their work to allow real volumes to have a similar impact.
+%While there are still issues several issues with this paper, by utilizing this work it is we can add these visualizations to a volume. 
+
+Introducing static noise~\cite{Ratcliff2010}, 4D objects~\cite{Langner2008}, and more complicated data would all be interesting areas for exploration in this space. 
+Different styles of studies, like density observations or trying to analyze small imperfections using these visualizations, could also make for interesting research moving forward~\cite{Laha2016}. 
+While also looking into rendering these effects on different displays to more intuitive methods of viewing this data~\cite{Geng2013, Xiong2021}.
+A plethora of research can still be done in this space. 

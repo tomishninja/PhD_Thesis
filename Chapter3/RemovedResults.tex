@@ -1,0 +1,107 @@
+\paragraph{Placement Accuracy from User Viewpoint:} \label{sec:X-ray Quantitative Results Viewpoint Placement Accuracy}
+
+\begin{figure*}[tbh]
+    \centering
+    \includesvg[width=\textwidth]{Chapter3/Images/DifferenceBetweenGoalAndPlacementPositionFromTheUserPlot.svg}
+    \caption{
+    The distance away from the goal and the placement positions are each from the user.
+    }
+    \label{fig:X-ray Difference Between the User and the Placment Location and Goal Location}
+\end{figure*}
+
+The placement accuracy of the virtual icosahedron object was also analyzed with respect to the user's viewpoint at the time of placement. To compute this, the actual and correct placement positions were transformed using the headset's position and orientation matrix, then we calculated the distance between both positions.
+For the direct viewpoint accuracy, the model showed a significant fixed effect of the x-ray visualization effects ($\chi2$(4, N=20) = 50.314, p  $<$ 0.0001)
+and the presence of reference objects ($\chi$2(1, N=20) = 47.777, p $<$ 0.0001) and a significant interaction effect ($\chi$2(4, N=20) = 18.428, p = 0.001).
+
+Post-hoc pairwise comparisons on the presence of reference objects showed a significant improvement in accuracy when reference objects were present (p$<$0.0001, df = 3018, t = -6.662). Comparisons between the different visualizations showed a significant improvement in accuracy between Edge and None (p = 0.0003, df = 989, t = -4.145), Random Dot (p $<$ 0.0001, df = 989, t = -6.883), Saliency (p $<$ 0.0001, df = 989, t = -5.021) and Tessellation (p = 0.0006, df = 989, t = -2.669). Variation was observed, but no significant difference found was found between Random Dot and None (p = 0.0589, df = 989, t = -2.662), and Random Dot and Tessellation (p = 0.0507, df = 989, t = -2.725).
+Significant pairwise comparisons between visualization and the presence of the reference objects showed various significant differences outlined in \autoref{tab:view-comparisons}.
+
+
+
+\begin{table}[t]
+\caption{Pairwise comparisons for the accuracy in virtual object placement as viewed by the user (see Figure 3(e)), (all values with a P-value $>$ 0.1 have been omitted)} 
+\label{tab:view-comparisons}
+\centering
+\begin{tabular}{lccl}
+  \hline
+ & df & t.ratio & p.value \\ 
+  \hline
+  Edge F - None F & 3019.11 & -4.013 & 0.0025** \\ 
+  Edge F - RandomDot F & 3018.93 & -7.185 & $<$.0001*** \\ 
+  Edge F - Saliency  & 3019.15 & -6.104 & $<$.0001*** \\ 
+  Edge F - Tessellation F & 3019.55 & -3.883 & 0.0042** \\ 
+  Edge F - Edge T & 3018.78 & -6.129 & $<$.0001*** \\ 
+  Edge F - None T & 3018.69 & -7.778 & $<$.0001*** \\ 
+  Edge F - RandomDot T & 3018.92 & -8.454 & $<$.0001*** \\ 
+  Edge F - Saliency T & 3019.05 & -6.683 & $<$.0001*** \\ 
+  Edge F - Tessellation T & 3018.93 & -7.733 & $<$.0001*** \\ 
+  None F - RandomDot F & 3018.71 & -3.097 & 0.0614. \\ 
+%  None F - Saliency F & -0.0057 & 0.0026 & 3019.12 & -2.191 & 0.4632 \\ 
+%  None F - Tesselation F & 0.0001 & 0.0025 & 3018.56 & 0.057 & 1.0000 \\ 
+%  None F - Edge T & -0.0047 & 0.0024 & 3018.88 & -1.941 & 0.6406 \\ 
+  None F - None T & 3018.68 & -3.662 & 0.0096** \\ 
+  None F - RandomDot T & 3018.69 & -4.320 & 0.0007*** \\ 
+%  None F - Saliency T & -0.0071 & 0.0026 & 3018.46 & -2.749 & 0.1550 \\ 
+  None F - Tessellation T & 3018.84 & -3.614 & 0.0114* \\ 
+%  RandomDot F - Saliency F & 0.0020 & 0.0026 & 3018.82 & 0.793 & 0.9987 \\ 
+  RandomDot F - Tessellation F & 3018.74 & 3.104 & 0.0601. \\ 
+%  RandomDot F - Edge T & 0.0030 & 0.0024 & 3018.53 & 1.246 & 0.9648 \\ 
+%  RandomDot F - None T & -0.0014 & 0.0025 & 3018.64 & -0.557 & 0.9999 \\ 
+%  RandomDot F - RandomDot T & -0.0030 & 0.0025 & 3018.51 & -1.212 & 0.9707 \\ 
+%  RandomDot F - Saliency T & 0.0006 & 0.0026 & 3018.81 & 0.246 & 1.0000 \\ 
+%  RandomDot F - Tesselation T & -0.0012 & 0.0025 & 3019.17 & -0.502 & 1.0000 \\ 
+%  Saliency F - Tesselation F & 0.0058 & 0.0026 & 3019.23 & 2.213 & 0.4481 \\ 
+%  Saliency F - Edge T & 0.0010 & 0.0025 & 3019.08 & 0.383 & 1.0000 \\ 
+%  Saliency F - None T & -0.0034 & 0.0026 & 3018.85 & -1.330 & 0.9467 \\ 
+%  Saliency F - RandomDot T & -0.0050 & 0.0026 & 3018.80 & -1.963 & 0.6256 \\ 
+%  Saliency F - Saliency T & -0.0014 & 0.0027 & 3019.15 & -0.529 & 1.0000 \\ 
+%  Saliency F - Tesselation T & -0.0033 & 0.0026 & 3019.00 & -1.280 & 0.9582 \\ 
+%  Tesselation F - Edge T & -0.0049 & 0.0025 & 3019.37 & -1.963 & 0.6256 \\ 
+  Tessellation F - None T & 3018.73 & -3.661 & 0.0096** \\ 
+  Tessellation F - RandomDot T & 3018.87 & -4.306 & 0.0007*** \\ 
+%  Tesselation F - Saliency T & -0.0072 & 0.0026 & 3018.43 & -2.764 & 0.1494 \\ 
+  Tessellation F - Tessellation T & 3018.75 & -3.615 & 0.0114* \\ 
+%  Edge T - None T & -0.0044 & 0.0024 & 3019.16 & -1.819 & 0.7235 \\ 
+%  Edge T - RandomDot T & -0.0060 & 0.0024 & 3019.11 & -2.494 & 0.2718 \\ 
+%  Edge T - Saliency T & -0.0024 & 0.0025 & 3019.20 & -0.946 & 0.9949 \\ 
+%  Edge T - Tesselation T & -0.0042 & 0.0024 & 3019.52 & -1.764 & 0.7579 \\ 
+%  None T - RandomDot T & -0.0016 & 0.0024 & 3018.45 & -0.656 & 0.9997 \\ 
+%  None T - Saliency T & 0.0020 & 0.0025 & 3018.56 & 0.785 & 0.9988 \\ 
+%  None T - Tesselation T & 0.0001 & 0.0024 & 3018.50 & 0.055 & 1.0000 \\ 
+%  RandomDot T - Saliency T & 0.0036 & 0.0025 & 3018.98 & 1.415 & 0.9227 \\ 
+%  RandomDot T - Tesselation T & 0.0017 & 0.0024 & 3018.97 & 0.712 & 0.9995 \\ 
+%  Saliency T - Tesselation T & -0.0019 & 0.0025 & 3018.86 & -0.733 & 0.9993 \\ 
+  \hline
+% \multicolumn{6}{l}{{\footnotesize Degrees-of-freedom method: kenward-roger}}\\
+
+% \multicolumn{6}{l}{{\footnotesize P-value adjustment: tukey method for comparing a family of 10 estimates}}\\
+\end{tabular}
+\end{table}
+
+
+%
+% The below results where removed as they referred to the accuracy within the box of the isohedron and confuse readers
+%
+\paragraph{Placement Accuracy by Axis:} \label{sec:X-ray Quantitative Results Placement Accuracy}
+
+\begin{figure*}[tbh]
+    \centering
+    \includesvg[width=\textwidth]{Chapter3/Images/DistanceToGoalBasedOnOrientationOfTheBoxGoal.svg}
+    \caption{
+    The distance away from the goal of the objects was based on their position relative to the box.
+    }
+    \label{fig:X-ray Distance To Goal Presence of Reference Objects plot}
+\end{figure*}
+
+% X axis
+The placement accuracy of the virtual icosahedron object was also analyzed on each axis to identify any effects of the physical box orientation. On the x-axis of the box, the model showed a significant fixed effect of the presence of reference objects  ($\chi$2(1, N=20) = 16.221, p $<$ 0.0001). No significant fixed effect of the X-ray visualization effects, 
+or interaction effect was found.
+The post-hoc pairwise comparisons showed the presence of the reference objects produced a significantly lower accuracy on the x-axis of the box (p $<$ 0.0001, df = 989, t = -4.723). 
+
+% Y axis
+On the y-axis of the box, the model showed a significant fixed effect of x-ray visualization effects ($\chi$2(4, N= 20) = 11.828, p = 0.0187) on accuracy. The fixed effect of the presence of the reference objects showed some variation but was not significant ($\chi$2(1, N= 20) = 3.695, p = 0.0546), and no significant interaction effect was found. 
+Post-hoc pairwise comparison of y-axis accuracy between x-ray visualizations showed no significant effects. 
+
+% Z axis
+On the z-axis of the box, the model showed a significant fixed effect regarding x-ray visualization effects $\chi$2(4, N= 20) = 10.1573, p = 0.0379, and the presence of the reference objects $\chi$2(1, N= 20) = 5, p = 0.0254. No significant interaction effect was found.
+Post-hoc pairwise comparisons on the presence of reference objects showed significantly improved accuracy on the z-axis (p = 0.0263, df = 989, t = -2.226) when reference objects were present. Comparisons between X-ray visualizations showed no significant differences.

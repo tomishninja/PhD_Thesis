@@ -1,0 +1,1178 @@
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|glsseeformat[Glossary:]{ar_g}}{Z}
+\glossaryentry{VR?\glossentry{vr}|glsseeformat[Glossary:]{vr_g}}{Z}
+\glossaryentry{OST?\glossentry{ost}|glsseeformat[Glossary:]{ost_g}}{Z}
+\glossaryentry{VST?\glossentry{vst}|glsseeformat[Glossary:]{vst_g}}{Z}
+\glossaryentry{DVR?\glossentry{dvr}|glsseeformat[Glossary:]{dvr_g}}{Z}
+\glossaryentry{LMM?\glossentry{lmm}|glsseeformat[Glossary:]{lmm_g}}{Z}
+\glossaryentry{CT?\glossentry{ct}|glsseeformat[Glossary:]{ct_g}}{Z}
+\glossaryentry{MRI?\glossentry{mri}|glsseeformat[Glossary:]{mri_g}}{Z}
+\glossaryentry{SUS?\glossentry{sus}|glsseeformat[Glossary:]{sus_g}}{Z}
+\glossaryentry{SAR?\glossentry{sar}|glsseeformat[Glossary:]{sar_g}}{Z}
+\glossaryentry{IMU?\glossentry{imu}|glsseeformat[Glossary:]{imu_g}}{Z}
+\glossaryentry{DICOM?\glossentry{dicom}|glsseeformat[Glossary:]{dicom_g}}{Z}
+\glossaryentry{PC?\glossentry{pc}|glsseeformat[Glossary:]{pc_g}}{Z}
+\glossaryentry{HU?\glossentry{hu}|glsseeformat[Glossary:]{hu_g}}{Z}
+\glossaryentry{MR?\glossentry{mr}|glsseeformat[Glossary:]{mr_g}}{Z}
+\glossaryentry{CAVE?\glossentry{cave}|glsseeformat[Glossary:]{caves_g}}{Z}
+\glossaryentry{UI?\glossentry{ui}|glsseeformat[Glossary:]{ui_g}}{Z}
+\glossaryentry{GUI?\glossentry{gui}|glsseeformat[Glossary:]{gui_g}}{Z}
+\glossaryentry{AI?\glossentry{ai}|glsseeformat[Glossary:]{ai_g}}{Z}
+\glossaryentry{R"\&D?\glossentry{rd}|glsseeformat[Glossary:]{rd_g}}{Z}
+\glossaryentry{CTC?\glossentry{ctc}|glsseeformat[Glossary:]{ctc_g}}{Z}
+\glossaryentry{DI?\glossentry{di}|glsseeformat[Glossary:]{di_g}}{Z}
+\glossaryentry{SHS?\glossentry{shs}|glsseeformat[Glossary:]{shs_g}}{Z}
+\glossaryentry{T?\glossentry{tesla}|glsseeformat[Glossary:]{tesla_g}}{Z}
+\glossaryentry{GPR?\glossentry{gpr}|glsseeformat[Glossary:]{gpr_g}}{Z}
+\glossaryentry{GPU?\glossentry{gpu}|glsseeformat[Glossary:]{gpu_g}}{Z}
+\glossaryentry{FPS?\glossentry{fps}|glsseeformat[Glossary:]{fps_g}}{Z}
+\glossaryentry{SQL?\glossentry{sql}|glsseeformat[Glossary:]{sql_g}}{Z}
+\glossaryentry{GAN?\glossentry{gan}|glsseeformat[Glossary:]{gan_g}}{Z}
+\glossaryentry{SDF?\glossentry{sdf}|glsseeformat[Glossary:]{sdf_g}}{Z}
+\glossaryentry{AABB?\glossentry{aabb}|glsseeformat[Glossary:]{aabb_g}}{Z}
+\glossaryentry{HCI?\glossentry{hci}|glsseeformat[Glossary:]{hci_g}}{Z}
+\glossaryentry{JND?\glossentry{jnd}|glsseeformat[Glossary:]{jnd_g}}{Z}
+\glossaryentry{SLAM?\glossentry{slam}|glsseeformat[Glossary:]{slam_g}}{Z}
+\glossaryentry{PSE?\glossentry{pse}|glsseeformat[Glossary:]{pse_g}}{Z}
+\glossaryentry{2AFC?\glossentry{twofc}|glsseeformat[Glossary:]{twofc_g}}{Z}
+\glossaryentry{BFS?\glossentry{bfs}|glsseeformat[Glossary:]{bfs_g}}{Z}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{i}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{1}
+\glossaryentry{CT?\glossentry{ct}|setentrycounter[]{page}"\glsnumberformat}{1}
+\glossaryentry{MRI?\glossentry{mri}|setentrycounter[]{page}"\glsnumberformat}{1}
+\glossaryentry{DICOM?\glossentry{dicom}|setentrycounter[]{page}"\glsnumberformat}{1}
+\glossaryentry{CT?\glossentry{ct}|setentrycounter[]{page}"\glsnumberformat}{1}
+\glossaryentry{MRI?\glossentry{mri}|setentrycounter[]{page}"\glsnumberformat}{1}
+\glossaryentry{AI?\glossentry{ai}|setentrycounter[]{page}"\glsnumberformat}{1}
+\glossaryentry{MRI?\glossentry{mri}|setentrycounter[]{page}"\glsnumberformat}{1}
+\glossaryentry{CT?\glossentry{ct}|setentrycounter[]{page}"\glsnumberformat}{1}
+\glossaryentry{AI?\glossentry{ai}|setentrycounter[]{page}"\glsnumberformat}{1}
+\glossaryentry{CT?\glossentry{ct}|setentrycounter[]{page}"\glsnumberformat}{2}
+\glossaryentry{MRI?\glossentry{mri}|setentrycounter[]{page}"\glsnumberformat}{2}
+\glossaryentry{MRI?\glossentry{mri}|setentrycounter[]{page}"\glsnumberformat}{2}
+\glossaryentry{CT?\glossentry{ct}|setentrycounter[]{page}"\glsnumberformat}{2}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{3}
+\glossaryentry{VR?\glossentry{vr}|setentrycounter[]{page}"\glsnumberformat}{3}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{3}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{3}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{3}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{3}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{3}
+\glossaryentry{VST?\glossentry{vst}|setentrycounter[]{page}"\glsnumberformat}{3}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{3}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{3}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{4}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{4}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{4}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{4}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{4}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{4}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{4}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{4}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{4}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{4}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{4}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{4}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{4}
+\glossaryentry{VST?\glossentry{vst}|setentrycounter[]{page}"\glsnumberformat}{4}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{4}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{4}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{4}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{4}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{4}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{4}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{4}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{4}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{4}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{4}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{4}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{4}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{5}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{5}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{5}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{5}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{5}
+\glossaryentry{MR?\glossentry{mr}|setentrycounter[]{page}"\glsnumberformat}{5}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{5}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{5}
+\glossaryentry{GUI?\glossentry{gui}|setentrycounter[]{page}"\glsnumberformat}{5}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{5}
+\glossaryentry{MRI?\glossentry{mri}|setentrycounter[]{page}"\glsnumberformat}{6}
+\glossaryentry{CT?\glossentry{ct}|setentrycounter[]{page}"\glsnumberformat}{6}
+\glossaryentry{CT?\glossentry{ct}|setentrycounter[]{page}"\glsnumberformat}{6}
+\glossaryentry{AI?\glossentry{ai}|setentrycounter[]{page}"\glsnumberformat}{6}
+\glossaryentry{CT?\glossentry{ct}|setentrycounter[]{page}"\glsnumberformat}{6}
+\glossaryentry{CT?\glossentry{ct}|setentrycounter[]{page}"\glsnumberformat}{7}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{7}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{7}
+\glossaryentry{CT?\glossentry{ct}|setentrycounter[]{page}"\glsnumberformat}{7}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{7}
+\glossaryentry{CT?\glossentry{ct}|setentrycounter[]{page}"\glsnumberformat}{7}
+\glossaryentry{CT?\glossentry{ct}|setentrycounter[]{page}"\glsnumberformat}{7}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{8}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{8}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{8}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{8}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{8}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{8}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{8}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{8}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{8}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{8}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{8}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{9}
+\glossaryentry{MR?\glossentry{mr}|setentrycounter[]{page}"\glsnumberformat}{9}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{9}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{9}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{9}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{9}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{9}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{9}
+\glossaryentry{VST?\glossentry{vst}|setentrycounter[]{page}"\glsnumberformat}{10}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{10}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{10}
+\glossaryentry{CT?\glossentry{ct}|setentrycounter[]{page}"\glsnumberformat}{10}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{10}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{10}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{10}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{10}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{10}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{10}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{11}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{11}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{11}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{11}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{11}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{11}
+\glossaryentry{VST?\glossentry{vst}|setentrycounter[]{page}"\glsnumberformat}{11}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{11}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{11}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{11}
+\glossaryentry{VST?\glossentry{vst}|setentrycounter[]{page}"\glsnumberformat}{12}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{12}
+\glossaryentry{MR?\glossentry{mr}|setentrycounter[]{page}"\glsnumberformat}{13}
+\glossaryentry{HCI?\glossentry{hci}|setentrycounter[]{page}"\glsnumberformat}{13}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{14}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{14}
+\glossaryentry{VST?\glossentry{vst}|setentrycounter[]{page}"\glsnumberformat}{14}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{14}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{14}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{14}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{14}
+\glossaryentry{MR?\glossentry{mr}|setentrycounter[]{page}"\glsnumberformat}{15}
+\glossaryentry{MR?\glossentry{mr}|setentrycounter[]{page}"\glsnumberformat}{15}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{15}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{15}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{15}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{15}
+\glossaryentry{MR?\glossentry{mr}|setentrycounter[]{page}"\glsnumberformat}{15}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{21}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{22}
+\glossaryentry{MR?\glossentry{mr}|setentrycounter[]{page}"\glsnumberformat}{22}
+\glossaryentry{CT?\glossentry{ct}|setentrycounter[]{page}"\glsnumberformat}{24}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{26}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{26}
+\glossaryentry{MR?\glossentry{mr}|setentrycounter[]{page}"\glsnumberformat}{27}
+\glossaryentry{GPU?\glossentry{gpu}|setentrycounter[]{page}"\glsnumberformat}{27}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{27}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{27}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{27}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{28}
+\glossaryentry{CT?\glossentry{ct}|setentrycounter[]{page}"\glsnumberformat}{28}
+\glossaryentry{MRI?\glossentry{mri}|setentrycounter[]{page}"\glsnumberformat}{28}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{28}
+\glossaryentry{CT?\glossentry{ct}|setentrycounter[]{page}"\glsnumberformat}{28}
+\glossaryentry{MRI?\glossentry{mri}|setentrycounter[]{page}"\glsnumberformat}{28}
+\glossaryentry{CT?\glossentry{ct}|setentrycounter[]{page}"\glsnumberformat}{29}
+\glossaryentry{MRI?\glossentry{mri}|setentrycounter[]{page}"\glsnumberformat}{29}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{29}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{30}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{30}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{30}
+\glossaryentry{MRI?\glossentry{mri}|setentrycounter[]{page}"\glsnumberformat}{30}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{30}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{30}
+\glossaryentry{CT?\glossentry{ct}|setentrycounter[]{page}"\glsnumberformat}{30}
+\glossaryentry{MRI?\glossentry{mri}|setentrycounter[]{page}"\glsnumberformat}{30}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{30}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{30}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{30}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{30}
+\glossaryentry{CT?\glossentry{ct}|setentrycounter[]{page}"\glsnumberformat}{31}
+\glossaryentry{MRI?\glossentry{mri}|setentrycounter[]{page}"\glsnumberformat}{31}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{31}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{31}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{31}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{31}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{31}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{31}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{31}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{32}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{32}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{32}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{33}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{33}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{33}
+\glossaryentry{UI?\glossentry{ui}|setentrycounter[]{page}"\glsnumberformat}{33}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{33}
+\glossaryentry{MR?\glossentry{mr}|setentrycounter[]{page}"\glsnumberformat}{33}
+\glossaryentry{MR?\glossentry{mr}|setentrycounter[]{page}"\glsnumberformat}{33}
+\glossaryentry{MR?\glossentry{mr}|setentrycounter[]{page}"\glsnumberformat}{33}
+\glossaryentry{MR?\glossentry{mr}|setentrycounter[]{page}"\glsnumberformat}{33}
+\glossaryentry{CAVE?\glossentry{cave}|setentrycounter[]{page}"\glsnumberformat}{33}
+\glossaryentry{VST?\glossentry{vst}|setentrycounter[]{page}"\glsnumberformat}{34}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{34}
+\glossaryentry{MR?\glossentry{mr}|setentrycounter[]{page}"\glsnumberformat}{34}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{35}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{35}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{35}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{36}
+\glossaryentry{2AFC?\glossentry{twofc}|setentrycounter[]{page}"\glsnumberformat}{36}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{37}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{37}
+\glossaryentry{MR?\glossentry{mr}|setentrycounter[]{page}"\glsnumberformat}{37}
+\glossaryentry{MR?\glossentry{mr}|setentrycounter[]{page}"\glsnumberformat}{37}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{37}
+\glossaryentry{CAVE?\glossentry{cave}|setentrycounter[]{page}"\glsnumberformat}{37}
+\glossaryentry{SAR?\glossentry{sar}|setentrycounter[]{page}"\glsnumberformat}{37}
+\glossaryentry{MR?\glossentry{mr}|setentrycounter[]{page}"\glsnumberformat}{37}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{38}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{38}
+\glossaryentry{VR?\glossentry{vr}|setentrycounter[]{page}"\glsnumberformat}{38}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{38}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{38}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{38}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{38}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{38}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{38}
+\glossaryentry{MR?\glossentry{mr}|setentrycounter[]{page}"\glsnumberformat}{38}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{38}
+\glossaryentry{SAR?\glossentry{sar}|setentrycounter[]{page}"\glsnumberformat}{38}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{39}
+\glossaryentry{CAVE?\glossentry{cave}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{SAR?\glossentry{sar}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{DICOM?\glossentry{dicom}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{VR?\glossentry{vr}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{VST?\glossentry{vst}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{VST?\glossentry{vst}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{41}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{41}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{41}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{41}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{41}
+\glossaryentry{VR?\glossentry{vr}|setentrycounter[]{page}"\glsnumberformat}{41}
+\glossaryentry{VR?\glossentry{vr}|setentrycounter[]{page}"\glsnumberformat}{41}
+\glossaryentry{VST?\glossentry{vst}|setentrycounter[]{page}"\glsnumberformat}{42}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{42}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{42}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{42}
+\glossaryentry{MR?\glossentry{mr}|setentrycounter[]{page}"\glsnumberformat}{42}
+\glossaryentry{CT?\glossentry{ct}|setentrycounter[]{page}"\glsnumberformat}{42}
+\glossaryentry{MRI?\glossentry{mri}|setentrycounter[]{page}"\glsnumberformat}{42}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{42}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{42}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{42}
+\glossaryentry{MR?\glossentry{mr}|setentrycounter[]{page}"\glsnumberformat}{42}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{42}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{42}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{42}
+\glossaryentry{MR?\glossentry{mr}|setentrycounter[]{page}"\glsnumberformat}{42}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{42}
+\glossaryentry{CT?\glossentry{ct}|setentrycounter[]{page}"\glsnumberformat}{43}
+\glossaryentry{CT?\glossentry{ct}|setentrycounter[]{page}"\glsnumberformat}{43}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{43}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{43}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{43}
+\glossaryentry{CT?\glossentry{ct}|setentrycounter[]{page}"\glsnumberformat}{43}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{43}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{43}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{43}
+\glossaryentry{VR?\glossentry{vr}|setentrycounter[]{page}"\glsnumberformat}{43}
+\glossaryentry{VR?\glossentry{vr}|setentrycounter[]{page}"\glsnumberformat}{43}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{43}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{43}
+\glossaryentry{VR?\glossentry{vr}|setentrycounter[]{page}"\glsnumberformat}{43}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{44}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{44}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{44}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{44}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{44}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{44}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{44}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{44}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{45}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{45}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{47}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{47}
+\glossaryentry{VR?\glossentry{vr}|setentrycounter[]{page}"\glsnumberformat}{47}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{49}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{50}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{50}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{51}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{51}
+\glossaryentry{SAR?\glossentry{sar}|setentrycounter[]{page}"\glsnumberformat}{52}
+\glossaryentry{SAR?\glossentry{sar}|setentrycounter[]{page}"\glsnumberformat}{52}
+\glossaryentry{SAR?\glossentry{sar}|setentrycounter[]{page}"\glsnumberformat}{52}
+\glossaryentry{SAR?\glossentry{sar}|setentrycounter[]{page}"\glsnumberformat}{53}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{54}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{54}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{55}
+\glossaryentry{CT?\glossentry{ct}|setentrycounter[]{page}"\glsnumberformat}{56}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{56}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{56}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{56}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{56}
+\glossaryentry{SAR?\glossentry{sar}|setentrycounter[]{page}"\glsnumberformat}{56}
+\glossaryentry{SAR?\glossentry{sar}|setentrycounter[]{page}"\glsnumberformat}{57}
+\glossaryentry{VST?\glossentry{vst}|setentrycounter[]{page}"\glsnumberformat}{58}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{59}
+\glossaryentry{VST?\glossentry{vst}|setentrycounter[]{page}"\glsnumberformat}{59}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{59}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{61}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{62}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{62}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{65}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{65}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{65}
+\glossaryentry{VST?\glossentry{vst}|setentrycounter[]{page}"\glsnumberformat}{65}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{65}
+\glossaryentry{SAR?\glossentry{sar}|setentrycounter[]{page}"\glsnumberformat}{65}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{65}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{65}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{65}
+\glossaryentry{VST?\glossentry{vst}|setentrycounter[]{page}"\glsnumberformat}{65}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{65}
+\glossaryentry{SAR?\glossentry{sar}|setentrycounter[]{page}"\glsnumberformat}{65}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{66}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{66}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{66}
+\glossaryentry{VST?\glossentry{vst}|setentrycounter[]{page}"\glsnumberformat}{66}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{66}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{66}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{66}
+\glossaryentry{VST?\glossentry{vst}|setentrycounter[]{page}"\glsnumberformat}{66}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{66}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{66}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{66}
+\glossaryentry{VST?\glossentry{vst}|setentrycounter[]{page}"\glsnumberformat}{66}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{66}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{66}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{66}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{67}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{67}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{67}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{67}
+\glossaryentry{SAR?\glossentry{sar}|setentrycounter[]{page}"\glsnumberformat}{67}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{67}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{67}
+\glossaryentry{SAR?\glossentry{sar}|setentrycounter[]{page}"\glsnumberformat}{67}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{67}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{67}
+\glossaryentry{UI?\glossentry{ui}|setentrycounter[]{page}"\glsnumberformat}{67}
+\glossaryentry{SAR?\glossentry{sar}|setentrycounter[]{page}"\glsnumberformat}{69}
+\glossaryentry{MR?\glossentry{mr}|setentrycounter[]{page}"\glsnumberformat}{71}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{71}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{71}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{72}
+\glossaryentry{2AFC?\glossentry{twofc}|setentrycounter[]{page}"\glsnumberformat}{72}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{72}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{73}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{73}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{73}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{73}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{73}
+\glossaryentry{CAVE?\glossentry{cave}|setentrycounter[]{page}"\glsnumberformat}{73}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{73}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{73}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{73}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{73}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{73}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{73}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{74}
+\glossaryentry{VR?\glossentry{vr}|setentrycounter[]{page}"\glsnumberformat}{74}
+\glossaryentry{VST?\glossentry{vst}|setentrycounter[]{page}"\glsnumberformat}{74}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{74}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{74}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{74}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{74}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{74}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{74}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{74}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{74}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{74}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{74}
+\glossaryentry{VR?\glossentry{vr}|setentrycounter[]{page}"\glsnumberformat}{74}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{74}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{74}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{74}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{74}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{74}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{74}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{74}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{74}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{74}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{74}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{75}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{75}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{75}
+\glossaryentry{VST?\glossentry{vst}|setentrycounter[]{page}"\glsnumberformat}{75}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{75}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{75}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{75}
+\glossaryentry{VST?\glossentry{vst}|setentrycounter[]{page}"\glsnumberformat}{75}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{75}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{75}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{75}
+\glossaryentry{VR?\glossentry{vr}|setentrycounter[]{page}"\glsnumberformat}{75}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{75}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{75}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{75}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{75}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{75}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{75}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{75}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{76}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{76}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{76}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{76}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{76}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{76}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{76}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{76}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{76}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{76}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{76}
+\glossaryentry{VST?\glossentry{vst}|setentrycounter[]{page}"\glsnumberformat}{76}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{76}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{76}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{77}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{77}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{78}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{78}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{78}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{78}
+\glossaryentry{VST?\glossentry{vst}|setentrycounter[]{page}"\glsnumberformat}{78}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{78}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{78}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{78}
+\glossaryentry{VR?\glossentry{vr}|setentrycounter[]{page}"\glsnumberformat}{78}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{79}
+\glossaryentry{VST?\glossentry{vst}|setentrycounter[]{page}"\glsnumberformat}{79}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{79}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{79}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{79}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{79}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{79}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{79}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{79}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{79}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{79}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{79}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{79}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{80}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{80}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{80}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{80}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{80}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{80}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{80}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{80}
+\glossaryentry{CT?\glossentry{ct}|setentrycounter[]{page}"\glsnumberformat}{80}
+\glossaryentry{MRI?\glossentry{mri}|setentrycounter[]{page}"\glsnumberformat}{80}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{81}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{81}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{81}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{81}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{81}
+\glossaryentry{VST?\glossentry{vst}|setentrycounter[]{page}"\glsnumberformat}{81}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{81}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{82}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{82}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{82}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{82}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{82}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{82}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{82}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{82}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{82}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{82}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{82}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{82}
+\glossaryentry{VST?\glossentry{vst}|setentrycounter[]{page}"\glsnumberformat}{82}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{82}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{82}
+\glossaryentry{VST?\glossentry{vst}|setentrycounter[]{page}"\glsnumberformat}{82}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{82}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{83}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{83}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{83}
+\glossaryentry{VST?\glossentry{vst}|setentrycounter[]{page}"\glsnumberformat}{83}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{83}
+\glossaryentry{VST?\glossentry{vst}|setentrycounter[]{page}"\glsnumberformat}{84}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{SLAM?\glossentry{slam}|setentrycounter[]{page}"\glsnumberformat}{85}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{91}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{91}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{91}
+\glossaryentry{FPS?\glossentry{fps}|setentrycounter[]{page}"\glsnumberformat}{91}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{93}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{93}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{93}
+\glossaryentry{VST?\glossentry{vst}|setentrycounter[]{page}"\glsnumberformat}{93}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{93}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{93}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{93}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{93}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{93}
+\glossaryentry{VST?\glossentry{vst}|setentrycounter[]{page}"\glsnumberformat}{93}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{93}
+\glossaryentry{VST?\glossentry{vst}|setentrycounter[]{page}"\glsnumberformat}{93}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{93}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{93}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{93}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{93}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{93}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{93}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{94}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{94}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{94}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{94}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{94}
+\glossaryentry{VST?\glossentry{vst}|setentrycounter[]{page}"\glsnumberformat}{94}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{94}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{95}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{95}
+\glossaryentry{VST?\glossentry{vst}|setentrycounter[]{page}"\glsnumberformat}{97}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{97}
+\glossaryentry{FPS?\glossentry{fps}|setentrycounter[]{page}"\glsnumberformat}{98}
+\glossaryentry{FPS?\glossentry{fps}|setentrycounter[]{page}"\glsnumberformat}{98}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{100}
+\glossaryentry{SUS?\glossentry{sus}|setentrycounter[]{page}"\glsnumberformat}{104}
+\glossaryentry{SUS?\glossentry{sus}|setentrycounter[]{page}"\glsnumberformat}{104}
+\glossaryentry{SAR?\glossentry{sar}|setentrycounter[]{page}"\glsnumberformat}{106}
+\glossaryentry{LMM?\glossentry{lmm}|setentrycounter[]{page}"\glsnumberformat}{107}
+\glossaryentry{LMM?\glossentry{lmm}|setentrycounter[]{page}"\glsnumberformat}{107}
+\glossaryentry{LMM?\glossentry{lmm}|setentrycounter[]{page}"\glsnumberformat}{107}
+\glossaryentry{LMM?\glossentry{lmm}|setentrycounter[]{page}"\glsnumberformat}{107}
+\glossaryentry{LMM?\glossentry{lmm}|setentrycounter[]{page}"\glsnumberformat}{107}
+\glossaryentry{HSD?\glossentry{hsd}|setentrycounter[]{page}"\glsnumberformat}{109}
+\glossaryentry{LMM?\glossentry{lmm}|setentrycounter[]{page}"\glsnumberformat}{109}
+\glossaryentry{LMM?\glossentry{lmm}|setentrycounter[]{page}"\glsnumberformat}{111}
+\glossaryentry{LMM?\glossentry{lmm}|setentrycounter[]{page}"\glsnumberformat}{111}
+\glossaryentry{LMM?\glossentry{lmm}|setentrycounter[]{page}"\glsnumberformat}{112}
+\glossaryentry{LMM?\glossentry{lmm}|setentrycounter[]{page}"\glsnumberformat}{113}
+\glossaryentry{LMM?\glossentry{lmm}|setentrycounter[]{page}"\glsnumberformat}{114}
+\glossaryentry{LMM?\glossentry{lmm}|setentrycounter[]{page}"\glsnumberformat}{115}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{118}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{118}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{120}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{120}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{122}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{122}
+\glossaryentry{IMU?\glossentry{imu}|setentrycounter[]{page}"\glsnumberformat}{122}
+\glossaryentry{IMU?\glossentry{imu}|setentrycounter[]{page}"\glsnumberformat}{122}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{124}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{124}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{124}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{125}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{125}
+\glossaryentry{MRI?\glossentry{mri}|setentrycounter[]{page}"\glsnumberformat}{125}
+\glossaryentry{CT?\glossentry{ct}|setentrycounter[]{page}"\glsnumberformat}{125}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{125}
+\glossaryentry{MRI?\glossentry{mri}|setentrycounter[]{page}"\glsnumberformat}{125}
+\glossaryentry{CT?\glossentry{ct}|setentrycounter[]{page}"\glsnumberformat}{125}
+\glossaryentry{CT?\glossentry{ct}|setentrycounter[]{page}"\glsnumberformat}{125}
+\glossaryentry{CT?\glossentry{ct}|setentrycounter[]{page}"\glsnumberformat}{125}
+\glossaryentry{MRI?\glossentry{mri}|setentrycounter[]{page}"\glsnumberformat}{126}
+\glossaryentry{GPR?\glossentry{gpr}|setentrycounter[]{page}"\glsnumberformat}{126}
+\glossaryentry{MRI?\glossentry{mri}|setentrycounter[]{page}"\glsnumberformat}{126}
+\glossaryentry{CT?\glossentry{ct}|setentrycounter[]{page}"\glsnumberformat}{126}
+\glossaryentry{MR?\glossentry{mr}|setentrycounter[]{page}"\glsnumberformat}{126}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{126}
+\glossaryentry{MRI?\glossentry{mri}|setentrycounter[]{page}"\glsnumberformat}{126}
+\glossaryentry{CT?\glossentry{ct}|setentrycounter[]{page}"\glsnumberformat}{126}
+\glossaryentry{MRI?\glossentry{mri}|setentrycounter[]{page}"\glsnumberformat}{127}
+\glossaryentry{CT?\glossentry{ct}|setentrycounter[]{page}"\glsnumberformat}{127}
+\glossaryentry{CT?\glossentry{ct}|setentrycounter[]{page}"\glsnumberformat}{127}
+\glossaryentry{MRI?\glossentry{mri}|setentrycounter[]{page}"\glsnumberformat}{127}
+\glossaryentry{CT?\glossentry{ct}|setentrycounter[]{page}"\glsnumberformat}{127}
+\glossaryentry{MRI?\glossentry{mri}|setentrycounter[]{page}"\glsnumberformat}{127}
+\glossaryentry{CT?\glossentry{ct}|setentrycounter[]{page}"\glsnumberformat}{127}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{127}
+\glossaryentry{MRI?\glossentry{mri}|setentrycounter[]{page}"\glsnumberformat}{127}
+\glossaryentry{CT?\glossentry{ct}|setentrycounter[]{page}"\glsnumberformat}{127}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{127}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{127}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{127}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{127}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{127}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{127}
+\glossaryentry{CT?\glossentry{ct}|setentrycounter[]{page}"\glsnumberformat}{127}
+\glossaryentry{MRI?\glossentry{mri}|setentrycounter[]{page}"\glsnumberformat}{127}
+\glossaryentry{CT?\glossentry{ct}|setentrycounter[]{page}"\glsnumberformat}{127}
+\glossaryentry{MRI?\glossentry{mri}|setentrycounter[]{page}"\glsnumberformat}{127}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{128}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{128}
+\glossaryentry{GPU?\glossentry{gpu}|setentrycounter[]{page}"\glsnumberformat}{128}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{128}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{128}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{128}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{128}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{128}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{129}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{129}
+\glossaryentry{MR?\glossentry{mr}|setentrycounter[]{page}"\glsnumberformat}{129}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{129}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{129}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{129}
+\glossaryentry{MR?\glossentry{mr}|setentrycounter[]{page}"\glsnumberformat}{129}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{129}
+\glossaryentry{CT?\glossentry{ct}|setentrycounter[]{page}"\glsnumberformat}{130}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{130}
+\glossaryentry{CT?\glossentry{ct}|setentrycounter[]{page}"\glsnumberformat}{130}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{131}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{131}
+\glossaryentry{GPU?\glossentry{gpu}|setentrycounter[]{page}"\glsnumberformat}{131}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{131}
+\glossaryentry{GPU?\glossentry{gpu}|setentrycounter[]{page}"\glsnumberformat}{131}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{131}
+\glossaryentry{SDF?\glossentry{sdf}|setentrycounter[]{page}"\glsnumberformat}{132}
+\glossaryentry{SDF?\glossentry{sdf}|setentrycounter[]{page}"\glsnumberformat}{132}
+\glossaryentry{SDF?\glossentry{sdf}|setentrycounter[]{page}"\glsnumberformat}{132}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{132}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{132}
+\glossaryentry{CT?\glossentry{ct}|setentrycounter[]{page}"\glsnumberformat}{132}
+\glossaryentry{MRI?\glossentry{mri}|setentrycounter[]{page}"\glsnumberformat}{132}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{132}
+\glossaryentry{CT?\glossentry{ct}|setentrycounter[]{page}"\glsnumberformat}{133}
+\glossaryentry{MRI?\glossentry{mri}|setentrycounter[]{page}"\glsnumberformat}{133}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{133}
+\glossaryentry{DICOM?\glossentry{dicom}|setentrycounter[]{page}"\glsnumberformat}{133}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{133}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{133}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{133}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{134}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{134}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{134}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{135}
+\glossaryentry{FPS?\glossentry{fps}|setentrycounter[]{page}"\glsnumberformat}{135}
+\glossaryentry{FPS?\glossentry{fps}|setentrycounter[]{page}"\glsnumberformat}{135}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{135}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{135}
+\glossaryentry{AABB?\glossentry{aabb}|setentrycounter[]{page}"\glsnumberformat}{135}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{135}
+\glossaryentry{CT?\glossentry{ct}|setentrycounter[]{page}"\glsnumberformat}{135}
+\glossaryentry{MRI?\glossentry{mri}|setentrycounter[]{page}"\glsnumberformat}{135}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{135}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{136}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{136}
+\glossaryentry{VR?\glossentry{vr}|setentrycounter[]{page}"\glsnumberformat}{136}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{136}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{136}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{136}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{136}
+\glossaryentry{VR?\glossentry{vr}|setentrycounter[]{page}"\glsnumberformat}{136}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{136}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{137}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{137}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{137}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{137}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{137}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{137}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{137}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{137}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{137}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{137}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{138}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{138}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{138}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{138}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{138}
+\glossaryentry{HU?\glossentry{hu}|setentrycounter[]{page}"\glsnumberformat}{138}
+\glossaryentry{T?\glossentry{tesla}|setentrycounter[]{page}"\glsnumberformat}{138}
+\glossaryentry{BFS?\glossentry{bfs}|setentrycounter[]{page}"\glsnumberformat}{138}
+\glossaryentry{HU?\glossentry{hu}|setentrycounter[]{page}"\glsnumberformat}{138}
+\glossaryentry{T?\glossentry{tesla}|setentrycounter[]{page}"\glsnumberformat}{138}
+\glossaryentry{DICOM?\glossentry{dicom}|setentrycounter[]{page}"\glsnumberformat}{138}
+\glossaryentry{HU?\glossentry{hu}|setentrycounter[]{page}"\glsnumberformat}{138}
+\glossaryentry{T?\glossentry{tesla}|setentrycounter[]{page}"\glsnumberformat}{138}
+\glossaryentry{MR?\glossentry{mr}|setentrycounter[]{page}"\glsnumberformat}{139}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{139}
+\glossaryentry{GPU?\glossentry{gpu}|setentrycounter[]{page}"\glsnumberformat}{139}
+\glossaryentry{HU?\glossentry{hu}|setentrycounter[]{page}"\glsnumberformat}{139}
+\glossaryentry{T?\glossentry{tesla}|setentrycounter[]{page}"\glsnumberformat}{139}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{139}
+\glossaryentry{HU?\glossentry{hu}|setentrycounter[]{page}"\glsnumberformat}{140}
+\glossaryentry{HU?\glossentry{hu}|setentrycounter[]{page}"\glsnumberformat}{140}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{140}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{140}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{140}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{140}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{140}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{140}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{140}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{140}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{140}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{140}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{140}
+\glossaryentry{AABB?\glossentry{aabb}|setentrycounter[]{page}"\glsnumberformat}{141}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{141}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{141}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{141}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{141}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{141}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{141}
+\glossaryentry{VST?\glossentry{vst}|setentrycounter[]{page}"\glsnumberformat}{141}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{141}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{141}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{141}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{141}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{142}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{142}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{143}
+\glossaryentry{GPU?\glossentry{gpu}|setentrycounter[]{page}"\glsnumberformat}{143}
+\glossaryentry{HU?\glossentry{hu}|setentrycounter[]{page}"\glsnumberformat}{143}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{144}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{144}
+\glossaryentry{MR?\glossentry{mr}|setentrycounter[]{page}"\glsnumberformat}{144}
+\glossaryentry{MRI?\glossentry{mri}|setentrycounter[]{page}"\glsnumberformat}{144}
+\glossaryentry{CT?\glossentry{ct}|setentrycounter[]{page}"\glsnumberformat}{144}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{145}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{147}
+\glossaryentry{GPU?\glossentry{gpu}|setentrycounter[]{page}"\glsnumberformat}{147}
+\glossaryentry{GPU?\glossentry{gpu}|setentrycounter[]{page}"\glsnumberformat}{147}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{148}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{149}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{149}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{149}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{150}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{150}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{150}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{150}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{150}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{150}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{150}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{151}
+\glossaryentry{DICOM?\glossentry{dicom}|setentrycounter[]{page}"\glsnumberformat}{151}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{151}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{151}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{151}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{151}
+\glossaryentry{MRI?\glossentry{mri}|setentrycounter[]{page}"\glsnumberformat}{153}
+\glossaryentry{CT?\glossentry{ct}|setentrycounter[]{page}"\glsnumberformat}{153}
+\glossaryentry{CT?\glossentry{ct}|setentrycounter[]{page}"\glsnumberformat}{154}
+\glossaryentry{MRI?\glossentry{mri}|setentrycounter[]{page}"\glsnumberformat}{154}
+\glossaryentry{GAN?\glossentry{gan}|setentrycounter[]{page}"\glsnumberformat}{155}
+\glossaryentry{SDF?\glossentry{sdf}|setentrycounter[]{page}"\glsnumberformat}{155}
+\glossaryentry{SDF?\glossentry{sdf}|setentrycounter[]{page}"\glsnumberformat}{155}
+\glossaryentry{SDF?\glossentry{sdf}|setentrycounter[]{page}"\glsnumberformat}{155}
+\glossaryentry{SDF?\glossentry{sdf}|setentrycounter[]{page}"\glsnumberformat}{158}
+\glossaryentry{AABB?\glossentry{aabb}|setentrycounter[]{page}"\glsnumberformat}{158}
+\glossaryentry{UI?\glossentry{ui}|setentrycounter[]{page}"\glsnumberformat}{160}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{160}
+\glossaryentry{VR?\glossentry{vr}|setentrycounter[]{page}"\glsnumberformat}{161}
+\glossaryentry{UI?\glossentry{ui}|setentrycounter[]{page}"\glsnumberformat}{162}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{162}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{162}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{162}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{162}
+\glossaryentry{VR?\glossentry{vr}|setentrycounter[]{page}"\glsnumberformat}{162}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{163}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{163}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{163}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{163}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{164}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{164}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{164}
+\glossaryentry{MR?\glossentry{mr}|setentrycounter[]{page}"\glsnumberformat}{164}
+\glossaryentry{MR?\glossentry{mr}|setentrycounter[]{page}"\glsnumberformat}{164}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{164}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{165}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{165}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{165}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{165}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{165}
+\glossaryentry{MR?\glossentry{mr}|setentrycounter[]{page}"\glsnumberformat}{165}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{165}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{165}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{165}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{165}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{165}
+\glossaryentry{MR?\glossentry{mr}|setentrycounter[]{page}"\glsnumberformat}{166}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{166}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{166}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{166}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{166}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{166}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{166}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{166}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{166}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{166}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{166}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{166}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{167}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{167}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{167}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{167}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{167}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{167}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{167}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{167}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{167}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{168}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{168}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{168}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{169}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{169}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{169}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{169}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{170}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{170}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{170}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{172}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{172}
+\glossaryentry{HSD?\glossentry{hsd}|setentrycounter[]{page}"\glsnumberformat}{172}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{172}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{172}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{172}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{173}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{173}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{173}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{173}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{173}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{173}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{173}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{174}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{174}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{174}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{174}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{174}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{175}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{175}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{175}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{175}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{175}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{175}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{175}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{175}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{175}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{175}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{176}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{176}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{176}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{176}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{176}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{176}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{176}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{176}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{176}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{176}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{176}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{176}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{177}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{177}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{177}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{177}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{177}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{177}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{178}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{178}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{178}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{178}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{178}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{178}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{178}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{178}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{178}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{178}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{179}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{179}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{180}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{180}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{180}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{180}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{180}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{180}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{180}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{180}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{180}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{180}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{181}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{181}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{181}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{182}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{182}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{182}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{182}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{182}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{182}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{182}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{182}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{182}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{183}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{183}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{183}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{183}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{183}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{183}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{183}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{183}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{183}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{183}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{183}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{183}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{183}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{183}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{184}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{184}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{184}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{184}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{184}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{185}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{185}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{185}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{185}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{185}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{185}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{186}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{186}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{186}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{186}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{186}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{186}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{186}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{186}
+\glossaryentry{2AFC?\glossentry{twofc}|setentrycounter[]{page}"\glsnumberformat}{187}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{187}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{187}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{187}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{187}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{187}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{187}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{187}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{187}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{187}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{187}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{187}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{187}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{188}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{188}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{188}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{188}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{188}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{188}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{188}
+\glossaryentry{2AFC?\glossentry{twofc}|setentrycounter[]{page}"\glsnumberformat}{188}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{188}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{188}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{188}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{188}
+\glossaryentry{2AFC?\glossentry{twofc}|setentrycounter[]{page}"\glsnumberformat}{188}
+\glossaryentry{2AFC?\glossentry{twofc}|setentrycounter[]{page}"\glsnumberformat}{188}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{188}
+\glossaryentry{2AFC?\glossentry{twofc}|setentrycounter[]{page}"\glsnumberformat}{188}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{189}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{189}
+\glossaryentry{MR?\glossentry{mr}|setentrycounter[]{page}"\glsnumberformat}{190}
+\glossaryentry{MR?\glossentry{mr}|setentrycounter[]{page}"\glsnumberformat}{190}
+\glossaryentry{MR?\glossentry{mr}|setentrycounter[]{page}"\glsnumberformat}{190}
+\glossaryentry{MR?\glossentry{mr}|setentrycounter[]{page}"\glsnumberformat}{190}
+\glossaryentry{MR?\glossentry{mr}|setentrycounter[]{page}"\glsnumberformat}{190}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{192}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{192}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{192}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{194}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{194}
+\glossaryentry{SDF?\glossentry{sdf}|setentrycounter[]{page}"\glsnumberformat}{194}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{194}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{194}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{194}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{194}
+\glossaryentry{2AFC?\glossentry{twofc}|setentrycounter[]{page}"\glsnumberformat}{195}
+\glossaryentry{LMM?\glossentry{lmm}|setentrycounter[]{page}"\glsnumberformat}{197}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{197}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{197}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{198}
+\glossaryentry{LMM?\glossentry{lmm}|setentrycounter[]{page}"\glsnumberformat}{199}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{199}
+\glossaryentry{LMM?\glossentry{lmm}|setentrycounter[]{page}"\glsnumberformat}{199}
+\glossaryentry{LMM?\glossentry{lmm}|setentrycounter[]{page}"\glsnumberformat}{199}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{199}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{199}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{199}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{199}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{199}
+\glossaryentry{LMM?\glossentry{lmm}|setentrycounter[]{page}"\glsnumberformat}{199}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{200}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{200}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{200}
+\glossaryentry{LMM?\glossentry{lmm}|setentrycounter[]{page}"\glsnumberformat}{200}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{200}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{200}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{200}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{200}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{202}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{202}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{203}
+\glossaryentry{JND?\glossentry{jnd}|setentrycounter[]{page}"\glsnumberformat}{203}
+\glossaryentry{PSE?\glossentry{pse}|setentrycounter[]{page}"\glsnumberformat}{203}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{203}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{203}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{203}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{204}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{204}
+\glossaryentry{JND?\glossentry{jnd}|setentrycounter[]{page}"\glsnumberformat}{204}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{204}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{204}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{204}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{205}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{205}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{205}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{205}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{205}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{205}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{207}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{207}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{207}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{207}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{207}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{207}
+\glossaryentry{VST?\glossentry{vst}|setentrycounter[]{page}"\glsnumberformat}{208}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{208}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{208}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{208}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{208}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{208}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{208}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{208}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{208}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{208}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{208}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{208}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{208}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{208}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{208}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{209}
+\glossaryentry{HCI?\glossentry{hci}|setentrycounter[]{page}"\glsnumberformat}{209}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{209}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{209}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{209}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{209}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{209}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{209}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{209}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{209}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{209}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{209}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{210}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{210}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{210}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{210}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{210}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{210}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{210}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{210}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{210}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{210}
+\glossaryentry{2AFC?\glossentry{twofc}|setentrycounter[]{page}"\glsnumberformat}{210}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{210}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{210}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{210}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{210}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{210}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{210}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{210}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{210}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{210}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{210}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{210}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{210}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{210}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{210}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{210}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{211}
+\glossaryentry{MRI?\glossentry{mri}|setentrycounter[]{page}"\glsnumberformat}{211}
+\glossaryentry{CT?\glossentry{ct}|setentrycounter[]{page}"\glsnumberformat}{211}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{211}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{211}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{211}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{211}
+\glossaryentry{CT?\glossentry{ct}|setentrycounter[]{page}"\glsnumberformat}{211}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{212}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{212}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{212}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{213}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{213}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{213}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{213}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{213}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{213}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{213}
+\glossaryentry{CT?\glossentry{ct}|setentrycounter[]{page}"\glsnumberformat}{214}
+\glossaryentry{MRI?\glossentry{mri}|setentrycounter[]{page}"\glsnumberformat}{214}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{214}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{214}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{214}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{214}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{214}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{214}
+\glossaryentry{CT?\glossentry{ct}|setentrycounter[]{page}"\glsnumberformat}{261}
+\glossaryentry{MRI?\glossentry{mri}|setentrycounter[]{page}"\glsnumberformat}{261}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{261}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{262}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{262}
+\glossaryentry{SAR?\glossentry{sar}|setentrycounter[]{page}"\glsnumberformat}{262}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{263}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{263}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{263}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{263}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{263}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{263}
+\glossaryentry{CT?\glossentry{ct}|setentrycounter[]{page}"\glsnumberformat}{264}
+\glossaryentry{MRI?\glossentry{mri}|setentrycounter[]{page}"\glsnumberformat}{264}
+\glossaryentry{CT?\glossentry{ct}|setentrycounter[]{page}"\glsnumberformat}{264}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{264}
+\glossaryentry{MR?\glossentry{mr}|setentrycounter[]{page}"\glsnumberformat}{265}
+\glossaryentry{HMD?\glossentry{hmd}|setentrycounter[]{page}"\glsnumberformat}{265}
+\glossaryentry{GPU?\glossentry{gpu}|setentrycounter[]{page}"\glsnumberformat}{265}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{265}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{265}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{265}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{265}
+\glossaryentry{UI?\glossentry{ui}|setentrycounter[]{page}"\glsnumberformat}{265}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{266}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{266}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{266}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{266}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{266}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{266}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{266}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{267}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{267}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{267}
+\glossaryentry{OST?\glossentry{ost}|setentrycounter[]{page}"\glsnumberformat}{267}
+\glossaryentry{AR"\glsadd {ar_g}?\glossentry{ar}|setentrycounter[]{page}"\glsnumberformat}{267}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{269}
+\glossaryentry{DICOM?\glossentry{dicom}|setentrycounter[]{page}"\glsnumberformat}{271}
+\glossaryentry{CT?\glossentry{ct}|setentrycounter[]{page}"\glsnumberformat}{271}
+\glossaryentry{DICOM?\glossentry{dicom}|setentrycounter[]{page}"\glsnumberformat}{271}
+\glossaryentry{DICOM?\glossentry{dicom}|setentrycounter[]{page}"\glsnumberformat}{271}
+\glossaryentry{CT?\glossentry{ct}|setentrycounter[]{page}"\glsnumberformat}{271}
+\glossaryentry{DICOM?\glossentry{dicom}|setentrycounter[]{page}"\glsnumberformat}{271}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{272}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{272}
+\glossaryentry{DICOM?\glossentry{dicom}|setentrycounter[]{page}"\glsnumberformat}{272}
+\glossaryentry{DVR?\glossentry{dvr}|setentrycounter[]{page}"\glsnumberformat}{272}
+\glossaryentry{PC?\glossentry{pc}|setentrycounter[]{page}"\glsnumberformat}{272}
+\glossaryentry{VIRT?\glossentry{virt}|setentrycounter[]{page}"\glsnumberformat}{295}
