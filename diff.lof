@@ -3,7 +3,7 @@
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Images of \gls {ct} and \gls {mri} films being utilized in a medical setting.}}{2}{figure.caption.8}%
 \contentsline {figure}{\numberline {1.2}{\ignorespaces Two similar slices of different human heads.}}{3}{figure.caption.9}%
 \contentsline {figure}{\numberline {1.3}{\ignorespaces A image of Hanna et al.'s~\cite {Hanna2018} sterile system for \glspl {pathologist}}}{6}{figure.caption.10}%
-\contentsline {figure}{\numberline {1.4}{\ignorespaces The Holographic Overlay system in use with a CT scanner. \DIFaddbeginFL \fixme {Miss aligned is incorrectly spelled} \DIFaddendFL }}{7}{figure.caption.11}%
+\contentsline {figure}{\numberline {1.4}{\ignorespaces The Holographic Overlay system in use with a CT scanner. }}{7}{figure.caption.11}%
 \contentsline {figure}{\numberline {1.5}{\ignorespaces This is a image of a cube rendered to show the same data shown in \autoref {fig:HolographicOverlaySystem} but using \gls {dvr}.}}{9}{figure.caption.12}%
 \contentsline {figure}{\numberline {1.6}{\ignorespaces {\color {blue}\uwave {An example of where it is difficult to interpret depth due to the absence of depth cues. The circular object is a virtual object displayed against the wall in the next room. }}\textbf {{\color {blue}\uwave {Left}}}{\color {blue}\uwave {) shows the room with no X-ray vision; }}\textbf {{\color {blue}\uwave {center}}}{\color {blue}\uwave {) shows the same room with X-ray vision enabled. However, the lack of depth cues makes it impossible to determine where the circular object in the next room is located. }}\textbf {{\color {blue}\uwave {Right}}}{\color {blue}\uwave {) shows the same rooms as on the left, displayed using an isometric perspective to illustrate where the items are actually located. }}}}{11}{figure.caption.13}%
 \addvspace {10\p@ }
@@ -12,7 +12,7 @@
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Aerial Perspective, Relative Size, and Relative Density: An Image of a mountain view in Bavaria, Germany, with indicators to explain how monoscopic depth perception functions}}{18}{figure.caption.16}%
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Depth Cues and Motion: Schematic illustration of motion components arising from observer translation and scene-relative object motion.}}{19}{figure.caption.17}%
 \contentsline {figure}{\numberline {2.5}{\ignorespaces A depiction of how convergence and accommodation work in the real world using Mixed Reality and OST AR.}}{20}{figure.caption.18}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Three images of the Stanford bunny sitting behind a wall, each using a different \gls {X-ray Vision} effect.}}{21}{figure.caption.19}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Three images of the Stanford bunny sitting behind a wall, each using a different \gls {X-ray Vision} effect.}}{22}{figure.caption.19}%
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Examples detailing the stippling algorithm created by Pastor and Strotthote~\cite {Pastor2004}.}}{26}{figure.caption.22}%
 \contentsline {figure}{\numberline {2.8}{\ignorespaces A example of Cuberilles.}}{29}{figure.caption.24}%
 \contentsline {figure}{\numberline {2.9}{\ignorespaces Examples of Hui et al.'s cursors on 3D planes.}}{32}{figure.caption.25}%
@@ -38,8 +38,8 @@
 \contentsline {figure}{\numberline {2.29}{\ignorespaces A heat map illustrating how often different \gls {X-ray Vision} effects are compared to each other in the literature.}}{69}{figure.caption.63}%
 \contentsline {figure}{\numberline {2.30}{\ignorespaces Eren et al.'s~\cite {Eren2013} different visualizations of underground pipe networks using \gls {X-ray Vision} techniques.}}{71}{figure.caption.64}%
 \contentsline {figure}{\numberline {2.31}{\ignorespaces A promotional Image from Dr Grordborts Invaders made by Weta Workshop for the Magic Leap.}}{76}{figure.caption.71}%
-\contentsline {figure}{\numberline {2.32}{\ignorespaces A bar graph of the type of display used to visualize the various \gls {X-ray Vision} effects.}}{76}{figure.caption.72}%
-\contentsline {figure}{\numberline {2.33}{\ignorespaces A bar graph displaying The types of \gls {ar} that was used to visualize the different types of \gls {X-ray Vision} effects.}}{77}{figure.caption.75}%
+\contentsline {figure}{\numberline {2.32}{\ignorespaces A bar graph of the type of display used to visualize the various \gls {X-ray Vision} effects.}}{77}{figure.caption.72}%
+\contentsline {figure}{\numberline {2.33}{\ignorespaces A bar graph displaying The types of \gls {ar} that was used to visualize the different types of \gls {X-ray Vision} effects.}}{78}{figure.caption.75}%
 \contentsline {figure}{\numberline {2.34}{\ignorespaces Devices examined for X-ray vision across the literature over time.}}{79}{figure.caption.77}%
 \contentsline {figure}{\numberline {2.35}{\ignorespaces A plot showing nine devices found in the literature.}}{81}{figure.caption.79}%
 \contentsline {figure}{\numberline {2.36}{\ignorespaces The \gls {ost} \gls {ar} display was utilized for Swan et al.'s~\cite {Swan2007} study.}}{89}{figure.caption.83}%
@@ -62,7 +62,7 @@
 \contentsline {figure}{\numberline {3.13}{\ignorespaces A graph representing the accuracy of participants' placement based on the distance the object was placed from the goal position within the large physical cube with a Voronoi pattern using the \glspl {X-ray Visualization}.}}{134}{figure.caption.109}%
 \contentsline {figure}{\numberline {3.14}{\ignorespaces A Graphs representing the accuracy of participants' placement based on the distance they are from the goal position on the X-axis within the large, physical cube with a Voronoi pattern}}{135}{figure.caption.111}%
 \contentsline {figure}{\numberline {3.15}{\ignorespaces Graphs representing the accuracy of participants' placement based on the distance they are from the goal position on the Y-axis within the large physical cube with a Voronoi pattern.}}{136}{figure.caption.112}%
-\contentsline {figure}{\numberline {3.16}{\ignorespaces Graphs representing the accuracy of participants' placement based on the distance the object was placed from the goal position on the X-axis within the large physical cube with a Voronoi pattern}}{137}{figure.caption.113}%
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Graphs representing the accuracy of participants' placement based on the distance the object was placed from the goal position on the Z-axis within the large physical cube with a Voronoi pattern}}{137}{figure.caption.113}%
 \contentsline {figure}{\numberline {3.17}{\ignorespaces Two box plots analyzing the time it took to complete the task compared between different (Right) \glspl {X-ray Visualization} and (Left) with and without the reference objects.}}{138}{figure.caption.116}%
 \contentsline {figure}{\numberline {3.18}{\ignorespaces Graphs representing the percentage of time participants spent moving the icosahedron for each task for each \gls {X-ray Vision} effect.}}{139}{figure.caption.119}%
 \contentsline {figure}{\numberline {3.19}{\ignorespaces The distance participants walked for each when (Left) different \glspl {X-ray Visualization} were displayed to them or (Right) the differences when reference objects were or were not available.}}{140}{figure.caption.120}%
@@ -129,7 +129,7 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {C.1}{\ignorespaces The Class Diagram showing the main dependencies of the Random Generating Volumes System.}}{256}{figure.caption.204}%
+\contentsline {figure}{\numberline {C.1}{\ignorespaces The Class Diagram showing the main dependencies of the Random Generating Volumes System.}}{302}{figure.caption.205}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

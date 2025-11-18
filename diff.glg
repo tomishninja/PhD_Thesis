@@ -1,7 +1,7 @@
 This is makeindex, version 2.17 [TeX Live 2025] (kpathsea + Thai support).
 Scanning style file ./diff.ist...........................done (27 attributes redefined, 0 ignored).
-Scanning input file diff.glo....done (716 entries accepted, 0 rejected).
-Sorting entries.........done (7925 comparisons).
-Generating output file diff.gls....done (277 lines written, 0 warnings).
+Scanning input file diff.glo....done (717 entries accepted, 0 rejected).
+Sorting entries.........done (7807 comparisons).
+Generating output file diff.gls....done (272 lines written, 0 warnings).
 Output written in diff.gls.
 Transcript written in diff.glg.

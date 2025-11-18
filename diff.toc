@@ -17,13 +17,13 @@
 \contentsline {subsubsection}{{\color {blue}\uwave {Hatching}}}{23}{section*.20}%
 \contentsline {subsubsection}{{\color {blue}\uwave {Stippling}}}{25}{section*.21}%
 \contentsline {subsubsection}{{\color {blue}\uwave {Halo}}}{26}{section*.23}%
-\contentsline {subsection}{\numberline {2.2.1}{\color {blue}\uwave {Volumetric Illustrative Rendering Techniques}}}{26}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.1}{\color {blue}\uwave {Volumetric Illustrative Rendering Techniques}}}{27}{subsection.2.2.1}%
 \contentsline {section}{\numberline {2.3}{\color {blue}\uwave {Direct Volume Rendering (DVR)}}}{28}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}{\color {blue}\uwave {Visualizing Volumetric Data}}}{28}{subsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.3.2}{\color {blue}\uwave {Use Cases for Direct Volume Rendering}}}{30}{subsection.2.3.2}%
 \contentsline {subsection}{\numberline {2.3.3}{\color {blue}\uwave {Human Computer Interaction (HCI) Experiments Using Direct Volume Rendering (DVR)}}}{31}{subsection.2.3.3}%
 \contentsline {section}{\numberline {2.4}An introduction to Augmented Reality (AR) and Virtual Reality (VR)}{37}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Mixed Reality (MR) Hardware}{37}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.1}Mixed Reality (MR) Hardware}{38}{subsection.2.4.1}%
 \contentsline {subsection}{\numberline {2.4.2}Designing Applications for Stereoscopic Displays}{41}{subsection.2.4.2}%
 \contentsline {section}{\numberline {2.5}{\color {red}\sout@orig {Perception and Depth Perception tasks in Augmented Reality (AR) and Virtual Reality (VR) Head Mounted Displays}}}{43}{section.2.5}%
 \contentsline {subsection}{\numberline {2.4.1}{\color {blue}\uwave {Volume Rendering In Mixed Reality}}}{43}{subsection.2.4.1}%
@@ -32,33 +32,33 @@
 \contentsline {section}{\numberline {2.5}Augmented Reality Enabled X-ray Vision}{52}{section.2.5}%
 \contentsline {subsubsection}{{\color {blue}\uwave {Eligibility Criteria}}}{52}{section*.32}%
 \contentsline {subsection}{\numberline {2.5.1}Observations from Systematic Literature Review}{53}{subsection.2.5.1}%
-\contentsline {subsection}{\numberline {2.5.2}Research Exploring X-ray Vision}{54}{subsection.2.5.2}%
-\contentsline {subsection}{\numberline {2.5.3}X-ray Vision Techniques}{55}{subsection.2.5.3}%
+\contentsline {subsection}{\numberline {2.5.2}Research Exploring X-ray Vision}{55}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}X-ray Vision Techniques}{56}{subsection.2.5.3}%
 \contentsline {subsubsection}{\gls {X-ray Vision} Effects}{57}{section*.36}%
 \contentsline {paragraph}{Auxiliary Augmentation}{57}{section*.37}%
 \contentsline {paragraph}{\DIFdelbegin {\color {red}\sout@orig {Vengeance}}\DIFdelend \DIFaddbegin {\color {blue}\uwave {Vergence}}\DIFaddend }{57}{section*.38}%
 \contentsline {subsubsection}{Transparency Based X-ray Visualizations}{58}{section*.39}%
 \contentsline {subsubsection}{``Hole in the World'' X-ray Visualizations}{58}{section*.40}%
 \contentsline {paragraph}{Virtual Box/Hole:}{59}{figure.caption.43}%
-\contentsline {paragraph}{Cutaways and Tunnelling:}{60}{figure.caption.46}%
+\contentsline {paragraph}{Cutaways and Tunnelling:}{61}{figure.caption.46}%
 \contentsline {paragraph}{Virtual Windows:}{62}{section*.48}%
 \contentsline {subsubsection}{Real-World Overlays}{63}{section*.49}%
 \contentsline {paragraph}{Grids:}{64}{section*.51}%
 \contentsline {paragraph}{Random Dot:}{65}{section*.53}%
-\contentsline {paragraph}{Halo and the Silhouette:}{65}{figure.caption.55}%
+\contentsline {paragraph}{Halo and the Silhouette:}{66}{figure.caption.55}%
 \contentsline {subsubsection}{Computer Vision-Enabled Techniques}{66}{section*.56}%
 \contentsline {paragraph}{Edge-Based:}{67}{section*.58}%
 \contentsline {paragraph}{Saliency:}{67}{section*.59}%
 \contentsline {paragraph}{Ghosting:}{67}{section*.60}%
-\contentsline {subsubsection}{Comparisons Of X-ray Vision Effects}{68}{section*.62}%
+\contentsline {subsubsection}{Comparisons Of X-ray Vision Effects}{69}{section*.62}%
 \contentsline {subsection}{\numberline {2.5.4}Applications of X-ray Vision}{71}{subsection.2.5.4}%
-\contentsline {paragraph}{{\color {red}\sout@orig {Medicine:}}}{71}{section*.65}%
+\contentsline {paragraph}{{\color {red}\sout@orig {Medicine:}}}{72}{section*.65}%
 \contentsline {paragraph}{{\color {red}\sout@orig {Construction and Maintenance:}}}{72}{section*.66}%
 \contentsline {paragraph}{{\color {red}\sout@orig {Security:}}}{73}{section*.67}%
 \contentsline {paragraph}{{\color {red}\sout@orig {Navigation and Tourism}}}{74}{section*.68}%
 \contentsline {paragraph}{{\color {red}\sout@orig {Education:}}}{75}{section*.69}%
 \contentsline {paragraph}{{\color {red}\sout@orig {Video Games:}}}{75}{section*.70}%
-\contentsline {subsection}{\numberline {2.5.5}Hardware For X-ray Vision}{75}{subsection.2.5.5}%
+\contentsline {subsection}{\numberline {2.5.5}Hardware For X-ray Vision}{76}{subsection.2.5.5}%
 \contentsline {subsubsection}{Displays}{76}{section*.73}%
 \contentsline {subsubsection}{Comparison of Displays}{78}{section*.76}%
 \contentsline {subsubsection}{Sensors Utilized}{79}{section*.78}%
@@ -104,13 +104,13 @@
 \contentsline {section}{\numberline {3.6}Results}{133}{section.3.6}%
 \contentsline {subsection}{\numberline {3.6.1}Quantitative Results}{133}{subsection.3.6.1}%
 \contentsline {subsubsection}{Accuracy of Placement (H.1)}{136}{section*.114}%
-\contentsline {paragraph}{Placement Accuracy from User Viewpoint by Axis (H.2 \& H.3):}{136}{section*.115}%
+\contentsline {paragraph}{Placement Accuracy from User Viewpoint by Axis (H.2 \& H.3):}{137}{section*.115}%
 \contentsline {subsection}{\numberline {3.6.2}Time Required (H.5)}{138}{subsection.3.6.2}%
 \contentsline {paragraph}{Time Required for task completion (H.5): }{138}{section*.117}%
 \contentsline {paragraph}{Time Participants Spent Moving the Object (H.5)}{139}{figure.caption.119}%
 \contentsline {subsubsection}{User Behaviour Results (H.6 \& H.7)}{140}{section*.121}%
 \contentsline {paragraph}{Distance Moved (H.6):}{140}{section*.122}%
-\contentsline {paragraph}{Distance from Box (H.7)}{140}{figure.caption.124}%
+\contentsline {paragraph}{Distance from Box (H.7)}{141}{figure.caption.124}%
 \contentsline {paragraph}{Speed Object Was Moved (H.6)}{141}{section*.125}%
 \contentsline {subsection}{\numberline {3.6.3}Subjective Results (H.8 \& H.9)}{142}{subsection.3.6.3}%
 \contentsline {section}{\numberline {3.7}Discussion}{144}{section.3.7}%
@@ -120,7 +120,7 @@
 \contentsline {subsection}{\numberline {3.7.4}User Behaviour Results (H.6 \& H.7)}{146}{subsection.3.7.4}%
 \contentsline {subsection}{\numberline {3.7.5}Subjective Results (H.8 \& H.9)}{146}{subsection.3.7.5}%
 \contentsline {subsection}{\numberline {3.7.6}Summary of Discussion}{147}{subsection.3.7.6}%
-\contentsline {section}{\numberline {3.8}Future Considerations}{147}{section.3.8}%
+\contentsline {section}{\numberline {3.8}Future Considerations}{148}{section.3.8}%
 \contentsline {section}{\numberline {3.9}Conclusion}{149}{section.3.9}%
 \contentsline {chapter}{\numberline {4}Designing X-ray Visualizations with Volume Rendering}{151}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Fundamentals of Volume Rendering}{153}{section.4.1}%
@@ -215,54 +215,55 @@
 \contentsline {subsection}{\numberline {8.4.2}Direct Volume Rendering Displayed Using Ocular See Through Augmented Reality}{237}{subsection.8.4.2}%
 \contentsline {subsection}{\numberline {8.4.3}Further Evaluations}{239}{subsection.8.4.3}%
 \contentsline {section}{\numberline {8.5}Final Remarks}{240}{section.8.5}%
-\contentsline {chapter}{List of Figures}{241}{chapter*.201}%
-\contentsline {chapter}{List of Tables}{249}{chapter*.202}%
-\contentsline {chapter}{\numberline {A}Holographic Overlay System Details}{251}{appendix.A}%
-\contentsline {chapter}{\numberline {B}X-ray Vision Literature Review Methodology}{253}{appendix.B}%
-\contentsline {subsubsection}{{\color {red}\sout@orig {Eligibility Criteria}}}{253}{section*.203}%
-\contentsline {chapter}{\numberline {C}Class Diagram for Random Generating Volumes}{255}{appendix.C}%
-\contentsline {chapter}{\numberline {D}Chapter 5: Counting Everything Post Hoc}{257}{appendix.D}%
-\contentsline {chapter}{\numberline {E}Chapter 3's Participant Comments on X-Ray Vision}{261}{appendix.E}%
-\contentsline {section}{\numberline {E.1}Favorite Visualizations and Why}{261}{section.E.1}%
-\contentsline {section}{\numberline {E.2}General Comments}{262}{section.E.2}%
-\contentsline {chapter}{\numberline {F}Feedback from Chapter 5 Examing the Effect of Perception on VIRTs}{265}{appendix.F}%
-\contentsline {section}{\numberline {F.1}Things That Were Liked and Disliked About VIRTs}{265}{section.F.1}%
-\contentsline {subsection}{\numberline {F.1.1}Halo}{265}{subsection.F.1.1}%
-\contentsline {subsubsection}{I liked this visualization because.}{265}{section*.209}%
-\contentsline {subsubsection}{I disliked this visualization because.}{266}{section*.210}%
-\contentsline {subsection}{\numberline {F.1.2}Hatching}{267}{subsection.F.1.2}%
-\contentsline {subsubsection}{I liked this visualization because.}{267}{section*.211}%
-\contentsline {subsubsection}{I disliked this visualization because.}{268}{section*.212}%
-\contentsline {subsection}{\numberline {F.1.3}No VIRT}{270}{subsection.F.1.3}%
-\contentsline {subsubsection}{I liked this visualization because.}{270}{section*.213}%
-\contentsline {subsubsection}{I disliked this visualization because.}{271}{section*.214}%
-\contentsline {subsection}{\numberline {F.1.4}Stippling}{272}{subsection.F.1.4}%
-\contentsline {subsubsection}{I liked this visualization because.}{272}{section*.215}%
-\contentsline {subsubsection}{I disliked this visualization because.}{273}{section*.216}%
-\contentsline {chapter}{\numberline {G}Feedback from Chapter 6 Examining the limits of Depth Perception}{275}{appendix.G}%
-\contentsline {section}{\numberline {G.1}Things That Were Liked and Disliked About VIRTs}{275}{section.G.1}%
-\contentsline {subsection}{\numberline {G.1.1}Halo}{275}{subsection.G.1.1}%
-\contentsline {subsubsection}{I liked this visualization because.}{275}{section*.217}%
-\contentsline {subsubsection}{I disliked this visualization because.}{277}{section*.218}%
-\contentsline {subsection}{\numberline {G.1.2}Hatching}{278}{subsection.G.1.2}%
-\contentsline {subsubsection}{I liked this visualization because.}{278}{section*.219}%
-\contentsline {subsubsection}{I disliked this visualization because.}{279}{section*.220}%
-\contentsline {subsection}{\numberline {G.1.3}No VIRT}{280}{subsection.G.1.3}%
-\contentsline {subsubsection}{I liked this visualization because.}{280}{section*.221}%
-\contentsline {subsubsection}{I disliked this visualization because.}{281}{section*.222}%
-\contentsline {subsection}{\numberline {G.1.4}Stippling}{283}{subsection.G.1.4}%
-\contentsline {subsubsection}{I liked this visualization because.}{283}{section*.223}%
-\contentsline {subsubsection}{I disliked this visualization because.}{284}{section*.224}%
-\contentsline {section}{\numberline {G.2}Validation for Answers Given in the Post-Study Questionaire}{285}{section.G.2}%
-\contentsline {subsection}{\numberline {G.2.1}What Made The Visualization Easy to use?}{285}{subsection.G.2.1}%
-\contentsline {subsection}{\numberline {G.2.2}What Made The Visualization Difficult to use?}{287}{subsection.G.2.2}%
-\contentsline {subsection}{\numberline {G.2.3}Why Do You Think You Performed Better With These Visualization?}{288}{subsection.G.2.3}%
-\contentsline {subsection}{\numberline {G.2.4}Why Do You Think You Performed Worse With These visualization?}{290}{subsection.G.2.4}%
-\contentsline {section}{\numberline {G.3}General Comments}{292}{section.G.3}%
-\contentsline {section}{\numberline {G.4}Validation for Answers Given in the Post-Study Questionaire}{293}{section.G.4}%
-\contentsline {subsection}{\numberline {G.4.1}What Made The Visualization Easy to use?}{293}{subsection.G.4.1}%
-\contentsline {subsection}{\numberline {G.4.2}What Made These visualization Difficult to use?}{294}{subsection.G.4.2}%
-\contentsline {subsection}{\numberline {G.4.3}Why Do You Think You Performed Better With These visualization?}{296}{subsection.G.4.3}%
-\contentsline {subsection}{\numberline {G.4.4}Why Do You Think You Performed Worse With These visualization?}{297}{subsection.G.4.4}%
-\contentsline {section}{\numberline {G.5}General Comments}{299}{section.G.5}%
-\contentsline {chapter}{\numberline {H}Statements of Authorship}{301}{appendix.H}%
+\contentsline {chapter}{Bibliography}{241}{chapter*.201}%
+\contentsline {chapter}{List of Figures}{287}{chapter*.202}%
+\contentsline {chapter}{List of Tables}{295}{chapter*.203}%
+\contentsline {chapter}{\numberline {A}Holographic Overlay System Details}{297}{appendix.A}%
+\contentsline {chapter}{\numberline {B}X-ray Vision Literature Review Methodology}{299}{appendix.B}%
+\contentsline {subsubsection}{{\color {red}\sout@orig {Eligibility Criteria}}}{299}{section*.204}%
+\contentsline {chapter}{\numberline {C}Class Diagram for Random Generating Volumes}{301}{appendix.C}%
+\contentsline {chapter}{\numberline {D}Chapter 5: Counting Everything Post Hoc}{303}{appendix.D}%
+\contentsline {chapter}{\numberline {E}Chapter 3's Participant Comments on X-Ray Vision}{307}{appendix.E}%
+\contentsline {section}{\numberline {E.1}Favorite Visualizations and Why}{307}{section.E.1}%
+\contentsline {section}{\numberline {E.2}General Comments}{308}{section.E.2}%
+\contentsline {chapter}{\numberline {F}Feedback from Chapter 5 Examing the Effect of Perception on VIRTs}{311}{appendix.F}%
+\contentsline {section}{\numberline {F.1}Things That Were Liked and Disliked About VIRTs}{311}{section.F.1}%
+\contentsline {subsection}{\numberline {F.1.1}Halo}{311}{subsection.F.1.1}%
+\contentsline {subsubsection}{I liked this visualization because.}{311}{section*.210}%
+\contentsline {subsubsection}{I disliked this visualization because.}{312}{section*.211}%
+\contentsline {subsection}{\numberline {F.1.2}Hatching}{313}{subsection.F.1.2}%
+\contentsline {subsubsection}{I liked this visualization because.}{313}{section*.212}%
+\contentsline {subsubsection}{I disliked this visualization because.}{314}{section*.213}%
+\contentsline {subsection}{\numberline {F.1.3}No VIRT}{316}{subsection.F.1.3}%
+\contentsline {subsubsection}{I liked this visualization because.}{316}{section*.214}%
+\contentsline {subsubsection}{I disliked this visualization because.}{317}{section*.215}%
+\contentsline {subsection}{\numberline {F.1.4}Stippling}{318}{subsection.F.1.4}%
+\contentsline {subsubsection}{I liked this visualization because.}{318}{section*.216}%
+\contentsline {subsubsection}{I disliked this visualization because.}{319}{section*.217}%
+\contentsline {chapter}{\numberline {G}Feedback from Chapter 6 Examining the limits of Depth Perception}{321}{appendix.G}%
+\contentsline {section}{\numberline {G.1}Things That Were Liked and Disliked About VIRTs}{321}{section.G.1}%
+\contentsline {subsection}{\numberline {G.1.1}Halo}{321}{subsection.G.1.1}%
+\contentsline {subsubsection}{I liked this visualization because.}{321}{section*.218}%
+\contentsline {subsubsection}{I disliked this visualization because.}{323}{section*.219}%
+\contentsline {subsection}{\numberline {G.1.2}Hatching}{324}{subsection.G.1.2}%
+\contentsline {subsubsection}{I liked this visualization because.}{324}{section*.220}%
+\contentsline {subsubsection}{I disliked this visualization because.}{325}{section*.221}%
+\contentsline {subsection}{\numberline {G.1.3}No VIRT}{326}{subsection.G.1.3}%
+\contentsline {subsubsection}{I liked this visualization because.}{326}{section*.222}%
+\contentsline {subsubsection}{I disliked this visualization because.}{327}{section*.223}%
+\contentsline {subsection}{\numberline {G.1.4}Stippling}{329}{subsection.G.1.4}%
+\contentsline {subsubsection}{I liked this visualization because.}{329}{section*.224}%
+\contentsline {subsubsection}{I disliked this visualization because.}{330}{section*.225}%
+\contentsline {section}{\numberline {G.2}Validation for Answers Given in the Post-Study Questionaire}{331}{section.G.2}%
+\contentsline {subsection}{\numberline {G.2.1}What Made The Visualization Easy to use?}{331}{subsection.G.2.1}%
+\contentsline {subsection}{\numberline {G.2.2}What Made The Visualization Difficult to use?}{333}{subsection.G.2.2}%
+\contentsline {subsection}{\numberline {G.2.3}Why Do You Think You Performed Better With These Visualization?}{334}{subsection.G.2.3}%
+\contentsline {subsection}{\numberline {G.2.4}Why Do You Think You Performed Worse With These visualization?}{336}{subsection.G.2.4}%
+\contentsline {section}{\numberline {G.3}General Comments}{338}{section.G.3}%
+\contentsline {section}{\numberline {G.4}Validation for Answers Given in the Post-Study Questionaire}{339}{section.G.4}%
+\contentsline {subsection}{\numberline {G.4.1}What Made The Visualization Easy to use?}{339}{subsection.G.4.1}%
+\contentsline {subsection}{\numberline {G.4.2}What Made These visualization Difficult to use?}{340}{subsection.G.4.2}%
+\contentsline {subsection}{\numberline {G.4.3}Why Do You Think You Performed Better With These visualization?}{342}{subsection.G.4.3}%
+\contentsline {subsection}{\numberline {G.4.4}Why Do You Think You Performed Worse With These visualization?}{343}{subsection.G.4.4}%
+\contentsline {section}{\numberline {G.5}General Comments}{345}{section.G.5}%
+\contentsline {chapter}{\numberline {H}Statements of Authorship}{347}{appendix.H}%

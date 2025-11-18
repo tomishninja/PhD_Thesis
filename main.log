@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.10)  7 OCT 2025 22:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.10)  16 NOV 2025 23:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/tomis/PhDThesis/main.tex
-(c:/Users/tomis/PhDThesis/main.tex
+**d:/Documents/PhDThesisChanges/PhDThesis/main.tex
+(d:/Documents/PhDThesisChanges/PhDThesis/main.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 (c:/texlive/2025/texmf-dist/tex/latex/base/report.cls
@@ -1125,30 +1125,30 @@ Package pdftex.def Info: Chapter1/Images/VolumeRendering.png  used on input line
 <Chapter1/Images/DiagramX-rayVisionMoreDetail.png, id=1215, 1924.94156pt x 508.90125pt>
 File: Chapter1/Images/DiagramX-rayVisionMoreDetail.png Graphic file (type png)
 <use Chapter1/Images/DiagramX-rayVisionMoreDetail.png>
-Package pdftex.def Info: Chapter1/Images/DiagramX-rayVisionMoreDetail.png  used on input line 326.
+Package pdftex.def Info: Chapter1/Images/DiagramX-rayVisionMoreDetail.png  used on input line 328.
 (pdftex.def)             Requested size: 426.79134pt x 112.82832pt.
 
 
 [10 <./Chapter1/Images/DiagramX-rayVisionMoreDetail.png>]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 404.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 406.
  (c:/texlive/2025/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 
 [11{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
-Overfull \hbox (51.54834pt too wide) in paragraph at lines 478--482
+Overfull \hbox (51.54834pt too wide) in paragraph at lines 480--484
 \T1/lmr/m/n/12 (ISMAR-Adjunct), 483^^U486. https://doi.org/10.1109/ISMAR-Adjunct54149.2021.00114 
  []
 
 
-Overfull \hbox (21.82443pt too wide) in paragraph at lines 485--489
+Overfull \hbox (21.82443pt too wide) in paragraph at lines 487--491
 \T1/lmr/m/n/12 8 (pp. 123^^U139). Springer In-ter-na-tional Pub-lish-ing. https://doi.org/10.1007/$\OT1/lmr/m/n/12 978 \OMS/lmsy/m/n/12 ^^@
  []
 
 
 
 [12{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
-Overfull \hbox (38.4759pt too wide) in paragraph at lines 514--518
+Overfull \hbox (38.4759pt too wide) in paragraph at lines 516--520
 \T1/lmr/m/n/12 Syd-ney, Aus-tralia, 2023, pp. 769-771, doi: 10.1109/ISMAR-Adjunct60411.2023.00168. 
  []
 
@@ -3889,17 +3889,17 @@ Package rerunfilecheck Info: File `main.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  36930 strings out of 473190
- 730024 string characters out of 5719979
+ 730069 string characters out of 5719979
  1315885 words of memory out of 5000000
  58312 multiletter control sequences out of 15000+600000
  668577 words of font info for 101 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 94i,17n,117p,2405b,955s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 94i,17n,117p,2420b,955s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{Hfootnote.27} has been referenced but does not exist, replaced by a fixed one
 
 <c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on main.pdf (374 pages, 291746932 bytes).
+Output written on main.pdf (374 pages, 291747026 bytes).
 PDF statistics:
  7378 PDF objects out of 7423 (max. 8388607)
  5923 compressed objects within 60 object streams

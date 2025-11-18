@@ -1,0 +1,2834 @@
+     1. INTRODUCTION
+
+
+a range of different AR HMDs. To achieve this, a system was developed that allows
+VST AR techniques to be used on OST AR devices. This system was then used
+to perform a spatial estimation task, enabling an in-depth evaluation of how these
+effects function across different augmented reality hardware configurations.
+    Chapter 4 investigates the technical work involved in volume rendering and de-
+tails the complexities involved in creating DVR techniques for X-ray vision, con-
+cluding in the creation of the Volumetric Illustrative Rendering Techniques (VIRTs).
+This was followed by a modular method to create random volumes and details, the
+Random Volume Generation system. The Random Volume Generation system al-
+lows controlled studies to be conducted with volumes to access the VIRTs (described
+in Chapter 5). The combination of the Random Volume Generation system and the
+VIRTs is then utilized in Chapter 6 to run a perception-based user study designed to
+determine how well a user can count regions within a volume. The chapter (Chapter
+7) then took the VIRTs and tested the degree of depth thresholds users could reli-
+ably distinguish depth by utilizing a 2FCA psychophysical study. The final chapter
+draws together the results and findings of this dissertation (Chapter 8).
+
+
+
+
+                                        14
+Chapter 2
+
+Background
+
+This section begins by exploring the history of human vision research, tracing its
+development to our current understanding of human perception and its integration
+with Mixed Reality (MR) hardware. We then look at the research behind how
+depth perception and perception can be considered with MR Head-Mounted Displays
+(HMDs) see. Followed by a systematic literature review of Augmented Reality (AR)
+enabled X-ray Vision. The discussion then shifts to volume rendering, emphasizing
+human-centered research using Direct Volume Rendering (DVR), and concludes with
+an analysis of illustrative effects and their applications within DVR.
+
+
+2.1      Human Perception and Depth Perception
+Understanding the mechanisms of how perception works has been a goal for humans
+long before computing or MR devices. Perception has been studied since Democritus
+conceived that sight was formed from small indivisible particles (460-371 BC). Since
+then, we have learned the anatomical structures of eyes and that sight is processed in
+the mind rather than the eye (1011 - 1021). During the 18th century, we started to
+gain a more modern view of how people see light (based on the reflection of light off of
+other objects), and we began to learn about how we observe beauty, aesthetics, and
+apparent deceptions. Newton’s particle theory in Optics (1704) proposed that light
+is composed of small particles that travel in straight lines. These particles change
+direction and speed when they hit a reflective surface, dispersing into different colors.
+This started a revolutionary shift in our perception of light. Later findings disproved
+the belief in pure white light despite Goethe’s defense of Aristotle’s theory (1810).
+This understanding of vision enabled technologies like motion images (developed in
+1932), leading to the first motion picture projector (the Phantoscope) in 1895.
+    In 1889, Gustav Fechner [61] coined psycho-physical, and we developed a metric
+for quantitatively determining changes in people’s perception. Their study involved
+seeing at what point a user could no longer determine if more or fewer dots were in
+
+                                           15
+     2. BACKGROUND
+
+
+
+
+Figure 2.1: This graph of depth cues and distance provides guidelines for depth
+perception in relation to the distance and key perception parameters. Used with
+permission from Cutting and Vishton [60].
+
+
+a pair of images. All pairs of images had ten more or fewer dots than the other one.
+This study showed that the more dots placed on a page, the harder it is for someone
+to determine the difference, creating the foundation of psychophysics analytics [61].
+From this point, qualitative experiments on perception began to run, and it became
+possible to understand precisely how human perception functioned. Leading to our
+current understanding of topics like depth perception.
+
+
+2.1.1     Depth Perception Fundamentals
+Throughout the late 19th century and the 20th century, psychologists began to study
+depth perception and came up with many factors to describe it. Most of these find-
+ings believed that depth perception was created by utilizing accommodation, con-
+vergence, motion perspective, binocular disparities, height of the visual field, aerial
+perspective, occlusion, and the relative size and density of objects [60]. In 1995,
+Cutting and Vishton took over a century’s worth of research and concluded that
+the human ability to determine what parameters of depth perception are required
+to be effective. Notably, not all depth cues are equal, and many are situational.
+Figure 2.1 shows a breakdown of how these depth cues can be contrasted based on
+how far away they are from each other. The obvious difference between the depth
+of two objects is shown using the virtual axis, while the horizontal axis shows the
+
+
+                                          16
+Figure 2.2: Depth cues and placements: Several images showing various cases of
+monoscopic forms of depth perception a) Shows an example of Occlusion trees that
+are occluded behind the main tree; b) An example of relative size where the larger
+trees a tree is the further in the foreground it seems to be; c) The field’s height
+where the trees are located higher up in the image will seem farther away from the
+user.
+
+
+distance or the depth away from the viewer’s vision they are effective.
+    Different forms of depth perception can be described by their utility in other
+spaces (Illustrated in Figure 2.1). Personal space refers to anywhere within 2m of
+the viewer, giving the viewer the required depth perception to interact with objects.
+The action space relates to any distance between 2 and 25m where depth perception
+functions by using the optical relationship between different objects. The vista space
+works by utilizing the changes of color in the horizon [60].
+    Occlusion is considered to have the most influence over any depth perception
+technique [60] and is effective as long as both the occluder and the occluded are in
+sight. The user can tell what object is closer to them [60]. However, occlusion itself
+only reveals the order of these functions [60]. Occlusion power comes from it being
+such an obvious depth cue [62], requiring only contrast, the opacity of objects, and
+the assumption that the object is not changing its shape without the viewer knowing
+about it.
+    Relative size and density are based on the user’s current knowledge of the world
+and only noticed a deduction in accuracy at distances past 5km away from the
+viewer [37]. Relative size refers to someone’s ability to determine depth based on
+how small it looks to them. Relative density refers to how densely these objects
+seem to be clustered together. Figure 2.3 illustrates how together, these techniques
+discern the depth of field away from an object. If the users are familiar with an
+object, they can determine how far away it is. However, this is much more powerful
+when there is more than one object in the distance. This depth cue, unlike occlusion,
+
+
+                                         17
+       2. BACKGROUND
+
+
+
+
+Figure 2.3: Aerial Perspective, Relative Size, and Relative Density: An Image of
+a mountain view in Bavaria, Germany. Several circles whose depths indicate how
+forests are viewed at various depths are shown. A line showing the gradual effects of
+the aerial perspective is also shown, indicating how it can be utilized to determine
+depth. The background image is licensed under a Creative Commons Attribution
+Universal 1.0 International license. 1
+
+
+can be used to gain a more granular idea of depth.
+    When looking off into the distance, objects may appear visibly lower the further
+away they are from the viewer. This is the Height in the Visual Field shown in
+Figure 2.3. This cue relies on the objects touching the ground, so things like airplanes
+are no good. This cue tends to work very well when an object is within several meters
+of a user (depending on its scale) and still works well up to about 1,000m away.
+    Aerial Perspective Refers to our ability to look through transparent objects.
+Generally, this refers to one’s ability to look through the water in the air, making
+mountains look blue, and is also applicable underwater and when viewing gas-like
+elements [60]. Transparent objects can be pretty rare, so most of these elements will
+naturally be seen from a distance in Figure 2.3. This, however, may not be the need
+to be the case when using computer graphics [60].
+    Motion parallax is considered the depth cue relating to how we perceive motion.
+  1
+      https://pxhere.com/en/photo/965104
+
+
+
+                                           18
+Figure 2.4: Depth Cues and Motion: Schematic illustration of motion compo-
+nents arising from observer translation and scene-relative object motion [63]. (a)
+An observer fixates on a traffic light while moving to the right, as a car indepen-
+dently moves left. (b–d) Depiction of the car’s image motion components related to
+self-motion and object motion. (d) accounts for image inversion by the eye’s lens.
+(b) If the car is stationary, it shows a leftward image motion due to the observer’s
+movement. (c) If the car moves left while the observer moves right, the car’s image
+motion also includes an object motion component. (d) The net image motion of
+the car, vret, is to the right. This figure is licensed under a Creative Commons
+Attribution license and was produced by French and Deangelis [63].
+
+
+This seems foundational to how we perceive depth [64]. As seen in Figure 2.4, the
+motion perspective normally relies on the user viewer focusing on an object that
+is moving concerning them [63]. This could be looking at a ball they are about
+to catch or a house in the distance while a user passes it in a car or some other
+form of transport [63]. Motion is an effective depth cue within 15 meters, but as
+Figure 2.1 illustrates, the effectiveness lessens when the objects are further away
+from the viewer and declines when an object is within 2m of a viewer as they can’t
+fully perceive the object [65].
+    People determine the depth perception of objects based on how their eyes are fo-
+cused, which can also be a useful depth cue [66]. Figure 2.5 illustrates how changing
+the accommodation and convergence allows us to focus on a given object. Humans
+can change the disposition between their eyes [67]. Accommodation relates to the
+ability to change the shape for focus. Of the eye to see an object clearly and at dif-
+ferent distances. Whereas convergence relates to the ability to turn the eyes to focus
+on nearby objects inwardly. These eye movement behaviours have a limited range,
+Figure 2.1 shows at closer distances to us, this depth cue works the most effectively
+together, but it also shows as the eyes move farther apart, objects positioned further
+in front of or behind the focal point become increasingly blurred [37].
+
+
+                                         19
+     2. BACKGROUND
+
+
+
+
+Figure 2.5: Convergence and Accommodation: A depiction of how convergence
+and accommodation work in the real world using Mixed Reality and OST AR. It
+consists of 4 diagrams showing how accommodation and convergence work together
+to better perception. The blured ducks indicate a point where a duck would not
+be in focus to the viewer based on the position sitting in this position due to the
+effect of convergence and accommodation. The frames below show examples of the
+resulting perceived images of the objects in each diagram. Each of the four diagrams
+showcases a human eye (the circular object) viewing some ducks. The point where
+the eyes meet is their vergence or the point of convergence (depicted by the line).
+The cone represents the accommodation, which focuses on the physical distance the
+viewer is from the display. This image was inspired by work by Rosedaler. This is
+licensed under a Creative Commons Attribution licence 2 .
+
+
+   Since both eyes have a different view of the real world, the image each eyes
+perceive is inherently different. This enables humans with several different abilities
+that are processed in the brain:
+
+  • Stereopsis : Refers to our human ability to assemble a 3D image from two
+    2D images from each eye. Giving us the ability to see the world in 3D.
+
+  • Diplopia : Also called double vision. This is what occurs with binocular
+    disparity, which can’t be completely fixed by Stereopsis, leaving the viewer
+    with two images that are not correctly aligned.
+
+These cues give viewers a clear indication of how the world is around them and are
+referred to in combination as binocular disparities. Binocular disparities are more
+effective when viewed closer to the viewer as the further they are away from each
+eye, the similar position they are in each eye [60].
+
+                                         20
+Figure 2.6: Three images of the Stanford bunny sitting behind a wall, each using
+a different X-ray Vision effect. To the left, a simple depth cue by placing the bunny
+behind a column. In the center, a virtual grid is placed over the physical wall to
+explain to the viewer that the bunny is behind the wall. On the right is highlighting
+the edge of the bricks with AR using edge detection to indicate that the bunny is
+behind the wall.
+
+
+    Other cues can give a viewer a better sense of depth. For example, it is possible
+to directly tell the viewer how far things are by presenting them with a neat grid
+texture. Explaining to a user exactly how big a world is can obviously present a
+high level of depth perception. Objects with a high amount of contrast can also be
+clearer to see; however, this can be seen as improving the relief size and density.
+Finally, humans may process depth perception in ways we have yet to understand
+fully; it is quite possible there is an aspect to living on earth, like gravity, that may
+even have an effect on our sense of depth perception [60, 68].
+
+
+2.1.2      Research into the Depth Perception of Color
+This dissertation utilizes several colorful objects in its evaluations and creates two
+studies that directly utilize someone’s ability to discern color from a specified area.
+This particular section highlights the papers of note that researched the impact of
+colors on depth perception. By understanding this research, the changes in depth
+perception that various colors can provide were mitigated across this dissertation.
+    Ping et al. [69] highlight the impact that colors can have on depth perception.
+When talking about medical visualization in general, it is very common to have
+several transparent layers in a single visualization. Some research has found that
+people tend to perceive different colors as being closer or further away than oth-
+ers [69, 70]. This section of the thesis discusses the research that has been factored
+into considerations regarding how color influences depth perception.
+    Aio and Li [70] wanted to test how the luminance and Contrast affected the
+depth perception of transparent plans when viewed on a computer monitor. The
+goal was to determine what methods could be utilized to make it more obvious
+  2
+      https://commons.wikimedia.org/wiki/User:Rosedaler
+
+
+                                           21
+      2. BACKGROUND
+
+
+which object was behind the other. They had two conditions to achieve this. They
+utilized luminance contact, testing the difference between changing the gradient
+between light and dark to dark to light. They utilized four planes of different sizes to
+distinguish depth perception. This study was conducted using an autoscopic display,
+which allowed for the presence and absence of motion parallax and no binocular
+parallax, giving the participants extra depth cues. Throughout this study, Aoi
+and Li [70] noticed participants underestimated depth perception but it could be
+improved by using either (or both) binocular parallax and motion parallax. They
+also noted that occluding darker or lighter colors did not make much difference. Aio
+and Li [70] next utilized the information from their prior study to test this data on
+medical data and less difference between the choices of different colors.
+
+
+2.2      Illustrative Rendering Techniques
+Cutting and Vishton [60] claim there are several real-world elements to create depth
+perception, which then need to be adapted for virtual displays [71]. However, artists
+have been able to establish depth perception even when illustrating non-realistic
+environments by using "Just Enough Reality" [72] to determine depth accurately.
+    The latter part of this thesis looks at using Volumetric Illustrative Rendering
+Techniques (VIRT)s as a method of X-ray Vision. Building on these perceptual
+foundations, the challenge in computer graphics—and particularly in advanced vi-
+sualization domains such as X-ray or mixed reality displays—is not just to replicate
+the cues found in natural vision, but to enhance and adapt them for clarity and in-
+sight. While perceptual mechanisms like stereopsis and texture gradients provide a
+basis for spatial understanding, there are scenarios where simply mimicking the real
+world is insufficient. Here, artistic illustrative effects become invaluable: by deliber-
+ately emphasizing, abstracting, or revealing underlying structures, these techniques
+enable viewers to "see" information that might otherwise remain obscured. In this
+way, the migration from perception-driven rendering toward illustrative approaches
+is not only a technical evolution, but also a creative one, leveraging artistic conven-
+tions to extend the capabilities of visual communication in graphics.
+    This section is going to look at how these effects have previously been used,
+what their impact has been on computer science, and what their utility has been
+when using MR devices. While this thesis only looks into a subsection of illustra-
+tive techniques, limiting itself to either Hatching, Stippling, or Halos, the actual
+definition of this is broader [73]. Illustrative techniques can also include the scope
+of non-photorealistic rendering, like using cell-shading and the deformation of video
+footage to look like it was produced by a pencil or paintbrush [73]. This section will
+also examine some user studies that have investigated this effectiveness [73].
+
+                                           22
+    The largest examples of illustrative effects being used can be seen in scientific
+textbooks like Gray’s anatomy [74]. This textbook utilized hatching’s ability to
+communicate texture and depth using a black-and-white image. These images were
+collected over years of diagramming the human body by directing unclaimed bodies
+from workhouses and mortuaries. Due to their clarity and accuracy, they are still
+widely used today.
+    Early work in the field by Interrante et al. [75–77] looked at how illustrative
+effects can aid the perception of transparent objects. Transparent objects make it
+difficult to understand the exact surface of the shape that a transparent object is
+formed as. This was done by pre-computing textures that used transparent and
+opaque regions. The first work was done by creating several different textures,
+including multiple methods that depict valleys and ridges, grids, and curvature
+information [75].
+    To improve the on their prior work [75], Interrante [77] created a visualization
+that utilized valleys, ridges, and curvature to explain the objects’ flow. This texture
+was calculated by drawing lines around the parts of the mesh with the highest
+curvature and having them move toward the ridges and valleys of the shapes. This
+dissertation extends this research by creating a texture that could be viewed from
+all sides, requiring less computation when the object is viewed from different angles.
+    The textures mentioned in Interrante et al.’s [76] work were later tested with a
+tipping and a grid-based pattern on each. A user study was done to determine if
+the direction of the lines or opacity affected users’ ability to determine the shape of
+the surface. At the same time, the participant viewed the graphics on a stereoscopic
+display. This study tested whether participants could accurately determine the
+closest surface of one noisy sphere to another inside of it. The analysis did show that
+texturing the object improved depth perception compared to a base line condition
+of having no texturing effect, but there was no significant difference if participants
+could determine which shell was the closer to themselves.
+
+Hatching
+
+The hatching which was developed in Interrante et al. [76] was later extended by
+Hertzmann and Zorin [78]. Hertzmann and Zorin [78] developed an algorithm that
+could translate hatching over to smooth surfaces by using a piecewise smooth sub-
+division to reconstruct a smooth surface from the mesh to compute the necessary
+qualities. This allowed for a surface-based rendering technique that worked much
+like a shadow but also thinned the lines to the point of being invisible when they
+were in the direct view of the camera. They then used a combination of noise gener-
+ation and denoising functions to create human errors that would be seen in a work
+of art.
+
+                                          23
+     2. BACKGROUND
+
+
+    The system that Hertzmann and Zorin [78] created was not designed for real-
+time interactions. This means that even simple actions like rotating around the
+model are not possible. Praun et al. [79] pre-generated a tonal art map based on
+different levels and then used these tonal art maps to determine the direction of the
+hashes before drawing them on the objects themselves. This system allowed for a
+wide variety of different configurations.
+    This method of hatching was then furthered by Pelt et al. [80] and applied to
+an iso-surface representing Computed Tomography (CT) data. Their algorithm
+was modified to consist of just a geometry shader rather than a fragment shader,
+removing the need for preprocessing the hatching. Rather, this system is able to
+compute the curvature of the iso-surface and an appropriate direction for the hashing
+in real time while providing a relatively fast frame rate, which would then create a
+textured striped pattern over a 3D object.
+    Another system was created by Lawonn et al. [81], which could run at even
+faster rates than Pelt et al.’s [80] work as long as it receives extensive pre-processing.
+It first identifies key regions: contours, defined by surface normal and view vector
+perpendicularity, and feature regions, identified by maxima and minima in the mean
+curvature field. Then, the direction of the lines is calculated directly from the
+direction of the curvature.
+    Hatching effects are also closely tied to brush-like effects, as they require the
+system to understand brush direction and stroke size. Gerl and Isenberg [82] then
+furthered the possible interactions of hatching and painterly effects. This technique
+preprocessed a Classifier to segment areas of the 3D mesh, then it used a Regression
+Analysis to choose the most appropriate direction of the stroke directions. To aid
+the AI methods, users were also given several interactions that allowed them to
+reconfigure the angle and direction of the effect [82].
+    Lawonn et al. [83] furthered this technique and paired it with a visualization
+of a cylinder, making the illustrative effects inside of it more apparent than the
+effects outside. The cylinder gave a similar impression to X-ray Vision, where the
+illustrative effects in the cylinder were clear and easy to see, while the effects outside
+the cylinder were duller. The hatching was modified to work on a set of vessels, and
+the caps of all the vessels and each location where the vessels split were identified
+so the vessels could be rendered differently.
+    Lawonn et al. [83] then ran a study comparing their version of hatching to the
+same cylinder from their previous study [83] with pseudo-chroma depth rendering
+and Phong shading. Users were asked to define the model’s depth tips of two
+vessels. pseudo-chroma depth rendering used the chroma colors to indicate depth,
+with more saturated colors being closer to the viewer and less saturated colors
+being further away whereas Phong shading used light and dark to indicate depth.
+
+
+                                           24
+Figure 2.7: Examples detailing the stippling algorithm created by Pastor and
+Strotthote [85]. The top of this image shows how the stippling subdivision is imple-
+mented using a graph function. The bottom image shows an example of how this
+stippling appears when it is applied to the target object (The bones representing a
+human hand). A small amount of stipple can be seen on the left of the image where
+the stipple was evenly and sparsely placed, but there is more depth perception in
+the center and right images where stippling is more frequent and varied. Used with
+permission from IEEE © 2004.
+
+
+This study showed that while participants performed faster with the pseudo-chroma
+depth performed, they were more accurate at assessing the distances and felt more
+confident in their answers using the hatching condition. This shows that hatching
+may allow for better depth perception.
+
+Stippling
+
+Lu et al. [84] furthered the stippling techniques shown by Interrante et al. [76]. By
+looking at the curvature of the model, finding localized curvature of 3D models, and
+spacing out the dots between the various pixels on the screen. This effect created a
+realistic stippling effect for 2D images.
+    An issue with drawing the dots for stippling was that Lu et al.’s [84,86] found that
+the distance between the dots requires to be randomly placed using a noise-based
+function rather than just at random. It was important space stippling randomly but
+
+
+                                          25
+     2. BACKGROUND
+
+
+evenly distributed. One solution for this was created by Pastor and Strothotte [85].
+Their version of stippling created a 3D Voronoi pattern over the 3D model, then a
+graph would be created linking the starting point of all of the dots which shared
+a boundary. This allowed for a seamless decline in the number of Voxels shown as
+they would be separated into groups based on the parent-child relationship seen in
+the upper part of Figure 2.7. This enabled the even stippling thresholds seen in the
+lower part of Figure 2.7 creating a sense of depth and shape of the objects it was
+applied to.
+    Another way of creating even stippling while allowing for different angles is to
+utilize a geometry shader to further subdivide the mesh. This technique was initially
+proposed by Meruvia and Pastor [87]. By doing this, you can subdivide each polygon
+to give each polygon a set number of dots within it and evenly distribute the dots
+inside of each polygon. This system operates under the assumption that areas with
+more polygons will require a higher density of dots, whereas flat areas will not [87].
+    This method of stippling was later extended by Ma et al. [88] to allow for the
+stippling to be applied to a 3D model in real time that utilized pre-computation to
+speed up the process rather than a more complex shader. The dot was placed using
+blue noise inside the Voronoi, adjusted in size to varying levels, and adjusted in
+tones based on where they appeared in parallel on the GPU. This type of stippling
+allowed for the effect to be placed realistically onto 3D models even as they were
+changing their shapes.
+
+Halo
+
+Outlines [89], Boundary Enhancements [90], feature lines [91, 92], and Halos [93] go
+by many other names, but they all relate to outlining either individual objects or
+highlighting areas of very high curvature from the perspective of the viewer. With
+traditional rendering, this tends to be done by viewing the distance between various
+pixels on the depth map [83, 93] or by calculating the local curvature of the sur-
+rounding fragments [89, 90]. However, this can be very different when working with
+DVR in part to the lack of a defined surface making any surface based calculations
+challenging.
+
+
+2.2.1     Volumetric Illustrative Rendering Techniques
+In more recent years, many papers have been striving to take volumetric data and
+present it as illustrative images, with the belief that these images will be easier to
+communicate and understand in a 2D format.
+   Initially Interrante et al.’s [76] proposed two methods to convert their illustrative
+techniques to DVR:
+
+
+                                          26
+   • Scan-Conversion Method: Converts texture slabs into a grayscale volume.
+     This method is efficient for generating multiple views but compromises stroke
+     crispness due to volume data resolution limitations [76].
+
+   • Geometric Definition Method: Directly applies geometrical definitions of
+     strokes during ray casting. This method maintains fine detail but is computa-
+     tionally expensive, requiring repeated intersection tests for each view [76].
+
+Since this thesis is focused on real-time volume rendering for immersive MR devices,
+a new volume was required to be generated each frame. This section will have more
+of a focus on papers that utilize the Geometric Definition Method. Which has since
+been heaver extended by other to now utilize techniques that are available on more
+modern Graphics Processing Units (GPUs) like fragment shaders.
+    Rheingans et al. [94] developed a method that was able to separately compute
+the expected color and the transparency. This allowed the lighting to react to
+certain elements and allow different textures within the volume to have a different
+appearance even if the Hounsfield unit was similar at that voxel. Rheingans et
+al. [94] DVR algorithm was able to present an accurate texture representation of
+the various surfaces of the volume and allowed for objects to be presented without
+regard to density or realism.
+    Lu et al. [86] created a system that was able to apply stippling to a complete
+volume. This system used algorithms like ray marching similar to DVR to perform
+this calculation. Visualization focused on rendering the various surfaces to make
+their curvatures clear but also took into account the amount of density it would
+have required to reach a given surface. Surfaces that were facing the camera were
+faded out, and the lighting algorithm mentioned in Lu et al. [86] allowed for shading
+to become an option to be utilized by the final visualization.
+    Work done by Bruckner et al. [95, 96] proposed that one method to get around
+some unwanted details that are an issue with DVR would be to utilize non-photo-
+realistic rendering. This style of rendering utilized on the surfaces of different objects
+and rendered them based on their curvature [96]. From this, they developed a simple
+cartoon-like shading algorithm [96], Stippling [96], and Halos [95].
+    When volume rendering is utilized in microscopy, it can be difficult to tell the
+difference between the different boundaries and the elements being visualized. Guo
+et al. [59] used a halo visualization to separate the different molecules that can be
+viewed, as well as two new techniques for promoting contrast in regions of the vol-
+ume called Phase Contrast Volume Rendering (PCVR) and Difference Interference
+Contrast Volume Rendering (DICVR). PCVR enhances the contrast of almost vis-
+ible parts of the volume, allowing for a higher contrast. DICVR tries to extend
+PCVR further by using interference contrast based on microscopy principles. They
+
+                                           27
+      2. BACKGROUND
+
+
+simplified the equation required to create these effects each time by performing mul-
+tiple rendering passes. This work by Bruckner et al. [95, 96] aimed at providing a
+more simplistic method for creating DVR and extending its functionality in biology.
+
+
+2.3     Direct Volume Rendering (DVR)
+The other focus of this thesis is volume rendering. Volume rendering relates to the
+visualization of a volume of data, which is typically created using a CT or Magnetic
+Resonance Imaging (MRI) machine. However, it can also be used for other scientific
+visualizations, such as fluid simulations, meteorological data, and geological data.
+Preprocessed Volume Rendering will generally present surfaces of the volumes using
+polygonal structures utilizing iso-surfaces [97], but DVR does not require explicit
+surfaces to be precisely stated. DVR can present the data within the natural format
+as a 3D image [98]. This allows the system to dynamically represent the volumes
+from within the system. However, it does highlight the need for techniques like CT
+and MRI to be directly aligned with the physical data source. An X-ray Vision
+technique needs to be developed to meet this criterion. This section highlights the
+prior work in this area that influenced the research in this dissertation.
+
+
+2.3.1    Visualizing Volumetric Data
+Generally, medical volumetric data is viewed using 2D slices of a human body. After
+years of training, medical practitioners can be very precise when using these slices,
+but they are not intuitive to use or to learn how to use [13]. Like other forms of 3D
+data visualizations, converting this data into a 3D version makes it more intuitive
+to read and interact with [8]. This process involves reconstructing 3D models from
+volumetric data, enabling more intuitive visualization and interaction compared to
+traditional 2D slice-based approaches.
+     Early methods to visualize volumes would focus on calculating the surface con-
+tours and calculating the exterior surface to match [99], which was problematic as
+it created ambiguity when there were irregularities on the slice data such as those
+caused by noise [100], requiring user intervention to overcome [101]. Herman et
+al. [102] tried creating a more automated surface by creating Cuberilles, which func-
+tioned similarly to Minecraft blocks Figure 2.8. This was useful as it allowed for
+varying resolution [103]. The continuation of this work was marching cubes [97].
+Unlike the rough surface afforded by utilizing Cuberilles, this algorithm made a
+smooth surface. Marching Cubes utilized the fact that any six Voxels neighboring
+Voxels could be paired into 14 different symmetrical orientations if they were either
+inside or outside of the threshold. This made it possible to create a 3D model of a
+
+
+                                         28
+Figure 2.8: A example of Cuberilles. The left side shows the armadillo in its
+original form. On the right, the same model is rendered using Cuberilles.
+
+
+CT or MRI scan with a manageable polygon count that looked similar to the real
+volume.
+    Wünsche [104] introduced a visualization toolkit designed for the exploration of
+complex biomedical data, with a particular focus on curvilinear finite element data
+sets. Unlike conventional volume visualization approaches that assume regularly
+gridded data, curvilinear finite element models define geometry in material space,
+where grid lines are curved when mapped into world coordinates. The system de-
+rives iso-surfaces in material space and then renders them in world space, enabling
+accurate visualization of organs modelled using FE techniques, such as the left ven-
+tricle of the heart. The toolkit provides several novel features: a modular design for
+comparing multiple models simultaneously, a generalized field structure allowing the
+creation and manipulation of scalar, vector, and tensor fields, and boolean filters for
+segmentation and icon placement. Additional innovations include global color map
+controls for consistent interpretation across models, and flexible element, plane, and
+point selection mechanisms. This framework allowed researchers to integrate and
+explore biomedical data ranging from scalar tissue properties to tensor fields derived
+from MRI, supporting both quantitative analysis and interactive visualization.
+    Liu et al. [105] extended this line of work by introducing a novel interface for DVR
+aimed at making transfer function design more intuitive and accessible, particularly
+for non-expert users. Traditional DVR requires carefully crafted transfer functions
+to map volume data values to color and opacity, a task that can be challenging
+without specialized visualization knowledge. To address this, Liu and colleagues
+proposed a spreadsheet-style, constructive visual component-based interface that
+follows a “programming-by-example” paradigm. Their system automatically ana-
+lyzes the Douglas–Peucker algorithm [106] histograms of the volume data using to
+
+                                          29
+     2. BACKGROUND
+
+
+detect meaningful structures, from which it generates “unit transfer functions” rep-
+resenting simple, recognizable features. Users can then combine, refine, and merge
+these units interactively to build more complex transfer functions. Preliminary
+evaluations demonstrated that even novice users were able to produce meaningful
+visualizations significantly faster and with less guidance than when using traditional
+transfer function editors, highlighting the potential of example-based interfaces for
+democratizing DVR in biomedical applications.
+    Iso-surfaces are still used widely today as they provide the most efficient means
+of displaying a shell; however, tasks like diagnostic exploration and interactive tasks
+are better enabled by DVR [107]. Farrell [108] found a method of using ray casting
+to create a surface method showcasing one of the first attempts at DVR. However,
+many of the concepts for this would later be formed by DVR, which was initially
+developed in 1988 by Drebin et al. [98], who designed this type of visualization
+as a fix for the all-or-nothing approach that is possible when using an iso-surface.
+Drebin et al.’s [98] approach allowed for a realistic, transparent representation of
+the volume collected from a MRI or glsct scanner [109, 110]. DVR functionality was
+further refined by Engel et al. [111] to work with modern equipment. Allowing all
+of the models to be viewed with minimal issues. DVR rendering was initially only
+designed for CT and MRI data [109, 110], but it was later utilized in other fields.
+
+
+2.3.2     Use Cases for Direct Volume Rendering
+As with many fields, DVR can be utilized for education. MacDougall et al. [112]
+provide an example using a large 3D display wall of molecules for chemistry research
+and education. These models used the traditional ball on a stick model and DVR,
+which better represented depth and provided a more realistic or cloudy model of the
+quantum world. MacDougall et al. [112] found that elements of this system could
+help create new drugs for the future and proposed use cases that would encourage
+students to become more hands-on.
+    Hibbard [5] talked about how the data from 2D plots is easier to view in 3D when
+using volume rendering. Hibbard [5] then also conferred this data could be used to
+allow this data to be manipulated by using a time-variant, allowing phenomena like
+the wind to be simple to examine. These techniques were then extended by Riley
+et al. [113] to allow for realistic visualizations of cloud maps. This was impossible
+using iso-surfaces, which tended to require a form of lighting that clouds did not
+utilize [113]. DVR allows climate scientists to explore the internal patterns of the
+effect of time and space on weather phenomena [114].
+    DVR is also used while testing the quality of materials to visulize them. These
+materials can constis of metals alloys [115], minerals [115] concrete [115], resins [1],
+
+
+                                          30
+and combinations of different materials used to create a single one [115, 116]. Ma-
+terial science requires understanding materials’ internal structures formed under
+different circumstances [116]. This could be done in the way of running CT scans
+of being dented or folded, allowing for structural analysis of how different condi-
+tions can affect different materials [116]. This can also be applied to the creation
+of different materials, like sponge-like materials that need to move in certain ways
+or quantum materials that will arrange atoms, creating some highly precise and
+gas-like materials [115, 117]. Volume rendering can also be used to show how con-
+ducive liquids like resins are moving through non-conductive ones [1], allowing for
+real-time testing of how to develop products using these materials and presenting
+communication methods with end users [1].
+    Molecular Sciences also use volume rendering to visualize the output gathered
+from electronic microscopes [2, 118]. This allows the user to view the contents of
+a sample collected in 3D based on the different densities, much like CT and MRI
+data. Nguyen et al.’s [118] DiffTEM system adds to this by allowing denoising that
+utilizes many images of the data collected from different orientations before the data
+is rendered.
+    Geologists can utilize DVR to represent the values of radar data [119]. They tend
+to do this by using ground-penetrating radar [119]. Unlike the previous examples of
+use cases for DVR, radar has many blank areas; Zehner [120] states that DVR can
+be used to both present a more full view of the area but to also better represent the
+level of uncertainty that can be viewed from this viewpoint.
+
+
+2.3.3    Human Computer Interaction (HCI) Experiments Us-
+         ing Direct Volume Rendering (DVR)
+Understanding how people visualize or interact with DVR is important to this re-
+search. While being able to visualize various data using DVR is one thing, the
+user experience is more important than the act of being able to display the content
+because the content rendered by the DVR needs to be a more pleasant experience
+than the alternative situations for it to have utility. The following section looks at
+how various studies over time have evaluated systems using DVR.
+   One of the first instances of human interaction being a concept using DVR is the
+work by Hui et al. [121] on a cursor for these interactions. This cursor is displayed
+in Figure 2.9 and works similarly to how a mouse works on a 2D plane, but it had
+the ability to be rotated on another plane using another 1D input, like the scroll
+wheel on a mouse, to rotate the plane the mouse cursor was sitting on. To inform
+the user of the depth of the plane was highlighted on the outside of the volume, and
+a variation blind effect would be used to prevent the cursor from moving too much
+
+
+                                         31
+     2. BACKGROUND
+
+
+
+
+Figure 2.9: Examples of Hui et al.’s [121] cursors on 3D planes. Right) Nail on
+plane, where the cursor has the ability to rotate around the volume; Left) Venetain
+blind, a non-flat plane, which allows the user to navigate easier on all dimensions
+using the cursor. Used with permission from IEEE © 1993.
+
+
+while still being able to get everywhere [121].
+    Kersten et al. [122] performed one of the first studies ever to be done using DVR
+using a 3D display. This study was focused on how transparency affected depth
+perception when using DVR on a stereoscopic display. The type of transparency
+used was commonly associated with direct volume rendering. The study design
+would slowly rotate a cylinder filled with Perlin noise [123] and then rotate it slowly
+in one direction. To tell what direction a cylinder was rotating, users would have
+to understand the approximate position of elements in the noise. Participants of
+this study had to do this when using a mono and stereoscopic display and between
+various amounts levels of opacity. Kersten et al.’s [122] findings showed that DVR
+is much more effective on stereoscopic displays. This shows that the real use case
+for these techniques may be within the use of stereoscopic devices.
+    Several years later, Kersten-Oertel et al. [124] looked at methods to tell depth
+within a sparse volume rather than an occluded one. This was in the form of a set
+of Cerebral vascular volumes. Five different depth cues and a baseline were utilized
+throughout this study: Edge Detection (Halos), Pseudo-Chromadepth, Fog, Kinetic
+depth, and Stereo Vision. Kersten-Oertel et al. [124] tested a combination of ex-
+perts and novices separately on two different studies. All of the studies utilized the
+same procedure, where two vessels were highlighted, and the participants guessed
+which one was closer to the participant. One of these studies utilized each depth
+cue individually, while the other focused on their different combinations. Individ-
+ual Chromadepth, Fog, and Stereo were shown to be much more beneficial than
+
+                                          32
+the other cues when shown individually. While chroma depth and stereo seem to
+have showcased the most substantial values for the combination, Kersten-Oertel et
+al. [124] study again shows why Stereo-vision of DVR is such a strong depth cue.
+    Another user study looking into the transparency created by using DVR was done
+by Corcoran and Dingliana [125]. This system used two layers of volume rendering:
+an outer transparent layer and an inner occluded layer. By having occluded surfaces,
+Corcoran and Dingliana [125] could provide lighting to parts of the volume that were
+occluded by rendering the image throughout multiple passes.
+    To evaluate the effectiveness of placing shadows in DVR Corcoran and Dingliana [125]
+ran a series of studies using a computer monitor running at approximately 20fps,
+each consisting of less than 20 participants. The first one was designed to test the
+users’ preferences. This was done by having the participants view the same object
+side by side. Participants were asked to say whether the shadowed-enabled or non-
+shadowed versions told them more about the volume. The next study looked at
+shape perception, which had participants arrange two images of similar body parts
+from two different datasets. This shape perception study showed that raycasted
+shadows were not essential for shape perception, but instead, the User Interface
+(UI) was because participants were able to orientate their depth perception by with
+the ability to rotate the object. The next study looked at relative depth perception.
+One user chose a point on the screen that was closest to themselves, and they found
+that showing shadows significantly increased depth perception. They note here that
+it was uncommon for participants to answer this incorrectly. The final experiment
+had users determine how far into a volume the point was by having them estimate
+the location of an artifact inside of the volume. This task found that depth per-
+ception was not affected by the distance or the presence of shadows inside of the
+volume; rather, it may hinder the absolute depth perception. Overall, Corcoran and
+Dingliana [125] show that shadows can help detail information in a Volume, but
+they don’t necessarily improve perception if there are other depth cues present like
+motion.
+    Three studies to use DVR with MR were done by Laha et al. [126–129] who looked
+at studies which were focused on determining the immersion of different MR devices
+displaying volumetric information. To best determine the amount of immersion
+when using MR devices, they enabled and disabled head tracking and limited the
+area that was displayed to the user to 360◦ , 270◦ , 180◦ , 90◦ . These conditions allowed
+them to determine the required or appropriate level of immersion that was preferable
+for each task. All of their studies utilized a selection of open-source real-world data
+to do their studies and utilized a range of different tasks suited for each dataset on
+each one. The first study was focused on testing if there was any noticeable benefit to
+MR when needing to utilize a Cave Automatic Virtual Environment (CAVE) using
+
+
+                                         33
+     2. BACKGROUND
+
+
+the restricted motion tracking [127]. This study which was focused on restricted
+head motion caused them to notice that any combination of the two conditions
+was able to grant better results. Laha et al.’s [126] next study utilized the NVisor
+SX111 a (Video See Through (VST) AR display) under similar circumstances. This
+study found that the performance of their participants was improved by providing
+the most immersion possible [126]. The final study ran by Laha et al. [129] looked
+at what happened when iso-surfaces were used as the data set, requiring them to
+change the tasks required and also had them reintroduce stereo vision back to the
+conditions. This study observed that the combination of all of the results was the
+most suitable for the tasks required to interact with volumetric data visualizations.
+    Afterward, Laha et al. [130] created a taxonomy of the different types of tasks
+that are possible when using MR, with the goal of remove the domain dependency
+that exists with empirical studies. This was done by consulting 167 people using a
+questionnaire regarding how this taxonomy should be shaped. This was done with
+the aim to allow basic types of interactions to be considered similar to other types
+of interactions for different fields. These different types were classified as:
+
+  • Searching: Searching for the presence or absence of an object, or counting
+    the amount of a given object.
+
+  • Pattern Recognition: Looking for trends like what side of the data set are
+    there more blood vessels or repetition and asking the participant how many
+    times certain items appear.
+
+  • Spatial Understanding: This section is for tasks that require the participant
+    to understand the orientation or position of a feature in the dataset.
+
+  • Quantitative Estimation: These focus on tasks that have the users estimate
+    the properties of a feature of the dataset.
+
+  • Shape Description: Requires the user to describe a shape they are viewing.
+
+They also note two possible viewing styles: Egocentric and exocentric. They also
+note how the different dimensionality of the data should be considered. Overall, this
+study paper has informed the design process of the later studies.
+     Sketch-based interactions allow for an easy interaction with volumes. Shen et
+al.’s [131] split the various use cases this technique could be used into seven different
+categories: selection, cutting, segmentation, matching, coloring, augmentation, and
+illustration.
+     An early version of volumetric hatching used in this dissertation was inspired by
+research from Feng et al. [132], which helped establish fundamental approaches to
+illustrative rendering. Feng et al. [132] created a system that projected a grid over
+
+                                           34
+Figure 2.10: The 6 datasets used in Grosset et al.’s [133] research: (a) aneurysm,
+(b) backpack, (c) bonsai, (d) flame, (e) Richtmyer-Meshkov instability & (f) thorax.
+Used with permission from IEEE © 2013.
+
+
+the area of the volumetric area. This was chosen to help highlight objects and clearly
+present the depth to different areas when faced with users who do not understand
+the depth of objects within the volume. This system worked by projecting a 2D grid
+on the first available voxel in the ray marching algorithm when it was in the range
+of the grid texture. They note in their findings that chroma color could be utilized
+to highlight depth perception.
+     Almost all interactions with DVR require good depth perception, even when they
+are using a 2D display. Grosset et al. [133] created a user study that aimed to test
+if the depth of field could be utilized with DVR. This study looked at replicating a
+person’s ability to focus on an element based on how deep it was in the volume that
+they were focused on. This was tested using a Dynamic and a Static experiment.
+The static experiment asked participants to judged which of two circled features
+in still images was closer in depth, testing whether Depth of Field and projection
+type affected speed and accuracy. The Dynamic Experiment required participants
+to watch short videos where the focal plane swept through the scene and then
+judged which circled feature was closer, testing whether dynamic focusing improved
+depth accuracy. The Dynamic Experiment allowed the user to control the depth
+of field by tracking their eyes. The other experiment by Grosset et al. [133] set
+the focal points at the most optimal place. While there was not much difference
+between the different conditions, both studies provided similar answers. Whether
+this technique was static or dynamic didn’t make much difference between various
+conditions. However, they did notice a difference between the different sets of data
+shown in Figure 2.10. Each different dataset which was visualized had a different
+amount of depth perception, with the bonsai and thorax datasets being the easiest to
+determine depth, while the flame and Richtmyer-Meshkov instability datasets were
+the hardest to determine depth. This was likely because each dataset they utilized
+presented a vastly different type of visualization, which utilized different depth cues
+to various levels [133].
+     Roberts et al. [134] investigated the impact of different types of reconstruction
+filters for DVR graphics using a questionnaire. These reconstruction filters included
+
+                                          35
+       2. BACKGROUND
+
+
+
+
+Figure 2.11: Conditions used in Englund et al.’s [135, 136] studies. (a) Direct
+Volume Rendering (DVR), (b) Depth of Field, (c) Depth Darkening, (d) Volumetric
+Halos, (e) Volume Illustration, and (f) Volumetric Line Drawings. Used with per-
+mission from John Wiley and Sons © 2016
+
+
+B-spline, Trilinear, CatMull-Rom, Int B-spline, and Welch filters. Participants were
+asked to view several open-source datasets and rate their depth quality, layout,
+sharpness, and jaggedness. This paper did not have many major findings. B-spline
+was preferable for the tasks they suggested but not to a significant amount. What
+was interesting about this research was that the datasets seemed to have more of an
+impact than the conditions themselves did, much like Grosset et al.’s [133] study.
+    To get around the issue of not being able to create a sated by Roberts et al. [134]
+and Grosset et al.’s [133], Englund et al. [135, 136] created 15 volumetric images in
+the shape of a cube and took photos of each of the sides these volumes, which allowed
+them to take 90 images of different volumes, which they then utilized in a question-
+naire. They then took these images with six different DVR visualization techniques
+seen in Figure 2.11 3 : Depth Darkening (Depth Darkening), Depth of Field (Depth
+of Field), Subtractive Color Blending (Volumetric Halos), Additive Color Blend-
+ing (DVR), White Outlines(Volumetric Lines), Toon Shading (Depth Darkening),
+Black Outlines(Volume Illustration). This questionnaire had participants perform
+Two-alternative forced choice (2AFC) questionnaire for multiple depth perception
+studies if participants could visually orient the images in the same positions and how
+attractive the different conditions they presented were [135]. This study found that
+depth darkening and Halo’s gave the best sense of depth perception out of all the
+conditions, and the occlusion cue-in seems to be the most effective way to determine
+depth perception based on it. Orienting the shapes was easiest to determine using
+the toon shading, as that method highlighted the shapes of the foreground objects
+the best. Most users preferred depth darkening [135].
+    The Englund et al.’s [136] study design and conditions were later consulted on
+by three experts. This clearly explains both the Subtractive Color Blending and
+Black Outlines. One main issue an expert noted was that as these sources of data
+only represented a single image, they didn’t accurately represent the interaction that
+   3
+    The descriptions used in Englund et al.’s [135,136] may be misleading when compared to other
+research. So the names they have used are in parenthesis.
+
+
+
+                                              36
+people would have with volume data, as this was expected to be utilized to properly
+view the data, like being able to rotate the volume. The same expert noted that the
+Toon shading hid aspects of the volume due to its high opacity. One expert noted
+that the outlines would be better suited if they could react to the surfaces’s outline.
+Some of the most important expert findings from Englund et al.’s research [136] was
+that by highlighting the edges of the objects, depth perception was most improved
+by communicating to the user where the front and back of the objects were. These
+factors likely were likely why the black outlines performed as well as they did.
+
+
+2.4          An introduction to Augmented Reality (AR)
+             and Virtual Reality (VR)
+Augmented Reality or AR refers to the ability to bring virtual objects into the
+real world [137]. AR technologies are part of Milgram et al.’s [137] Mixed Reality
+Continuum (seen in Figure 2.12), which represents the spectrum of technology that
+can augment the visual world. The more of the world that is the viewer’s perception
+is moved towards only being able to sense the virtual world the more further along
+the scale it becomes until a user is fully immersed in a virtual world. MR talks about
+the spectrum between the real and virtual worlds, not including them. Resulting
+in MR to include many different types of displays, given the types of interactions
+ranging from HMDs, CAVEs, Handheld Devices, Spatial Augmented Reality (SAR)
+displays, and even some large monitors can be used as mixed reality devices.
+
+
+2.4.1        Mixed Reality (MR) Hardware
+This section covers the relevant hardware for this dissertation, focusing on devices
+that provide an MR experience to gain an understanding of the experiences that are
+relevant and that combine real-world interactions with computer graphics. These
+devices have been designed for different applications and, as such, have different
+strengths and weaknesses across Milgram ’s [137] Mixed Reality Continuum. This
+
+
+                                 Mixed Reality (MR)
+
+
+
+
+    Real 
+             Augmented
+                   Augmented
+               Virtual 
+
+
+Environment            Reality (AR)                Virtuality (AV)        Environment
+
+
+
+
+ Figure 2.12: A simple view of Milgram et al.’s Mixed Reality Continuum [137].
+
+
+                                          37
+       2. BACKGROUND
+
+
+section focuses on the advantages and disadvantages of the hardware used in the
+relevant research for this dissertation.
+    The first AR system (seen in Figure 2.13) was created by Ivan Sutherland in
+1968 "The Sword of Damocles" [138]. This modified a person’s sight by adding
+computer graphics to it. By tracking where the user moved their head every 10ms,
+the system would update the images that the system presented to them within 3D
+space. The position of the user’s eyes in each lens would determine the direction of
+the 3D object, which was tracked by a collection of exterior sensors placed around
+the space users could walk around [138].
+    Sutherland’s [138] Sword of Damocles became the progenitor of all modern AR
+and Virtual Reality (VR) HMDs. In the following decades, researchers developed
+methods to interact with computers using hand gestures [140] to interact with 3D
+desktop displays and found cheaper and more ergonomic ways to present this infor-
+mation [141]. Research was done to shrink the size of these displays into a more
+portable size [142].
+    AR can be found in many different industries [143]. Entertainment and gaming
+use AR to create an experience that is based on navigation like Ingress or Poke-
+mon Go 4 , also first-person shooters, puzzle games, and board games [143, 144].
+Industrial maintenance uses AR to instruct people on the maintenance of complex
+machinery [145], Tour Guides use AR to guide users around cities and buildings
+and to explain the contextual information to the end user [145]. AR is also be-
+ing used to extend existing telecommunications technologies, allowing volumetric
+communications to be possible between different groups of people [145].
+    Modern smartphones and tablets provide a suitable platform for presenting video
+see-through mixed reality experiences that use the smartphone’s camera to capture
+the physical world, which is augmented with digital content. The wide availability
+of smartphones has also made them a popular choice for MR experiences. One
+advantage of this approach is the display’s brightness, which often outperforms
+head-worn displays that can appear washed out compared to head-worn displays.
+Mobile devices don’t provide an immersive experience; smartphones need to be held
+by the user, and they can allow for an AR experience or require a stand during the
+operation. A use case that has been gaining popularity is for training or education
+applications where 3D content is presented as an adjunct to a paper-based medium.
+    Projector-based mixed reality systems, also known as SAR, employ projectors to
+alter the appearance of physical objects that can be highly organic in shape instead of
+a typical projector screen. This form of augmented reality has received less attention
+compared to head-worn and hand-held solutions. However, projected information
+provides some unique features that have the potential for several applications. An
+  4
+      https://pokemongolive.com/
+
+
+                                          38
+Figure 2.13: Ivan Sutherland’s [138] "The Sword of Damocles" one of the first head-
+mounted AR systems. This image is a reprint published by [139] licensed under a
+Creative Commons Attribution licence. Permission of the original image is granted
+to make digital or hard copies of all or part of this work for personal or classroom use
+is granted without fee, provided that copies are not made or distributed for profit
+or commercial advantage.
+
+
+
+
+                                          39
+     2. BACKGROUND
+
+
+advantage of projected information overlaid on physical objects is that multiple
+observers can be perceived as the same projection simultaneously and from multiple
+points of view. For example, visualizations of internal anatomical details directly
+projected onto the human body [146].
+    CAVEs environments are another instance of SAR. Caves are three-dimensional
+cubicles that use several projected images to simulate an immersive 3D environment
+without users needing to wear a headset. As such, caves can provide a collabora-
+tive AR experience for one or more medical professionals who wish to explore vast
+amounts of information collaboratively. For example, medical data can be visualized
+in the form of three-dimensional models that can be viewed collaboratively in a cave
+environment for diagnosis [147]. Digital Imaging and Communications in Medicine
+(DICOM) files were processed into 3D models using an algorithm that converts vox-
+els to polygons that are refined into visualizations to be viewed using 3D glasses in
+a collaborative environment.
+    HMDs rely on placing the display of the headset as close to the user’s line of sight
+as possible. They allow users to move around the virtual content and interact with it
+naturally through head movement. This offers a means of presenting mixed or virtual
+reality content suitable for medical visualizations, training, step-by-step guidance,
+and many other applications [143,148]. Since Ivan Sutherland’s HMD in 1968 [138],
+it has been iterated on since, especially in the last several years since VR headsets
+have drastically lowered in price and become a consumer commodity [148, 149].
+    VR HMDs are available in many different forms. They are accompanied by sup-
+porting technologies such as position tracking, front-facing cameras, eye tracking,
+EEG sensors, and hand controllers to deliver compelling virtual experiences [150].
+Desktop systems such as the Oculus Rift S and HTC Vive Pro offer high-quality
+display systems that, coupled with a high-end PC, present immersive 3D environ-
+ments in real time. They also incorporate tracking systems that enable hand-held
+controllers to support interactions in virtual worlds. Standalone hardware options
+such as the Oculus Quest and Vive Focus have also become available, removing the
+need to be tethered to a PC and allowing for wide-area virtual environments to
+be configured. One of the advantages of head-worn displays is that they leave the
+operators’ hands free to perform other tasks, unlike hand-held technologies, such as
+smartphones, which require the user to hold the device during operation.
+    AR HMDs tend to come in two distinct types: VST, and Ocular See Through
+(OST) HMDs. VST HMDs use exterior sensors (usually a camera) and an occlusive
+headset (typically a VR headset) [29,30,151]. While OST AR use a range of different
+transparent displays.
+    There have been ongoing improvements in these devices’ quality, ergonomic de-
+sign, resolution, and capability. Early consumer-level displays, such as the Sony
+
+
+                                          40
+Glasstron (1996), provided an augmented reality display solution connecting to a
+desktop computer. This has since been taken to utilizing a Mobile platform with
+the Microsoft HoloLens (2016). The HoloLens allowed the user to move around
+untethered and interact with the virtual environment. The system was able to react
+to the real-world environment, and it allowed for precise ( 1.5 cm) spatial tracking.
+    OST AR HMDs like the Microsoft HoloLens [152] can also be used to display
+AR content within the user’s field of sight. Objects should be locked into place in
+the real world, allowing users to move around the 3D virtual content while being
+able to view the real-world content. The HoloLens uses environmental information
+to locate the real world and brings virtual objects into the user’s field of view.
+
+
+2.4.2    Designing Applications for Stereoscopic Displays
+AR devices require different types of interfaces based on the required context and
+functionality [153, 154]. This section presents design considerations that are impor-
+tant to understand when creating a display that accommodates X-ray Vision in a
+medical setting, which is a key use case for this thesis.
+    In their review by Akpan and Shanker [19], they investigated 3D data visual-
+izations displayed on VR headsets compared to 2D displays. This review presented
+studies that tested 3D visualizations identifying key performance elements:
+
+  • Data can be easier to analyze with visualizations and promotes more experi-
+    mentation with data sets in the correct situations. This can be seen in Cordil
+    et al.’s [155] work where users are encouraged to move around the different
+    axes of graphs to create new ones, encouraging data analysis on a different
+    level. Allowing for a rapid visual analysis with clear results;
+
+  • Aiding users in understanding the data at a faster rate. Tanagho et al. [156]
+    has found that when guiding people using 2D and 3D interfaces for performing
+    a Laparoscopic surgery, participants were faster and more accurate when using
+    a 3D interface compared to a 2D one;
+
+  • Verifying data using a 3D format can help users to more rapidly verify models.
+    Majber et al. [157] found this to be the presenting simulation data to stake-
+    holders for factory designs and layouts. The Interface and data visualized by
+    the VR device were understandable even to people who were not knowledgeable
+    about the products or factories;
+
+  • The overall presentation of 3D data tends to be able interpreted more intu-
+    itively than 2D models such as graphs or slices. Qu et al. [158] found this when
+    they were simulating the growth of an eggplant, where they found the simula-
+    tions were made much easier to understand when the user was presented with
+
+                                         41
+     2. BACKGROUND
+
+
+     a 3D graphic of an approximation of the predicted growth of the plant rather
+     than 2D graphs.
+
+Similar findings can also be found in McIntire et al.’s [16] literature review on
+the utility of stereoscopic displays compared to conventional monoscopic displays.
+McIntire et al.’s [16] found that stereoscopic display either improved or made no
+difference in spatial awareness, spatial understanding, classifying objects, spatial
+manipulation, navigation, and educational activities. There is evidence that 3D
+information made sense when viewed via a stereoscopic display.
+     Guo et al. [159] noted that even if a VST AR HMD could be perfectly calibrated
+to the real world, it still made surgeons nervous to really on an external device
+connected to the HMD via a wired or wireless connection, because it could lose its
+calibration making the system inaccurate, or it could turn off and occlude the sur-
+geon’s vision altogether. Andrews et al. [160] note in their literature review that due
+to the HoloLens’s gesture controls allow for operations within sterile environments.
+Making the headset functional in a clinical or surgical setting. When Rodrigues et
+al. [161] asked two surgeons how best to create an MR sweet of tools. Rodrigues et
+al. [161] spent several months talking with two surgeons to choose the best hardware.
+Both opted to use the HoloLens over all other hardware choices. Pratt et al. [43]
+utilized the HoloLens to perform several surgeries where the patients CT and MRI
+data was laid over the top of the patients. It is for these reasons that the research
+in this dissertation chose to use an OST AR HMD (a HoloLens2) for this research.
+
+
+2.4.3     Volume Rendering In Mixed Reality
+Graphical capabilities on MR HMDs require more simultaneous processes than on
+traditional displays as they as they require the rendering of multiple displays which
+need to be redrawn from a slightly different angle each frame, eliminating current
+hardware acceleration approaches [29]. This is made much harder as many modern
+OST AR headsets utilize mobile hardware even to produce the most simple 3D
+visualization [162], resulting in only a few papers on this topic. Authors have,
+however, found ways of getting this technique to function on MR HMDs by utilizing
+external devices and optimizing rendering through specialized GPU pipeline [163,
+164]. This has made possible research that spans gamification, medical assistance,
+collaboration, and high-fidelity graphics interaction, resulting in some interesting
+features.
+    Gamification is often used to increase student retention in education. One system
+created by Cecotti et al. [22] allowed students to learn how to read medical images
+using 3D spaces as well as 2D ones. The scene shown in Figure 2.14 shows the
+information presented to the students and how it allows them to map individual
+
+                                          42
+Figure 2.14: The virtual scene created by Cecotti et al. [22] (a) the 3D data,
+(b) the sagittal (y-z), (c) coronal (x-y), (d): transaxial (x-z) planes. Used with
+permission from IEEE © 2021.
+
+
+planes to a 3D object, allowing them to learn how various organs are seen using 2D
+planes. This is currently integrated into their institution’s anatomy curriculum.
+     Pelanis et al. [165] asked a series of surgeons to compare how using a 3D rendering
+of CT data compared to a more traditional 2D representation of the same CT data
+when using an OST AR HMD. The CT data consisted of images of 150 different
+legions. The medical practitioners correctly accessed 89 of the 150 legions using
+both formats, and there was no real difference in the accuracy of the visualizations.
+There was a difference between the time required, where MRI scans required an
+average time of 23.5 sections, while the OST AR HMD only took practitioners an
+average of 6 sections to diagnose. Pelanis et al. [165] highlights that there is still an
+advantage to using 3D graphics even when a person is highly trained.
+     Cinematic Rendering is generally a costly method of viewing Volumetric data.
+It cannot be run in real time and requires a very powerful computer. Stadlinger et
+al. [166,167] utilized a workaround for this method where they took many images of
+the volume and rendered them on 2D planes for the user to see. This allowed this
+technique to be viewed using a lowered-powered machine. This made the processing
+so efficient that Steffen et al. [168] could display cinematic rendering on the VR
+headset.
+     Steffen et al.’s [168] research had ten trained medical investigators look at ten
+patient cases using both a desktop display and VR HMD. When these users were
+asked to assess the volume details, they were more accurate when using a desktop.
+They also noted that desktop displays offered better depth perception when viewing
+cinematic rendering.
+     Heinrich et al. [169] performed a series of tests looking at the difference be-
+tween depth perception between AR and VR when looking at volumetric vascular
+structures rendered as an iso-surface. They then utilized three different depth cues:
+Phong Shading, pseudo-chroma depth shading, and surrounding the volume with a
+Fog. Users would be presented with a set of spheres located at the ends of all of
+the blood vessels and asked if they could sort them from nearest to farthest. Using
+
+
+                                           43
+      2. BACKGROUND
+
+
+Pseudo-Chromadepth shading or Fog techniques clearly improved desktops, as these
+showed the z-axis. However, VR users rarely make any errors. This was because
+they could freely use an array of other depth perception cues, such as Convergence,
+Binocular Disparities, Motion Perspective, and even, in the case of Fog and Aerial
+Perspective. In contrast, the desktop was limited to Occlusion, Real Size, and Den-
+sity, which any display could also use. However, this does show that just using a
+AR device will improve the depth perception of a task using volume data, but it
+also indicated that the need limits required for testing medical data needed to be-
+come much more precise than before to enable the type of accuracy required by the
+medical field.
+
+
+2.5     Augmented Reality Enabled X-ray Vision
+One important aspect of AR enabled X-ray vision relates to the field of research
+looking at aligning the depth mismatch when virtual objects are placed inside of
+physical objects in AR. As is shown in Figure 2.6 since AR superimposes the virtual
+objects over the real world it is difficult to make them look like they are behind
+an occlusive surface. It is to this end that many X-ray Vision effects have been
+developed for different devices to solve these issues.
+    The goal of this research is to determine methods where X-ray Vision effects can
+work with DVR on OST AR HMDs. To ensure that this research in this dissertation
+has a solid basis for the lessons learned by the previous works, a systematic litera-
+ture review was conducted. This literature review was inspired by the PRIMA 2020
+SRC (Page et al. 2021) protocols checklist. It utilized five databases: ACM Digital
+Library 5 , IEEE Xplore 6 , Pub Med 7 , Web of Science 8 , and Scopus 9 using the
+search terms: “("X-ray vision" OR "X-ray visualization" OR ("occlusion" AND "per-
+ception") OR (visualization AND x-ray) OR "see-through vision" OR "ghosted views"
+OR "augmented reality x-ray") AND ("AR" OR "Augmented Reality" OR "Mixed Re-
+ality")” These terms were filtered by the paper’s Abstract, Title, and Keywords. A
+backwards and forwards snowball was conducted where each papers citations and
+references where each checked for overlaps on to the existing papers selected for the
+study which then produced either caused the final search to be adjusted (to the
+one mentioned earlier). Each time the search criteria was changed the search would
+begin again. If the papers were not located in the databases listed (grey literature)
+would be added if they passed all criteria and where papers cited by more than
+  5
+    https://dl.acm.org/
+  6
+    https://ieeexplore.ieee.org/Xplore/home.jsp
+  7
+    https://pubmed.ncbi.nlm.nih.gov/
+  8
+    https://www.webofscience.com/wos/
+  9
+    https://www.scopus.com/
+
+
+                                         44
+                         Duplicates 
+                    Abstracts and
+                                                          Titles Read
+                Full Text Articles                     Gray Literature
+                       Removed = 333                    Rejected = 500                 Rejected = 157                          Search = 2
+
+    IEEE Xplore  
+
+ Results Found = 127
+
+
+
+
+                                                                                            Accessed for Eligibility = 248
+                            Total Results Found = 994
+
+
+
+                                                             Records Screened = 748
+       ACM  
+
+ Results Found = 39
+
+
+
+
+                                                                                                                                  Final Result = 81
+    Pub Med  
+
+Results Found = 138                                                                                                                                          83
+
+ Web Of Science  
+                                                                                                                                    Papers Accepted
+Results Found = 362
+
+      Scopus 
+
+Results Found = 425
+
+
+
+Figure 2.15: The protocol utilized for this literature review with the matching
+results.
+
+
+five papers were also considered for entry into this database (2 papers found and
+accepted). For a paper to be accepted, it needed to meet the eligibility criteria
+outlined below as determined by the single reviewer. The process and results of this
+review as depicted in Figure 2.15
+
+Eligibility Criteria
+
+All papers in this review needed to meet the following criteria:
+
+   • X-ray vision (XRV) needed to be explored in the research, placing virtual
+     objects behind real-world objects.
+
+   • Mixed Reality Technologies other than VR must have been used.
+
+   • Papers that simply superimposed data over the real world and papers that
+     did not focus on making the content appear on the other side of or within the
+     real-world object were not included.
+
+   • Studies included in multiple papers were only recorded once all papers that
+     highlighted the same research had been included in this review, as the content
+     between both articles provides different amounts of information.
+
+   • If the focus on XRV was light compared to other study elements and two or
+     more reviewers agreed on it, then the work would not be included in favor of
+     more focused research.
+
+    These criteria ensured that the X-ray visualization was more than superimposing
+a medical image onto a human subject. Any paper that did not utilize AR was
+removed. This meant that some documents that utilized Virtual Reality technologies
+to test AR in a completely virtual environment were not included.
+
+
+
+                                                                                                                             45
+     2. BACKGROUND
+
+
+
+
+Figure 2.16: A bar graph representing the number of papers that were published
+between 1990 and 2023 focusing on X-ray Vision, each categorized by the type of
+research undertaken.
+
+
+2.5.1    Observations from Systematic Literature Review
+This section presents the complete findings of all the X-ray Vision papers that
+were found as of October 30, 2023. It discusses all the devices on which X-ray
+Vision techniques have been used, along with the techniques for X-ray Vision, their
+functional mechanism, and the research focus. Following this, I looked at how each
+user study was conducted and the parameters utilized for the various experiments.
+    Of all the selected papers that were longer than two pages, 27 Technical papers
+were found (3 of which also included a case study), and another 29 papers were
+found that presented a user study. Three demonstrations have been showcased
+at conferences. Ten short papers have highlighted several methods of research,
+including a proposal, many of which detail pilot studies for some of the 29 user
+studies. Every task that required its own set of results was considered a study, and
+if no results were published for a given study, it was not included in our analysis.
+    In recent years, peer-reviewed research proposals have become increasingly com-
+mon compared to technical papers. Prior to 2010, the literature was predominantly
+technical in nature. This shift may reflect an evolving trend in the field, where
+research is expected to address a broader range of topics or where purely technical
+contributions are less frequently regarded as sufficient on their own. Importantly,
+research proposals continue to play a valuable role by introducing new ideas and
+approaches, guiding future investigations, and helping to shape the direction of the
+field. Over the past decade, our understanding of X-ray Vision has advanced through
+a combination of user studies and research proposals that explore and refine emerg-
+ing techniques. As shown in Figure 2.16, the field has steadily matured, with a
+growing emphasis on evaluating the impact of these techniques and improving their
+effectiveness.
+
+                                        46
+2.5.2     Research Exploring X-ray Vision
+Creating an effective X-ray Vision solution for a task requires careful design, con-
+struction, and system validation to discover an appropriate balance among the pos-
+sible solutions to address the challenges related to AR and X-ray Vision technolo-
+gies. The literature contains research studies investigating depth perception, spatial
+awareness, interaction techniques, and usability of X-ray Vision systems. Figure 2.17
+shows the prevalence of the different topics in the surveyed literature.
+    The effectiveness of visualizations and interactions for a given task may depend
+on the distance of the physical and virtual object(s) from the user. The human
+eye’s ability to perceive depth and fine detail may vary as a function of distance,
+and a human’s reach to manipulate physical (and sometimes virtual) objects is
+constrained by human anatomy. Perception and interaction have been studied in
+several settings, ranging from within arms’ reach distance to scenarios where distant
+objects are interrogated and manipulated. Depth perception AR and VR tend to
+look at methods of improving the user’s sense of space in an environment. Research
+into the depth perception of X-ray Vision focuses on how to influence the impact on
+depth perception when looking through an object.
+    Depth perception and perception, more broadly, have received considerable at-
+tention in the research community since accurate depth perception is vital for X-ray
+Vision user experience. A key focus of research has explored depth perception in
+X-ray Vision as related to fixing the depth/distance offset caused by trying to place
+a virtual object on the other side of a real-world object in reference to the user’s
+view point [170–172]. This makes the work in this field done with depth perception
+different from other forms of research on depth perception. Some works are looking
+into methods to enhance the depth perception of visualization [36, 173]. The major
+finding that seems prevalent in this field is that partial occlusion is an effective tool
+to improve depth perception.
+    Spatial awareness concerns a user’s understanding of and ability to operate ef-
+fectively in a physical environment augmented through X-ray Vision. Findings in
+this field generally look at the impacts of using these visualizations on aspects like
+the general placement of an object or attempt to navigate around a foreign envi-
+ronment [169, 174]. X-ray Vision can orient people using exterior landmarks across
+large buildings [175].
+    Effective mechanisms to interact with and control an X-ray Vision visualization
+are essential to the effectiveness and usability of an X-ray Vision system. Making
+usability the second largest topic of research in X-ray Vision. Creating interac-
+tion mechanisms that cater to the combined characteristics of physical and virtual
+elements in X-ray Vision can be challenging. Interaction mechanisms, including ges-
+
+
+                                           47
+     2. BACKGROUND
+
+
+
+
+Figure 2.17: A plot showing the studies that have been run on X-ray Vision by
+device type.
+
+
+tures, button and menu commands, and eye tracking, have been proposed by Wang
+et al. [176, 177] and Liao et al. [178].
+
+
+2.5.3    X-ray Vision Techniques
+Partial occlusion is a very depth perception cue, while other techniques rely on other
+depth cues to allow the user to look through real-world objects such as stereopsis.
+There are many variations of these effects; very similar effects have been categorized
+together in this section and will be discussed as a collection of work.
+    There are two main categories for X-ray Vision effects: ones that typically uti-
+lize visualization to present occlusion techniques and others that utilize other cues.
+There has been much more research within the visualization category, so this has
+been split into three different sections: Hole in the World-Based X-ray Visualiza-
+tions, Real-World Overlays, and Computer Vision Techniques. Splitting the visual-
+izations into these groups allows for a more explicit discussion of how they function
+in their current form.
+    Graphs in this section will note an "other" X-ray Vision category. These effects
+are used as baselines for various experiments but do provide an understanding that
+an object is supposed to be rendered underground. These effects include things
+like presenting a written definition of the location of an object displayed like a
+
+
+                                         48
+Figure 2.18: Examples of X-ray Vision techniques that don’t function using tra-
+ditional techniques but rather label or indicate where objects should be located. a
+& b ) Cote and Mercier’s [179] underground schematics visualized on the ground; c
+) Eren et al.’s [180] labels designed to tell the user if a objects is above or below the
+ground; d ) Muthalif et al.’s [181] showcases the labels indicating how far below the
+ground an object is. Permission was granted for images a © 2018, b © 2018, and c
+© 2022 from IEEE. Figure (d) is licensed under a Creative Commons Attribution
+licence.
+
+
+sign [180]. Other options are a line between the user and the object [182] or a line
+between the ground and the object [181]. Options that were not included but can
+give a similar form of information could be considered overlaying the ground with
+the schematics [179]. These solutions were not included as even though they gave a
+clear indication of where the user was, they were all complicated for the user, adding
+steps beyond looking at a 3D object and determining its location. These solutions
+make great base conditions as they are flawed and complicated, but they are robust.
+
+X-ray Vision Effects
+
+X-ray Vision can also be achieved by utilizing other depth cues, such as accommo-
+dation convergence, relative scale, and density.
+
+Auxiliary Augmentation utilizes the relationship between two objects, employ-
+ing the depth cues of relative size and density and the effect of motion. Using another
+occlusive X-ray Vision technique on one object provides enough information to in-
+form the user of the position of the other object [183]. Auxiliary Augmentation
+effect should be possible on a 2D display as it uses relive scale and density as its
+primary depth cues. Still, it is also made more potent on a stereoscopic display like
+a HMD.
+
+Vergence X-ray Vision is designed to have people change and move their focus
+away from the foreground to focus on the background image. This method simulates
+binocular distortion. By tracking a user’s eyes, it is possible to tell when they are
+trying to look past an object. This can advise what should and should not be kept
+in view whilst creating and placing objects approximately where the users expect
+them to be. By taking advantage of that, it is possible to blur virtual objects when
+a user is not looking at them to present a viewing experience similar to real life
+
+
+                                           49
+     2. BACKGROUND
+
+
+using Accommodation and Convergence [184, 185].
+    This effect has not seen widespread use only being utilized by Kitajima et al. [184]
+who manually created a depth based AR system where the plans were moved so a
+user could only focus on one to determine if they could regain tell if what was in front
+or behind. This study did not find any significant difference in the depth perception
+of the objects, but they did note that the users found it easier to focus on one object
+at a time. One possible reason is that Accommodation and Convergence are difficult
+to track, and off-the-shelf AR solutions do not provide this capability. It makes it a
+difficult version of X-ray Vision to use fully [184].
+
+Transparency Based X-ray Visualizations
+
+One form of X-ray Vision used is the ability to adjust the transparency of a part
+of an image (as seen in Figure 2.27). By configuring the transparency according
+to the current view, a user can be given the impression that the object is either in
+the foreground or that the transparency is low enough to feel as if they are looking
+inside the object. This form of X-ray Vision is called Alpha Blending.
+    Three papers [186–188] have explored Alpha Blending and its possible applica-
+tions when adapting it to security cameras, allowing for one line of sight to combine
+the information of several security cameras at once. Rather than having each secu-
+rity camera link to a single screen, their X-ray Vision method makes the foreground
+object more transparent, presenting the content behind them. Early observations
+of this technique presented better information and insight when looking through
+buildings. Tsuda et al. [188] found that this technique works best when paired with
+another visualization technique. The inverse of this has also been used as a visu-
+alization technique by making the virtual object less visible when compared to the
+real world [189].
+    Making the virtual world more transparent can help the user focus on the real
+world using the AR system as a guide. This method is commonly used in medicine
+where users want to use X-ray Visualization as a guide while still being able to
+concentrate on their work since they are not distinct [190–192]. However, when
+used from a stereoscopic viewpoint, these transparent effects don’t seem to address
+the depth perception mismatch as they don’t provide a clear depth cue to the user.
+
+“Hole in the World” X-ray Visualizations
+
+Hole-based X-ray Visualizations focus on creating a sense of partial occlusion by
+allowing a user to look through an object. Figure 2.19 depicts the three ways this
+can has been achieved. These methods may use partial occlusion by simply having
+a user look through a 2D window (Figure 2.19 virtual window), while others use
+
+
+                                          50
+Figure 2.19: Armadillos sitting behind a corkboard in AR with the same orienta-
+tion using hole-in-the-worlds effects to function. On the left are virtual holes, and
+on the right are virtual windows.
+
+
+tunnelling [38] or cutaways [190, 193]. The most popular of these techniques is
+creating an open box for people to look into, allowing a sense of how far away the
+virtual object is placed in a real-life object. This provides the impression that the
+virtual object is inside a real-life object. This can be seen in Figure 2.19 where the
+armadillos seem to be sitting inside boxes inside the wall rather than superimposed
+in front of the wall.
+    Although hole-in-the-world visualizations work quite effectively utilizing any AR
+display [37, 38, 181, 190, 193, 194], they have a few limitations. Firstly, the visual-
+ization needs to be in a static position. It cannot rotate or change size relative to
+the user’s motions, so the hole should not react to the user’s position. The user
+could choose to make the hole larger or smaller without breaking the effect. There
+is a limited field of view into the hole. Although the limited view creates the X-ray
+Vision effect, it restricts the user’s view of the data. One advantage of this X-ray
+Vision method is that it can be viewed using any display.
+
+Virtual Box/Hole: The Virtual hole X-ray Visualization was the first type of
+X-ray Vision to be implemented and was designed by Bajura et al. [37] (seen in
+Figure 2.20). Who aimed to visualize a baby fetus inside of its mother’s womb. They
+accomplished this by presenting a box for the baby to be seen in, which would allow
+for some level of occlusion. It is still one of the most used X-ray Visualizations and is
+still being researched in modern studies due to their effectiveness and versatility [51,
+190, 195]. Virtual holes have been found to provide a relationship between virtual
+objects and the real world.
+     Research has also observed that introducing some particle occlusion alone may
+aid depth perception [183]. It has been observed by Kytö et al. [183] that users
+could better determine distance if they had a partially occluded object in the scene
+for users to use as a reference or even using other virtual objects as a reference.
+This was demonstrated in a study that partially occluded the edges of other objects
+
+                                           51
+     2. BACKGROUND
+
+
+
+
+Figure 2.20: A image of Bajura et al.’s [37] X-ray Vision technique. Used with
+permission from ACM © 1992. Permission to make digital or hard copies of all or
+part of this work for personal or classroom use is granted without fee, provided that
+copies are not made or distributed for profit or commercial advantage
+
+
+and found that as long as some of the X-ray Vision effects were covering part of the
+virtual scene, then it was possible to make smaller objects behind it appear to be a
+given depth behind as there was another object sitting in the front [183].
+    SAR X-ray Vision techniques papers utilize virtual holes as they work well with
+Perspective-Corrected Projection [196–198]. The initial research in this space looks
+at what is required for a SAR based X-ray Vision system. This was done by Avveduto
+et al. [196], who asked participants to perform a mock biopsy like the one shown
+in Figure 2.21. Participants were then asked to attempt this procedure using either
+an image of a leathery surface or an image of buttons, which provided two different
+levels of contrast as backdrops for the virtual hole. A virtual hole to a virtual
+hole with an occlusion mask against a baseline. The authors found that using the
+occlusion mask and the virtual hole provided accurate results, with participants only
+being off by approximately 2.5cm (sd = 0.5), whereas in tasks where the participants
+used no X-ray Vision 3cm (sd = 0.5).
+    Heinrich et al. [197] later used virtual holes with SAR using Perspective-Corrected
+Projection tested methods to illustrate depth perception with and without stereo
+vision. They compared using the conditions shown in Figure 2.22 (Phong Shading,
+Virtual Mirror, Depth-Encoding Silhouettes, Pseudo-Chromadepth, and Support-
+ing Lines). This task asked participants to correctly identify the depth order of the
+cubes that can be seen in Figure 2.22. This research found that the stereoscopic rep-
+
+                                          52
+Figure 2.21: This image contains the X-ray Vision study environment from Avve-
+duto et al. [196]. a) shows a study setup that was utilized throughout this study,
+with the virtual objects present. b) shows the no X-ray Vision condition used for
+this experiment from the participant’s view. c) shows the X-ray Vision conditions
+used for this experiment from the participant’s view. Used with Permission from
+Avveduto et al. [196].
+
+
+resentation of SAR improved all conditions regarding time required and perceived
+difficulty. Pseudo-Chromadepth and Support Lines were the most effective X-ray
+Visualizations, whereas Phong and the Virtual Mirror conditions were the most
+challenging.
+
+Cutaways and Tunnelling: Cutaways and Tunnelling present a hole through
+an object, revealing an object on the other side of the object [38, 193, 199]. Both
+these techniques can be seen in Figure 2.23. They appear as a box with no back.
+The point of these visualizations is to give the sense of going through a real-world
+object. These visualizations focus more on indicating where the data is in the real
+world rather than giving the user a better sense of depth when looking through a
+
+
+
+
+Figure 2.22: The conditions used in Heinrich et al.’s [197] investigation in to SAR
+based virtual holes. a) Phong Shading. b) Virtual Mirror. c) Depth-Encoding
+Silhouettes. d) Pseudo-Chromadepth. e) Supporting Lines. Used with permission
+from IEEE © 2019.
+
+
+                                        53
+     2. BACKGROUND
+
+
+
+
+Figure 2.23: A image of the tunneling x-ray visualization used to look through
+multiple walls. The first arrow looks into a storeroom, whereas the second arrow
+looks out to the outside. White arrows showcase the depth of the tunnel.
+
+
+particular piece of data [38].
+     Avery et al. [38] observed a slight offset to the perception of depth when tunneling
+is used on its own [38]. This can be improved by combining this technique with either
+a real-world overlay [200] or any Computer Vision-Enabled Technique [38] on either
+the front or back to help ground the visualization. This allowed Avery et al. [38]
+and Lerotic et al. [200] to give their users the perspective of looking through a wall,
+whereas [201] used a smaller form of this to look through an individual wall. This
+smaller attempt would be considered a cutaway [193].
+     Cutaways don’t appear much in AR literature however some notable works ex-
+ist [202]. The smaller size of the effect means they may require another visualization
+to repair the depth offset. However, no research has been done to test whether this
+could be an issue. Research from Erat et al. [201] did find that cutaways make for
+a very natural way to look through a wall to interact with something like a drone
+on the other side when compared to looking at the drone from a first-person’s view-
+point, but little else is understood about using cutaways in AR for X-ray Vision.
+When testing this use case, they found that technological limitations still held users
+back from utilizing X-ray Vision to render objects underneath the ground [201].
+
+Virtual Windows: Virtual Windows shows the user a perspective of a 2D hole
+in the wall. These are sometimes presented as a crack in the wall [193] or will have a
+slight frame, but what separates this visualization from cutaways is that they ignore
+the content that is not known and start the virtual space immediately after the
+
+
+                                           54
+real-world surface [?]. This can be seen in Figure 2.19 , merging with the surface of
+a given material [27, 203].
+    Guo et al. [203] utilized virtual holes to enable video games to take place in a Non-
+Euclidean Space. The authors aimed to look at methods where X-ray Vision could
+be made to be more interactive. Enabling people to play a game together regardless
+of their spatial requirements. Their experiment had them tag virtual objects that
+were to tag objects behind the physical walls, which showed to be almost as useful
+as giving the participants a virtual mini-map with the targets located on it.
+    Another form of virual windows has been titled "Contextual Anatomic Mime-
+sis" by Bichlmeier et al. [27]. This is one of these windows designed to work au-
+tonomously with medical applications. The technique that blends virtual anatomical
+structures with the appearance of real tissue, gradually transitioning from realistic
+skin to virtual content. It gradually moves from having the appearance of skin to
+looking more like the virtual content while still presenting a slight overlay based on
+the roughness of the skin [27]. The effects of Contextual Anatomic Mimesis were
+furthered by Martin-Gomez et al. [36], who have shown a significant improvement
+when paired with a another second effect to help represent the depth of an object.
+Noting that using more than 1 depth cue is beneficial. These effects ranged from
+hatching to applying shading to show shadows to the effect where it was found that
+hatching outperformed the other conditions (hole, ghosted mask, constant, shaded,
+black, chromatic, and bright) [36]. These results have led us to the understanding
+that illustrative effects may have a slight advantage when providing an understand-
+ing of the positioning of data for medical diagrams as they can not only provide a
+sense of depth perception but are also easy to understand for a general user.
+
+Real-World Overlays
+
+Another way of providing X-ray Vision effects is to represent the physical environ-
+ment using a virtual pattern such as a wireframe or a grid. This is typically done
+in two ways. One way is to place a pattern on the ground, allowing users to retain
+some knowledge of depth by using a constant geometric cue [182]. The other method
+utilizes overlaying the real-world object with a pattern of some sort. The second
+method is used when viewing virtual objects in stereoscopic displays, as it requires
+a level of geometric saliency to be perceptible. Binocular disparities are required for
+these types of visualizations to function [204].
+    Overlaying a real-world overlay as a guide over the ground does not require any
+specific device since as long as the overlay is able to interact with the real world
+environment. It will perform better, however, when it is used with a binocular
+HMD as this can better represent the surface [205]. While they do provide a good
+occlusive cue, the main role they serve is to help the user locate the position of an
+
+                                           55
+     2. BACKGROUND
+
+
+
+
+Figure 2.24: This is a demonstration of real world overlay’s and how they are
+utilized as forms of X-ray vision. the X-ray Visualizations Wireframe, Random Dot,
+and Grid and are placed over colorful patterned box with a virtual cube, sphere
+icosahedron, and a Stanford bunny rendered inside. The image was taken using the
+HoloLens’ screen view.
+
+
+object with reference to a real world object. The additional cues provided from that
+point moving forward should take note of what is required from that point moving
+forward.
+    Figure 2.24 illustrates forms real-world overlays can take, for example overlaying
+grids [197, 198, 206, 207], Wireframes [182, 188, 208] and Random Dots [171, 204, 205,
+209]. All of these effects are designed to utilize partial occlusion to highlight the
+shape of the object and to help the user understand the orientation of the wall. This
+gives the user a better comprehension of the distance between themselves and the
+objects they are looking inside of.
+
+Grids: Grids allow for a persistent barrier between a given surface and provide a
+guide on where a surface is in an augmented world [198, 207]. Johnson et al. [207]
+developed a surgical system that utilized a grid-based visualization to allow for CT
+data to be viewed at the correct position within the patient when using a wearing an
+AR HMD. A grid was utilized to represent different types of flesh and a 3D object.
+They had surgical students utilize this system with laparoscopic video to evaluate
+it, where it was received with a positive reception from the subjective study which
+was conducted [207].
+    Grids also tend to be utilized to explain to the user where the background of the
+X-ray Visualization can be seen. Figure 2.25 shows how Heinrich et al. [198] utilized
+a grid overlaying a virtual hole and tested how accurate a biopsy would be using this
+as visualizations between an OST AR and SAR. This required testing the accuracy of
+the initial insertion angle and the depth to which the user placed the device. Heinrich
+et al. [198] utilized two conditions without X-ray Visualization. One was a target
+that showed and would change in color when the needle approached the target, and
+the other was a virtual needle for the users to match. This method demonstrated
+
+                                          56
+Figure 2.25: The conditions utilized for Heinrich et al.’s [198] research. The first
+row shows how they were visualized using the HoloLens, while the second line shows
+the output from the SAR display. The columns represent the three visualizations
+they used in their study, which were then split into three, showing the difference
+between their visualizations for guiding the angle and depth required for the needle.
+Used with permission from IEEE © 2022.
+
+
+that the glyph visualization was more effective than the X-ray Visualization, as it
+provided participants with a more intuitive X-ray Vision experiance. However, both
+of them performed better than showing the visualization of the desired entry of the
+needle [198].
+
+Random Dot: Random dot is another way of expressing more occlusion than
+other geometric pattern effects typically employed [171, 204]. This effect provides
+a partial sense of occlusion by providing a semi-occlusive layer over real-world ob-
+jects [204]. This effect is one of the least computationally expensive but requires
+an immersive environment with flat surfaces. Highlighting various pixels on the
+surface of objects provides a stereoscopic effect of occlusion for the user and should
+technically allow for a better sense of depth.
+    Ghasemi et al. [171] conducted two studies to evaluate Random Dot visualiza-
+tions. A psycho-physical depth perception experiment, which consisted of a series
+of thin circles, was run to determine the effectiveness of this X-ray Visualization.
+Participants were given six different distances that ranged from 5mm in front and
+behind the visualization/wall. The results study found that this effect is most ef-
+fective when around 50% of the space is filled using a random dot. The amount of
+dots and their size could be altered, but it was most effective when more small dots
+were used up close and fewer larger ones up close and more remote. This distance
+could be increased if objects are further away from the wall, allowing for more depth
+perception.
+
+
+
+
+                                         57
+     2. BACKGROUND
+
+
+
+
+Figure 2.26: Ozgur et al.’s [93] X-ray Vision system using Halos. The silhouettes
+are generated through orthographic projection onto the front and back planes, which
+are oriented based on the sight line passing through the tumor’s center of mass.
+These planes are positioned at the points where the organ’s surface intersects the
+sight line. Used with permission from IEEE © 2017 and Ozgur et al. [93]
+
+
+Halo and the Silhouette: This effect goes by many names but is most commonly
+called Halo or Silhouette as it creates an outline of the virtual objects. It will be
+referred to as the Halo visualization in this dissertation for simplicity. The Halo
+X-ray Visualizations as stated in Ozgur et al.’s [93] paper presents the effect as a
+bright light around the edges of the object of interest and use alpha blending to
+communicate depth [93]. This effect is very similar to what is referred to as the
+"silhouette" effect in medical visualization [94]. However, terminology varies across
+fields, and in this thesis, I will consistently use the term "Halo visualization" to
+describe this effect for clarity. Figure 2.26 show how the the halo is set to leverage
+the depth perception cue of relative size. This X-ray Vision effect is unique due to its
+lack of occlusion, making it effective for surgical situations [93]. It has been tested
+using a monoscopic display in a study designed for minimally invasive surgeries. It
+can also exploit a color-based effect, applying visual language to communicate depth
+to the user [93].
+
+Computer Vision-Enabled Techniques
+
+In computer vision, several methods are used to highlight salient features in an
+image. This is normally done by highlighting various salient factors within an image.
+These techniques are commonly used on monoscopic VST devices as they provide
+a good sense of where an object is positioned relative to another in 2D. This is
+separate from the Halo technique as these do not generally utilize the image of the
+real world while the halo technique utilizes the shape of the object that has been
+inserted. To this date, the results lack the performance of Computer Vision-Enabled
+Techniques in stereo, with most of the publications found in this space either being
+demos or research proposals [195, 210].
+
+
+                                          58
+Edge-Based: Edge-based X-ray Visualizations (depicted in Figure 2.27) identify
+areas in the user’s view that contrast highly between neighboring pixels and highlight
+them. This high contrast effect tends to be regarded by most humans as salient,
+making it a reliable method for determining salient artifacts [38]. Created initially by
+Kalkofen et al. [211] to allow for better image-based X-ray Vision. This visualization
+creates a predictable method for highlighting areas on an image (given that the
+surface has a high level of contrast) and makes it a popular way of showcasing X-ray
+Vision on a monoscopic AR device [38, 172, 211, 212]. By highlighting the visible
+edges of an object, it is possible to create the appearance that an object is behind
+the object either through partial occlusion [38, 211] or by cutting out elements of
+the X-rayed object [175, 213].
+
+Saliency: Saliency highlights areas of the real world that are likely to be of in-
+terest and makes the areas that are unlikely to be less apparent. Figure 2.27 shows
+one method of using saliency as an X-ray Visualization. The visualization technique
+can vary between implementations because it can be done algorithmically [172] or
+by training an AI model to detect the features a human is more or less likely to look
+at [214]. A user could naturally peer through objects using the saliency method,
+given that the camera could find some salient and non-salient areas of the im-
+age [172]. As of the beginning of this thesis, Saliency has only been utilized with
+VST AR.
+
+Ghosting: Ghosting utilizes the effects of visual saliency and focuses on allowing
+artistic approaches to partial occlusion [215,216]. Adaptive Ghosting is an extension
+that combines the salient effect of ghosting and edge-based X-ray Vision effects.
+    Zollman et al. [217] tested the effectiveness of Edge-Based, Ghosting, and Ran-
+domly occluding underground pipes. Participants were asked to identify the depth
+of the pipes, which were located underground, based on a series of Images they re-
+ceived. This study found that ghosting was better equipped than edge-based X-ray
+Vision at identifying depth underground and noted that it was easy to use, but it
+did observe the details of the shape.
+
+
+
+
+Figure 2.27: X-ray Vision showing alpha blending, Saliency, and edge-based Vi-
+sualizations (Shown left to right) looking through a building.
+
+
+                                          59
+     2. BACKGROUND
+
+
+
+
+Figure 2.28: A description of the X-ray Vision system used by Kalkofen et al. [39].
+This image shows the various components of the graphics pipeline required to create
+the adaptive ghosting effect. (a) The occluder and occluded elements are combined
+into a ghosted view using state-of-the-art transparency mapping based on the im-
+portance map of the occluder. However, this initial ghosted view lacks is difficult to
+integrate into the real world seamlessly as it is either used to cover a area or it is
+not. To address this, a new importance map is generated for the resulting ghosted
+view which looks at area’s of high contrast and places the visualisation on to them
+as well as over the rest of any are’s close to virtual elements that need to be seen
+within the physical objects. (b) This new importance map is then compared to the
+original importance map of the occluder. Features that were marked as important
+in the occluder but are no longer prominent in the ghosted view are identified for
+enhancement. (c) By applying these enhancements to the adaptive ghosted view,
+the previously obscured important structures become clearly visible again. Used
+with permission from IEEE © 2013.
+
+
+     Adaptive Ghosting technique to the current environment makes it less varied
+when viewing it from different directions [39]. Figure 2.28 presents Kalkofen et
+al.’s [39] system for Adaptive Ghosting, which normalizes the contrast of the input
+image to allow this effect to maintain a similar effect even in different lighting.
+This system combats one major issue with computer vision-enabled X-ray Vision
+techniques: their inconsistency depending on changes to the scene and lighting.
+Adaptive Ghosting can cause unexpected artifacts and misleading visualizations,
+but it is still possible to notice this effect even when using Adaptive Ghosting.
+
+Comparisons Of X-ray Vision Effects
+
+Given all these methods of X-ray Vision, it is quite common for people to try to
+compare them to determine the positive and negative aspects. Studies in this area
+have investigated:
+
+
+
+                                         60
+                                        Visualization Pairings in Literature
+
+                            Binocular                       2                                5
+
+
+   Computer Vision Enabled Techniques                       4            15        53             Literary Frequency
+                                                                                                           60
+
+                 Real−World Overlays                        22           65        15                      40
+
+                                                                                                           20
+                                       Hole                 46           22        4         2             0
+
+
+             Transparency Adjustment
+
+
+
+                                                            e
+                                                 t
+
+
+
+
+                                                                      ys
+
+
+
+
+                                                                                              r
+                                                                                   s
+                                              en
+
+
+
+
+                                                                                            la
+                                                                                ue
+                                                         ol
+
+
+                                                                    la
+
+
+
+
+                                                                                          cu
+                                                       H
+                                             tm
+
+
+
+
+                                                                              iq
+                                                                     r
+                                                                  ve
+
+
+
+
+                                                                                        no
+                                                                               n
+                                          us
+
+
+
+
+                                                                            ch
+                                                                 O
+
+
+
+
+                                                                                       Bi
+                                         dj
+
+
+
+
+                                                                         Te
+                                                            ld
+                                        A
+
+
+
+
+                                                          or
+
+
+                                                                         d
+                                     cy
+
+
+
+
+                                                                       e
+                                                         W
+
+
+                                                                    bl
+                                  en
+
+
+
+
+                                                       l−
+
+
+                                                                    a
+                                   r
+
+
+
+
+                                                                 En
+                                pa
+
+
+
+
+                                                     a
+                                                  Re
+                           ns
+
+
+
+
+                                                            on
+                            a
+
+
+
+
+                                                         isi
+                         Tr
+
+
+
+
+                                                       rV
+                                                       te
+                                                     pu
+                                                m
+                                              Co
+
+
+
+
+Figure 2.29: A heat map illustrating how often different X-ray Vision effects are
+compared to each other in the literature. The diagonal cells (from lower left to
+upper right) show the total number of studies for each effect, while the center row
+indicates studies that examined each effect individually without comparison.
+
+  • The amount of occlusion density required for visualizations to create the X-
+    ray Vision visualisations and effective limits to the practicality of these ef-
+    fects [218];
+
+  • How different displays react to X-ray Visualizations on Mobile Devices [175,
+    213].
+
+  • What is the impact of X-ray Vision between different visualizations [36, 172,
+    182, 217].
+
+These comparisons are detailed in Figure 2.29.
+   Partial occlusion is important to most X-ray Visualizations. It shows how much
+occlusion is needed for a given technique and how much occlusion makes interactions
+impossible. This was the question that Santos et al. [218] addressed for mobile AR
+X-ray Vision when using edge-based or saliency X-ray Vision effects. This study
+had participants look at a box wrapped in either wrapping paper or crumpled foil.
+This study utilized two tasks: One looking at what thresholds were required to allow
+participants to see 2D objects using X-ray Vision effects, and the other looking at
+the maximum allowable alpha values these effects could have [218].
+   Santos et al.’s [218] first tested how the user could see four objects placed inside
+
+                                                             61
+     2. BACKGROUND
+
+
+the box and asked them to reveal the maximum decision cutoff (threshold). The
+next task was to lower the alpha value of the visualization until participants could
+clearly see the object hidden behind it. Inside the box would be visualized an image
+of an object they were asked to see, which could either be a small or a large object
+about the box. Each second, the transparency of the visualization would decrease,
+asking them to press a button on the display to stop the visualization when they
+could identify the item. The combination of Santos et al.’s [218] results indicates
+the clarity of the object was dependent on the size, color, and texture of the box
+rather than the visualization used. The study noted Saliency was slightly harder to
+see through but not to a significant level. This dissertation treats these results as a
+guideline and has based its use of transparency and contrast with X-ray Vision on
+these results.
+    Sandor et al. [172] Compared Edge-based visualizations to their newer Saliency
+visualization by having participants try to find a target in four scenes. This study
+found little difference between saliency and edge-based visualizations, but partici-
+pants preferred the edge overlay. After this, both these conditions were tested using
+an online survey where participants would look at images presenting the information
+where saliency was seen to be better for providing X-ray Vision for images.
+    Dey et al. [175, 213] compared X-ray Vision on different-sized mobile devices to
+determine the display size could impact the visualizations required for Mobile de-
+vices. Firstly, they developed an X-ray Visualization called Melt, which showed a
+part of the foreground and a part of the background together. Their first exper-
+iment tested the Edge-based technique against the Melt X-ray technique from far
+distances using a 7-inch display. This study found that Melt was a more accurate
+in-depth estimation but took the participants longer to judge, which was likely used
+to overcome the drawbacks of the visualization [175, 213].
+    Dey et al. [213] ran a user study comparing Edge-based and Saliency using a
+Mobile AR display. They created three levels of each X-ray Visualization, where
+they were more or less sensitive to environmental concerns. These results indicated
+that users struggled to use X-ray Visualization when the edges were too thick for
+the edge-based variable, and saliency struggled in bright environments.
+    All of the comparisons explained in this section utilized similar X-ray Vision
+visualizations and most focused on how X-ray Visualizations worked in different
+areas. All these examples utilize mobile devices, so how these would affect HMDs
+in general is a question that is yet to be answered. Also, most of these comparisons
+have utilized various forms of computer vision techniques (except for one use of the
+Melt visualization). Currently, there are many unknowns that exist in this space.
+
+
+
+
+                                          62
+Figure 2.30: Eren et al.’s [180] different visualizations of underground pipe net-
+works using X-ray Vision techniques. a) baseline, b) edge-based, c) virtual hole, and
+d) cross-sectional techniques. Used with permission from Springer Nature © 2018.
+
+
+2.5.4     Applications of X-ray Vision
+X-ray vision has been applied across a wide range of domains where visualizing hid-
+den or internal structures is valuable. Medical research has been a central focus,
+where overlays of anatomical structures can support diagnosis and guide surgical pro-
+cedures by allowing clinicians to perceive organs, tissues, and bones in situ [27,37,51].
+While demonstrations have shown promise, challenges remain around depth percep-
+tion and real-time performance, as highlighted in comparative evaluations of iso-
+surfaces, direct volume rendering, and alternative rendering effects [27, 28]. Outside
+of medicine, construction and maintenance tasks also benefit, with researchers ex-
+ploring techniques for seeing into walls or underground pipe networks. Early work
+by Feiner et al. [219] focused on gradually revealing occluded structures, and more
+recent studies (e.g., Eren et al. [180, 220], shown in Figure 2.30) have evaluated
+different visualization methods for accurately perceiving underground utilities.
+    Beyond these domains, X-ray vision concepts have been investigated in secu-
+rity, navigation, and education. In security, transparency effects and perspective-
+corrected projections have been used to augment situational awareness, though eval-
+uations suggest togglable, more occlusive effects may be most effective [186–188].
+Navigation and tourism applications demonstrate how seeing through structures or
+into the past can improve wayfinding and enrich cultural experiences, with evalu-
+ations showing reduced cognitive load compared to traditional maps [221–223]. In
+education, while the effects of X-ray vision itself remain underexplored, augmented
+reality has been shown to increase engagement and may support long-term retention
+in domains like anatomy [19, 57].
+    Entertainment provides a final but growing space for X-ray vision. While formal
+
+
+                                           63
+     2. BACKGROUND
+
+
+
+
+Figure 2.31: A promotional Image from Dr Grordborts Invaders made by Weta
+Workshop for the Magic Leap. Used with permission from Weta Workshop.
+
+
+research is limited [224], several commercial AR games such as Microsoft’s RoboRaid
+and Dr. Grordborts Invaders (shown in Figure 2.31) have experimented with the
+concept, using it to merge real and virtual environments in playful, interactive ways.
+These applications highlight both the versatility of X-ray vision across domains and
+the ongoing challenges of designing visualization techniques that are perceptually
+effective, intuitive, and computationally feasible.
+
+
+2.5.5     Hardware For X-ray Vision
+X-ray Visualizations can be split into two key components to enable X-ray Vision:
+A display to view the visualization and sensors to collect the data for X-ray Vision.
+While many studies have utilized collected information, allowing them to require
+only devices to collect pre-rendered devices, others have utilized a display.
+    X-ray Visualizations rely on two essential aspects: the availability of data repre-
+senting the internal or hidden structures, and the means to visualize this data effec-
+tively. While many studies utilize pre-existing or independently collected datasets,
+others focus on the development and evaluation of display technologies for present-
+ing X-ray Vision. It is important to note that data acquisition is typically a separate
+process from visualization, and in most cases, data is gathered without a specific
+visualization method in mind. However, the choice of data acquisition can limit the
+types of visualizations that can be effectively employed. For instance, real-time data
+acquisition methods may restrict the complexity of visualizations due to processing
+constraints, while pre-collected datasets allow for more intricate and computation-
+
+                                          64
+Figure 2.32: A bar graph of the type of display used to visualize the various X-ray
+Vision effects.
+
+
+ally intensive visualization techniques.
+
+Displays
+
+AR displays come in different variations, each with its own benefits. These different
+types of displays can be generalized as OST AR, VST AR, and SAR. OST AR works
+by projecting the image on a transparent reflective display, creating a transparent
+display which is generally used for HMDs. VST AR displays utilize one or more
+cameras and display them with graphics overlaid on them. SAR uses projectors
+to place computer graphics to overlaid onto reality. Figure 2.32 shows there are
+preferences between different types of X-ray Vision devices to an extent due to the
+individual benefits and drawbacks caused by these displays which have been laid
+out in Table 2.1. Figure 2.33, shows real-world overlays are much more common
+than computer vision techniques, but real-world visual techniques are less common
+on monoscopic displays.
+    X-ray Vision systems can be supported by display devices, including mobile
+phones, head-mounted displays, computer screens, and projectors [145]. Devices
+range from traditional computer screens and mobile personal devices, head-mounted
+displays to projectors. Most earlier devices only accommodate monocular vision,
+while recent head-mounted displays can support stereoscopic vision. Figure 2.34
+shows that the choice of technology is often a result of technological advances and
+emerging products. It can be observed that mobile screen-based displays were most
+popular following the release of powerful mobile phones in 2007, underpinned by
+emerging computer vision techniques for tracking and the generation of visualiza-
+tions. Similarly, stereoscopic head-mounted displays have gained popularity be-
+cause of increased capabilities, technology maturity, and general availability in re-
+cent years.
+    Recently, research utilizing Microsoft HoloLens 1 and 2 has been widely used in
+X-ray Vision research because of their advanced display tech and gesture recognition,
+making them a useful device for security and medical operations [36, 161, 225, 226].
+
+
+                                           65
+     2. BACKGROUND
+
+
+
+
+Figure 2.33: A bar graph displaying The types of AR that was used to visualize
+the different types of X-ray Vision effects.
+
+
+HMDs shine in medical settings, offering a sterile work environment. Medical appli-
+cations use screens for remote interactions, like controlling robotic arms in minimally
+invasive surgery [227]. In contrast, the construction and maintenance industries em-
+ploy diverse devices due to their varied environments [180, 181, 206, 220].
+
+Comparison of Displays
+
+Comparing the effectiveness of different displays seems to be a relatively new area
+of study for AR enabled X-ray Vision. Prior to starting this dissertation in 2019,
+our review found no studies that compared X-ray Visualizations between different
+papers. Since then, several studies have published their results on comparing VST
+AR devices against OST AR devices.
+    Gruenefeld et al. [182] performed depth perception studies using an OST headset
+utilizing X-ray Vision, including Grid, Cut-out effects. The grid effect, placed on
+the ground within the X-ray able space and a perpendicular wall facing the viewer,
+could be used to approximate a relationship between the wall and the object. In
+contrast, the cut-out visualization provided a hole in the wall, which the user could
+look through to see where the object was on the other side, against a baseline that
+pointed participants to the object with a red arrow and displayed a perpendicular line
+going from the far point of the arrow to the bottom of the visualization. Gruenefeld
+et al.’s [182] found that the weakest of the depth cues were the cut-out. This was
+because the cues did not convey a clear depth indications to the user [182], because
+the grid effect provided a clear indication of depth, allowing the users to count the
+amount of grid squares between the object and the wall they had a better sense of
+depth.
+    Another set of studies published by Martin-Gomez et al. [228] studied the dif-
+ference between four X-ray Visualizations (None (Superimposition), virtual hole,
+ghosting, and Random Dot) on both VST AR and OST AR devices in the near
+field. They found that users better utilized X-ray Vision on a VST AR headset
+than on an OST AR device. This prompted another study investigating different
+
+                                          66
+                               Devices Examined for X−ray Vision Over the Years
+                     10
+
+
+                     8
+Literary Frequency
+
+
+
+
+                     6
+
+
+                     4
+
+
+                     2
+
+
+                     0
+                           19 2
+                           19 3
+                           19 4
+                           19 5
+                           19 6
+                           19 7
+                           19 8
+                           20 9
+                           20 0
+                           20 1
+                           20 2
+                           20 3
+                           20 4
+                           20 5
+                           20 6
+                           20 7
+                           20 8
+                           20 9
+                           20 0
+                           20 1
+                           20 2
+                           20 3
+                           20 4
+                           20 5
+                           20 6
+                           20 7
+                           20 8
+                           20 9
+                           20 0
+                           20 1
+                           20 2
+                             23
+                             9
+                             9
+                             9
+                             9
+                             9
+                             9
+                             9
+                             9
+                             0
+                             0
+                             0
+                             0
+                             0
+                             0
+                             0
+                             0
+                             0
+                             0
+                             1
+                             1
+                             1
+                             1
+                             1
+                             1
+                             1
+                             1
+                             1
+                             1
+                             2
+                             2
+                             2
+                          19
+
+
+
+
+                                                         Year
+                                                   Paper Classification
+                               SAR Projector(s)   Mono Mobile     Stereo Screen   Stereo HMD
+                               Mono Images        Mono Screen     Mono HMD
+
+
+Figure 2.34: Devices examined for X-ray vision across the literature over time.
+Each point represents a publication, categorized by device type (vertical axis) and
+year of appearance (horizontal axis). The distribution highlights how research inter-
+est has shifted across different device categories, with increased attention to head-
+mounted displays and mobile devices in more recent years.
+
+
+rendering techniques for X-ray Vision (shading, hatching, ghosting) and brightness
+levels, finding that bright, clear objects work best in OST AR.
+    Heinrich et al.’s [198] research comparing OST AR displays to SAR displays
+(previously mentioned in Section 2.5.3) presented findings that both OST AR and
+SAR displays functioned in a similar fashion. However, they found that X-ray Vision
+works better with OST AR displays, while UI elements (see Figure 2.25, Glyph Vis)
+tend to function better when using projectors. These different conditions can be
+seen and compared in Figure 2.25.
+
+Sensors Utilized
+
+The information used in X-ray Vision applications may possess different character-
+istics, such as the nature of the data, its temporal characteristics, and its realism.
+Three-dimensional models, point clouds, video feeds and photos, medical data, and
+depth maps are examples of the diversity of data visualized in X-ray Vision. More-
+over, one can distinguish static information, which remains unchanged for a task,
+from dynamic information, which may change during a task. Finally, the degree of
+realism of the data can vary.
+    Figure 2.35 illustrates that static information prevails as the most common vir-
+tual element in X-ray Vision, constituting 65% of the 54 papers examined. Examples
+include 3D models, medical images, and building schematics, predominantly found in
+medical, construction, and maintenance domains. Virtual objects range from simple
+
+                                                       67
+     2. BACKGROUND
+
+
+geometric shapes to intricate representations of real objects [180, 181, 206, 217, 220].
+    Dynamic data, as shown in Figure 2.35, typically consists of video feeds from
+static or mobile cameras. By providing multiple perspectives in real time, these
+feeds allow users to perceive distant or hidden details while still observing the actual
+environment, a capability that has proven valuable in domains such as security and
+robotic system control [195, 201]. In contrast, non-dynamic data is often employed
+in construction, where pre-recorded or modelled information is used to represent
+underground pipes and other hidden infrastructure [180, 181, 206, 217, 220]. Within
+this context, X-ray Vision studies in construction have relied primarily on simulated
+data to approximate real-world conditions and to address the challenge of clearly
+communicating the location of underground structures to end users.
+    Most of the research that utilizes live recordings in this review employed cam-
+eras or medical equipment (shown in Figure 2.35). No studies were found that
+visualized radar and other sensor data in a 3D manner to create an X-ray Vision
+effect—limiting the types of visualizations that people were viewing. Techniques like
+photogrammetry were not found either which would be able to recreate images from
+several views into a 3D scene [229, 230]. This suggests that, so far, X-ray Vision
+has primarily focused on presenting users with visualizations of the known world.
+In contrast, little work has explored systems that could reveal entirely unknown or
+hidden environments in real time, effectively giving users access to true X-ray vision.
+
+
+
+
+                                          68
+Figure 2.35: A plot showing nine devices found in the literature. Head-mounted
+displays used as display devices are grouped. Portable screens like phones and
+tablets, larger screens, and magic mirrors fall under the ’Screens’ category. Addi-
+tionally, three user studies utilized Images and SAR.
+
+
+
+
+                                        69
+  2. BACKGROUND
+
+
+
+Table 2.1: Advantages and Disadvantages of Devices Used for X-ray Vision
+
+      OST AR Head-Mounted Displays (Optical See-Through)
+Advantages                    Disadvantages
+
+– Direct view of real world with overlays    – Limited brightness and contrast
+– Maintains natural depth cues and pe-       – Smaller field of view vs. VST
+  ripheral vision                            – Alignment/calibration issues
+– Good for tasks needing situational         – Optical distortion of virtual content
+  awareness (e.g., surgery)                  – Lower graphical fidelity
+– Hands-free operation
+
+       VST AR Head-Mounted Displays (Video See-Through)
+Advantages                    Disadvantages
+
+– High graphical fidelity and brightness     – Camera-mediated view
+– Easier integration of computer vision           ∗ Latency
+– Wider field of view possible                    ∗ Distortion
+– Flexible virtual content manipulation      – Lower situational awareness
+                                             – Reduced situational awareness
+                                             – Can cause motion sickness
+                                             – Heavier, bulkier hardware
+
+                      Mobile Devices (Phones/Tablets)
+Advantages                             Disadvantages
+
+– Widely available, easy to use              – Less immersive
+– Bright displays                            – Must be handheld
+– Portable for quick tasks                   – Smaller screens limit detail
+– Stable, high-quality graphics              – Hardware fragmentation
+                                             – Limited spatial interaction
+
+           Spatial Augmented Reality (SAR) / Projectors
+Advantages                        Disadvantages
+
+– Projects info directly on objects          – Needs precise calibration/tracking
+– Multiple users at once                     – Works best in controlled environments
+– No wearables needed                        – Sensitive to lighting/surface
+– Limited multi-user suitability             – Limited multi-user suitability
+
+                             Desktop/Fixed Screens
+Advantages                              Disadvantages
+
+– High computational power                       – Not immersive
+– Stable, high-quality graphics                  – Stationary, low spatial interaction
+– Large display for detail                       – Requires looking away from real world
+– Comfortable for long use                       – Limited field of view
+– Good for collaboration                         – Not mobile-friendly
+– Easy integration with systems
+
+
+
+                                            70
+2.6     Perception and Depth Perception tasks in Aug-
+        mented Reality (AR) and Virtual Reality (VR)
+        Head Mounted Displays
+Depth perception on MR HMDs has been a goal for over 25 years [71]. Several
+common methods of testing depth perception in the real world. These include
+
+  • Blind Walking or Blind reaching: Asking a participant to place their
+    hands or to walk to a location where a virtual artifact was previously [31,231];
+
+  • Verbal Reporting: Requesting the participant tell you how far away the
+    virtual object is from them [31, 231];
+
+  • Matching Protocols: Placing a virtual object relive to where the virtual
+    object is (or was) [31, 231];
+
+  • Two-alternative forced choice: Giving the participant where there is one
+    correct and wrong answer on a set of conditions that will get closer to being
+    equal to determine at what point can participants no longer determine proper
+    depth perception [209, 232].
+
+Early work in this field focused on testing how seeing graphics rendered using virtual
+reality headsets may have changed, and how real-world factors impact the depth per-
+ception of the environment [233]. Ellis et al. [233] Evaluated the difference between
+monocular vision, binocular vision, and a stereoscopic display utilizing a rotating
+display where participants were asked to judge the depths they saw different virtual
+objects. To do this, they had participants place and verbally estimate positions in
+which real or virtual objects were away from them. Overall, Ellis et al.’s [233] study
+found a high amount of work stating that both binocular and stereoscopic displays
+provided excellent depth perception when compared to monocular displays. They
+also noted that when virtual content was displayed behind a real-world object, it
+created the same mismatch, about 6cm closer to the viewer/participant than it was
+displayed. Most depth estimations were within 2cm of the actual position [233].
+    McCandless et al. [234] followed up this study by adding both motion and a time
+delay on HMDs. People moving their heads causes motion parallax, which allows
+for a sense of depth between objects. McCandless et al. [234] control study found
+that when the virtual object was moved over a meter away, movements caused a
+noticeable drop in depth perception, which was shown to be understated compared
+to their motion parallax study. This demonstrated that the worse the experience
+was, the more users moved around and noted an increase in the large time delay
+between their head movements and the interaction time.
+
+                                         71
+     2. BACKGROUND
+
+
+    Rolland et al. [235] looked into the perception of different shapes (cubes, oc-
+tahedrons, and cylinders) when viewed from a HMD. They did this by presenting
+these shapes in several different sizes and testing if participants could determine
+what shapes were closer to them using a 2AFC study design. This study design
+only found a little change between different designed shapes.
+    Later on, Mather and Smith. [236] investigated a method to determine if using
+multiple depth cues could improve depth perception. The depth cues investigated
+in this experiment were Contrast, Blur, and Interpolation. All possible different
+combinations of these conditions were used. This experiment was done using a
+computer monitor. Participants saw many different textures displayed on four planes
+partially overlapping each other, each with a different depth cue that could be used
+as an aid. Participants would click on all the different textures from nearest to
+furthest to determine where an item should be placed. This experiment showed
+that participants could most easily tell where objects were with all three cues, but
+they struggled with the other cues, especially interpolation.
+    While a lot of work happening at this time was focused on the far-plane, Wither
+et al. [237] looked at methods that make virtual objects appear further away rather
+than just smaller. A Sony Glassatron was used which was a common monoscopic
+HMD of the time, but they lacked basic depth cues. Their study utilized flat planes
+as showdowns in the virtual world, giving users an on-screen map to view items with
+and coloring the markers so they appeared in the correct positions. They would have
+users view objects that were 38, 55, and 65 meters away, and users would have to
+guess their location. This was done using a group of objects and using individual
+objects. This study showed that shadows and size were the best indicators while
+changing the color was the worst depth cue Wither et al. [237] tested.
+    Armbrüster et al. [34] worked on determining what elements the virtual reality
+headset displayed that affected the participants’ depth perception. This included:
+
+  • The virtual environment would change between three different environments:
+    one had no graphics shown as part of the world, one showed the world as a
+    meadow, and the final one was a large but enclosed gray room.
+
+  • participants were asked to guess a total of ten different distances. Four of
+    these were in the near-field space, and six of these were in the action space.
+
+  • They would also toggle a ruler on the ground that would showcase the distance
+    from themselves in meters.
+
+They also had two tasks, one where participants would either need to be able to
+see spheres located at all of the different distances, or they could only see a single
+sphere at a time. This research did not provide any clear indication of whether any
+
+                                         72
+Figure 2.36: The OST AR display was utilized for Swan et al.’s [239] study. These
+images show how the OST AR HMD was mounted for people to view. Used with
+permission from IEEE ©2007.
+
+
+of these conditions were able to be observed, but they did note that participants
+underestimated the distances of the objects they were viewing and that users had a
+better sense of depth when objects were closer to them.
+    Another study that examined the virtual environment’s effect on participants
+was performed by Murgia and Sharkey [238]. This study looked solely into how
+people perceive depth within the virtual space. To do this, they created a life-
+sized virtual environment using a CAVE, designed to work with stereoscopic glasses
+and react to users moving within the virtual environment. They tested a range of
+conditions, including two levels of graphical quality, one where the environment was
+bland and one where 1-meter objects would appear. They introduced real-world
+reference objects to help the participants understand the correct depth at which
+their virtual counterparts would be located. This study found that the clearer the
+virtual environment was at displaying depth, the easier the user could determine
+depth within it.
+
+
+2.6.1    Depth Perception User Studies on Ocular See Through
+         (OST) Augmented Reality (AR) displays
+OST AR displays allow users to view the real world while graphics are overlaid on
+the real world, which makes them useful for a range of stress-inducing professions.
+This creates a different dynamic for depth perception as the whole environment is
+the real world. This can lead to increased stress levels when performing precise
+tasks, making depth perception a critical element of any augmented reality system
+using OST AR displays.
+   Swan et al. [239] performed the first depth perception study using an OST AR
+devices. Participants were asked to either verbally report or blindly walk to a point
+
+
+                                         73
+     2. BACKGROUND
+
+
+displayed using the headset while viewing real-world objects with and without a real-
+world headset. The world was rendered virtually, or only the marker was rendered.
+The headset was mounted on an apparatus shown in Figure 2.36 that was not able
+to move. Forcing users to move to the position of the stimuli that they saw. The
+users were asked to turn as the examiners removed the real-world object. This study
+found that the AR conditions were more accurate than the VR conditions. They
+also found that blind walking is performed more accurately than verbally guessing
+where an object is positioned.
+    Later on from this, Jones et al. [240, 241] ran a series of studies that looked into
+several different methods of depth perception. Their first study ran a similar process
+to Swan et al.’s [239] compare VST AR to OST AR. However, this time, the HMD
+was mounted to their head instead of being fixed, allowing for depth cues involving
+stereopsis [240, 241]. These results showed that the OST AR conditions did better
+than the prior ones.
+    One issue that was possible with the previous three experiments was that users
+may have been estimating the location based on aspects in the environment [240,
+241]. To get around this, Jones et al. [240] ran another study where they did not
+just occlude the area behind the OST AR HMD, but they occluded the participant’s
+complete vision. This indicated that users were using the real-world environment to
+assist their depth perception. These results were further confirmed when users only
+had their vision partially occluded.
+    The prior work by Swan et al. [239] and Jones et al. [240, 241] explained that
+when in the action space AR depth perception is more limited when compared to VR.
+However, two key questions remained before OST AR devices could see widespread
+use: first, how accurate are these devices; and second, how tasks performed in the
+near field influence the effectiveness of OST AR techniques. The latter was inves-
+tigated by Singh et al. [242] who created a study design based on blindly reaching
+where they found that off-the-shelf hardware could present depth accurate to 2cm
+to 4cm to the point [242, 243].
+    Previous studies by Jones et al. [240, 241] Swan et al. [239] utilized a Sony
+Glassatron. This was changed for the nVisor ST60 OST AR HMD seen in Fig-
+ure 2.37 [244]. This research consisted of three separate studies: one of these was
+done having participants move another virtual object to the exact location as a
+physical one by moving a slider underneath the desk (shown in Figure 2.37 (a)); the
+other two had participants placing a virtual object in the same position as the one
+they were looking at (shown in Figure 2.37 (b)). One of these placement studies
+was used to determine whether corrective feedback from graphical elements could
+aid participants. All of these studies showed that there was approximately a 1cm
+difference between placing virtual objects using an OST AR HMD than in real life
+
+
+                                          74
+Figure 2.37: Swan et al.’s [244] study design, detailing the apparatus used for
+the two different types of experiments they ran utilizing reaching tasks. Used with
+permission from IEEE © 2015.
+
+
+when in this task environment. These experiments with the newer headsets showed
+that the results were accurate to within 1–2 cm. This demonstrates that the type
+of display technology used in different headsets can significantly impact the accu-
+racy achievable with OST AR HMDs. The bais seen in this study’s graphs shows
+was higher than this as it was common for people move the object too far away
+from them rather than closer to them when trying to match the position of physical
+objects [244].
+    Many years after Swan et al.’s [239] initial research, Medeiros et al. [245] ran a
+slightly different experiment that also tried to learn what the impact was between
+depth perception between VST and an OST AR HMDs. The infrastructure to create
+VST and OST AR HMDs was, at this point, quite different, and they began to have
+different pros and cons. The Oculus VR HMD 10 (now owned by Meta (previously
+Facebook)) had recently been publicly released, which used a Fresnel lens [246].
+Meanwhile, the Meta lens (made by the company meta which is now insolvent
+insolvent) OST AR HMD 11 utilized a distorted reflection of a screen’s projection.
+Medeiros et al.’s [245] study design asked users to draw a line between two spheres
+in the virtual space. The findings from Medeiros et al. [245] study showed that the
+OST AR headset was less accurate in drawing lines between two points. Participant
+comments indicated this was due to the difference in view windows between the
+Oculus and the Meta HMDs. Participants using the Meta headset struggled to keep
+both objects in view at once, while when they were wearing the Oculus, participants
+seemed to have no issues. This study highlighted the importance of a field of view
+when comparing activities between two headsets, as a smaller field of view could
+ 10
+      https://en.wikipedia.org/wiki/Reality_Labs
+ 11
+      https://en.wikipedia.org/wiki/Meta_%28augmented_reality_company%29
+
+
+                                          75
+     2. BACKGROUND
+
+
+
+
+Figure 2.38: OST AR HMD which was utilized in Singh et al. [247] experiments.
+(a) Details the utility of each lens and how they distort the user’s view. (b) Details
+how these participants see through this lens, allowing for the HMD to function. (c)
+The real-life implementation of the custom HMD. This image has been modified and
+is used with permission from IEEE © 2018.
+
+
+impact the ease with which a given participant can react to certain stimuli.
+     The work that was started by Swan et al. [239] was later finalized by Singh et
+al. [247] who developed the OST AR HMD detailed in Figure 2.38 which was able to
+react to five different focal cues allowing for highly accurate visualizations. Due to
+its large weight, this headset was placed on a desk whose height could be adjusted
+to match the participants’. The near field depth perception of this headset was
+tested by a series of matching the graphical cue-like tasks similar to what was done
+prior in Swan et al.’s [244]. The first study tested the same conditions as Swan et
+al.’s previous study [244]. This type of OST AR device was shown to be able to
+improve depth perception to about 1 cm accuracy in the near field, regardless of the
+user’s age. The second study evaluated how people of different ages performed the
+task, which showed that people’s depth perception of AR seemed to function fine
+regardless of age. The final study changed the brightness of the graphical content,
+which showed no difference [247].
+     Hua and Swan [248] utilized the same apparatus and ran a study that asked
+users to tell the depth of an occluded object. This was done by allowing for the
+option of a temporary occlusion barrier. The authors found this headset was able
+to reduce the errors from a previous 4cm [249] on VST AR HMDs.
+     Whitlock et al. [250] later looked at the difference between using controller ges-
+tures and voice commands to aid the placement of objects using a HoloLens. Partici-
+
+
+                                          76
+Figure 2.39: Several images from Al-Kalbani et al.’s [33] study set up. (a) displays
+grasp measurements required for Grasp Aperture (GAp) and grasp middle point
+(gmp) (b - m) images of participants completing the task, (b - g) without shadows,
+(h-m) with shadows. (n) the interaction space in reference to the Kinect. Used with
+permission from IEEE © 2019
+
+
+pants were asked to complete a series of precision tasks, including selecting, rotating,
+and translating virtual objects placed at different distances from each type of control
+interface. Whitlock et al. [250] found that participants perceived embodied freehand
+gestures as the most efficient and usable interaction compared to device-mediated
+interactions. Voice interactions demonstrated robustness across distances, while em-
+bodied gestures and handheld remotes became slower and less accurate when the
+distance was increased. These findings emphasize the importance of selecting appro-
+priate interaction modalities based on distance when designing the studies in this
+thesis.
+    Many previous papers showcased how the depth perception of computer graphics
+can be realized when they are placed in the real world. However, very few of these
+focused on what happens if these graphical objects react to the real world, such as
+having them leave a shadow over the ground. Using OST AR devices is difficult
+
+                                          77
+       2. BACKGROUND
+
+
+as they cannot display darker shades of colors. Al-Kalbani et al. [33] ran a study
+that looked at the accuracy of participants trying to grab hold of virtual 3D shapes
+using a HoloLens2 as shown in Figure 2.39 (b - m). To do this the placement of
+their hands was situated around the virtual cube as shown in Figure 2.39 (a) using a
+remote sensor (a Kinect 2 12 ) placed just over 2 meters away as shown in Figure 2.39
+(n). The results from this study showed that participants tended to overestimate
+the area they had to grasp. Drop shadows were appreciated when they were visible
+to the participants and increased the amount of time required to grasp the object,
+but they did not improve the participant’s accuracy. Users also underestimated the
+depth required by 2cm.
+    It is common in AR experiments to display objects as if they are hovering in
+reality; however, since this itself is not a natural appearance of the virtual object,
+it may be misleading the end user. This is even more relevant when using OST
+AR HMDs as they show virtual objects superimposed over the participants’ vision.
+Rosales et al. [32] set out to test this hypothesis by testing if a participant’s depth
+perception was more accurate by having participants blindly walk to a position where
+they believed they saw a virtual cube that was either hovering or on the ground.
+Whether an object was on or off the ground, participants tended to underestimate
+the depth they needed to move towards, but targets off the ground they judged to
+be closer to them.
+    Adams et al. [251] also ran a study looking at how depth perception could be
+influenced by having the graphics respond to the real world by investigating depth
+perception with virtual objects placed on and off the ground. This study design
+utilized a 3 x 2 x 2 x 2 design looking at three distances in the action space (3m,
+4.5m, and 6m), the presence of shadows, causing the virtual object to hover off the
+ground, and if it was being viewed by a VST or an OST AR display. The results from
+Adams et al. [251] showed an underestimation of the values of over 17%. There was
+a small increase in accuracy regarding the presence of shadows, showing a significant
+improvement of 2%.
+    Similar to Swan et al. [239], Medeiros et al. [245], and Adams et al. [251], Ping
+et al. [252] aimed to determine what differences in depth perception can be observed
+between AR and VR, and whether different depth cues have varying impacts. This
+study used three different depth cues (points, lines, and boxes) as conditions and four
+different illumination ranges which to change the texture of the surface (Ambient,
+Half-Lamber, Blinn-Phong, Cook-Torrane). Participants were asked to use these
+depth cues to align differently sized objects while they were between 1.75m and 7.35
+m away from the shapes they were being asked to align. Participants would control
+one of the shapes using a keyboard input, allowing them to move the virtual objects
+ 12
+      https://en.wikipedia.org/wiki/Kinect
+
+
+                                             78
+forward or backward. Ping et al.’s [252] results showed that there was little difference
+in the depth cues that improved depth perception between the OST and VST AR
+HMDs, but they did note that illumination of the objects made a larger effect on
+a participants depth perception. This effect was likely caused due to participants
+perceiving the objects were the same shape regardless of their size, they would all
+look alike unless and having more details on the shape may have given them more
+attributes they could match.
+    This finding caused Ping et al. [69] to investigate how different shaders could
+influence depth perception. This study had a similar physical setup as their previous
+study but only used a HoloLens [252]. The conditions were split into a 3 x 3 study
+setup using three different shaders: Half-Lambert, Blinn-Phong, and Cook Torrance,
+each colored as blue, yellow, or green, and displayed at either 25cm, 30cm, 35cm,
+or 40cm. This study showed that participants seemed to be more accurate with the
+brighter-colored virtual objects (yellow or green). Participants struggled to place
+larger objects, and both the shaders that had more pronounced specular highlights
+were found to aid depth perception the most.
+
+
+2.7      Research Gap
+This thesis looks at methods that can be used to allow a user to view DVR visual-
+izations within the real-life objects they have been created from when using an OST
+Device. This first required a better understanding of how X-ray Vision worked on
+OST AR HMDs. Then, it required taking the learnings from that and placing and
+implementing them in a way that could be utilized with DVR. We would aim to test
+our findings to determine if these X-ray Visualizations impact the user’s experience.
+    At the time of starting the research (2020) for this thesis, there was little research
+on how X-ray Vision within the near field functions when using OST AR HMDs.
+Some work was done using early versions of the technology within the action field
+prior [51,201,210], but no research had been done in the near field. Around the same
+time as our own research, several other papers came out trying to solve this issue,
+highlighting the need to fill this gap [36, 182]. These papers looked at methods and
+presented scenarios using static graphics overlaid onto the real world while having
+users test out various methods while constraining the users’ actions by having them
+stand in one place and controlling how they interacted with the task [36, 182]. The
+research in this dissertation differs from these because these visualizations were in
+an environment that allowed for a more ecologically relevant scenario with few con-
+straints on the user’s freedom, presenting less biased results in favor of more realistic
+conditions. The difference between Geometrical Saliency and Visual Saliency was
+also compared to determine what makes the most appropriate X-ray Visualization
+
+                                           79
+     2. BACKGROUND
+
+
+for an OST AR HMD. This was done by creating an algorithm that allowed for the
+calibration of a camera image over the view of the use of an OST AR HMD.
+    Then, taking the lessons learned from our research on X-ray Vision of OST
+AR devices, a range of X-ray Visualizations was created and analyzed utilizing
+illustrative effects. These were then tested using two separate studies; one of these
+was aimed at testing the user’s ability to analyze the data, and the other tested how
+accurate the user’s sense of depth was when looking at these objects. As previously
+stated by Grosset et al. [133], the large range of distinct differences in publicly
+available data sets can cause wildly different results across methods that utilize the
+same condition. So, in a bid to allow our datasets to be utilized in HCI studies,
+this type of visualization allowed us to perform tasks that could be repeated in a
+numerous (over a septillion) different ways and modified for many different studies.
+    To clarify the main research gap addressed by this thesis, the key points are
+summarized as follows:
+
+  • Lack of research on near-field X-ray vision in OST AR HMDs: Prior work
+    (e.g., Blum [51], Rompapas [210], Erat [201]) focused on the action field or
+    static overlays, but little was known about how X-ray vision functions in the
+    near field.
+
+  • Limitations of prior studies: Contemporary work (Gruenefeld [182], Martin-
+    Gomez [36]) constrained user freedom (static standing positions, restricted
+    interactions), limiting ecological validity.
+
+  • Need for ecologically relevant scenarios: Few studies tested X-ray vision in
+    realistic, less constrained conditions, which may produce more representative
+    user experiences.
+
+  • Unclear best method for X-ray visualization: No prior comparative analysis
+    between geometrical saliency and visual saliency for OST AR HMDs.
+
+  • Lack of integration with Direct Volume Rendering (DVR): Previous AR vi-
+    sualization studies used static or simplified graphics; the use of DVR-based
+    X-ray visualization in OST AR remains largely unexplored.
+
+  • Dataset challenge: Public datasets vary widely, making reproducibility diffi-
+    cult; this research proposes repeatable tasks using DVR-based X-ray visual-
+    izations adaptable across many conditions.
+
+   The end product of this thesis is several new X-ray Visualizations. That can be
+used to overlay over the original object, person, or animal that had been scanned
+by a CT or MRI scanner to provide the illusion of looking into the object.
+
+
+                                         80
+
