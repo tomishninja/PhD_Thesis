@@ -43,13 +43,13 @@
 \contentsline {paragraph}{Grids:}{56}{section*.51}%
 \contentsline {paragraph}{Random Dot:}{57}{section*.53}%
 \contentsline {paragraph}{Halo and the Silhouette:}{58}{figure.caption.55}%
-\contentsline {subsubsection}{Computer Vision-Enabled Techniques}{58}{section*.56}%
+\contentsline {subsubsection}{Computer Vision-Enabled Techniques}{59}{section*.56}%
 \contentsline {paragraph}{Edge-Based:}{59}{section*.58}%
 \contentsline {paragraph}{Saliency:}{59}{section*.59}%
-\contentsline {paragraph}{Ghosting:}{59}{section*.60}%
-\contentsline {subsubsection}{Comparisons Of X-ray Vision Effects}{60}{section*.62}%
+\contentsline {paragraph}{Ghosting:}{60}{section*.60}%
+\contentsline {subsubsection}{Comparisons Of X-ray Vision Effects}{61}{section*.62}%
 \contentsline {subsection}{\numberline {2.5.4}Applications of X-ray Vision}{63}{subsection.2.5.4}%
-\contentsline {subsection}{\numberline {2.5.5}Hardware For X-ray Vision}{64}{subsection.2.5.5}%
+\contentsline {subsection}{\numberline {2.5.5}Hardware For X-ray Vision}{65}{subsection.2.5.5}%
 \contentsline {subsubsection}{Displays}{65}{section*.67}%
 \contentsline {subsubsection}{Comparison of Displays}{66}{section*.70}%
 \contentsline {subsubsection}{Sensors Utilized}{67}{section*.72}%

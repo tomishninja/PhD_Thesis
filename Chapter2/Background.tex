@@ -931,6 +931,9 @@ Their experiment had them tag virtual objects that were to tag objects behind th
 
 Another form of virual windows has been titled "Contextual Anatomic Mimesis" by Bichlmeier et al.~\cite{Bichlmeier2007}. This is one of these windows designed to work autonomously with medical applications. 
 The technique that blends virtual anatomical structures with the appearance of real tissue, gradually transitioning from realistic skin to virtual content.
+The ‘contextual’ aspect reflects how the cutout is positioned and adjusted based on the user’s interaction or viewpoint, while the ‘anatomic’ component identifies its focus on anatomical layers rather than general geometry. 
+‘Mimesis’ highlights that the effect intentionally imitates the look and structure of anatomical illustration rather than attempting a physically accurate X-ray. 
+Together, the term describes the specific way these familiar rendering methods are combined for anatomical depiction.
 It gradually moves from having the appearance of skin to looking more like the virtual content while still presenting a slight overlay based on the roughness of the skin~\cite{Bichlmeier2007}. 
 The effects of Contextual Anatomic Mimesis were furthered by Martin-Gomez et al.~\cite{Martin-Gomez2021}, who have shown a significant improvement when paired with a another second effect to help represent the depth of an object.
 Noting that using more than 1 depth cue is beneficial.
@@ -961,7 +964,10 @@ The additional cues provided from that point moving forward should take note of 
 Grids allow for a persistent barrier between a given surface and provide a guide on where a surface is in an augmented world~\cite{Johnson2014, Heinrich2022}. 
 Johnson et al.~\cite{Johnson2014} developed a surgical system that utilized a grid-based visualization to allow for \gls{ct} data to be viewed at the correct position within the patient when using a wearing an \gls{ar} \gls{hmd}.
 A grid was utilized to represent different types of flesh and a 3D object. 
-They had surgical students utilize this system with laparoscopic video to evaluate it, where it was received with a positive reception from the subjective study which was conducted~\cite{Johnson2014}. 
+They had surgical students utilize this system with laparoscopic video to evaluate it. 
+The original authors described the technique as being “positively received” by participants; however, their study focused exclusively on collecting subjective impressions. 
+No quantitative assessments of depth perception, task performance, or usability were reported which is common in early stage desing applications where authors may prioritize a conceptual demonstration over a rigorous evaluation.
+As a result, the evidence available is limited to subjective feedback rather than objective performance metrics, and this thesis reflects that scope accurately.~\cite{Johnson2014}. 
 
 \begin{figure}
     \centering
@@ -1010,16 +1016,12 @@ This distance could be increased if objects are further away from the wall, allo
     \label{fig:JustHalo}
 \end{figure}
 
-This effect goes by many names but is most commonly called Halo or Silhouette as it creates an outline of the virtual objects.
-It will be referred to as the Halo visualization in this dissertation for simplicity.
-The Halo \glspl{X-ray Visualization} as stated in Ozgur et al.'s~\cite{Ozgur2017} paper presents the effect as a bright light around the edges of the object of interest and use alpha blending to communicate depth~\cite{Ozgur2017}. 
-%This is very similar to the silhouette effect found in medicine~\cite{Rheingans2001}, but since it is the only time this will be treated as if this is the termonlolgy for this effect in this thesis. 
-This effect is very similar to what is referred to as the "silhouette" effect in medical visualization~\cite{Rheingans2001}. 
-However, terminology varies across fields, and in this thesis, I will consistently use the term "Halo visualization" to describe this effect for clarity. 
-\autoref{fig:JustHalo} show how the the halo is set to leverage the depth perception cue of relative size.
-%In \autoref{fig:JustHalo}, it can be seen the halo's is set, allowing it to leverage the depth perception cue of relative size. 
-This \gls{X-ray Vision} effect is unique due to its lack of occlusion, making it effective for surgical situations~\cite{Ozgur2017}. 
-It has been tested using a monoscopic display in a study designed for minimally invasive surgeries. It can also exploit a color-based effect, applying visual language to communicate depth to the user~\cite{Ozgur2017}.
+This effect goes by many names but is most commonly referred to as Halo or Silhouette, as it produces an outline around virtual objects. For simplicity, this dissertation will use the term Halo visualization.
+The Halo \glspl{X-ray Visualization}, as described by Ozgur et al.~\cite{Ozgur2017}, presents the effect as a bright rim around the edges of the object of interest and uses alpha blending to convey depth~\cite{Ozgur2017}.
+This effect closely resembles what is known as the “silhouette” technique in medical visualization~\cite{Rheingans2001}. Strictly speaking, “silhouette” refers to halo-like outlines that exclude regions around intersections, but terminology varies across fields. 
+Therefore, for clarity and consistency, this dissertation uses Halo visualization to refer to this class of effects
+\autoref{fig:JustHalo} illustrates how the halo is configured to leverage the depth-perception cue of relative size. This \gls{X-ray Vision} effect is distinctive in that it does not introduce occlusion, making it well suited to surgical scenarios~\cite{Ozgur2017}. 
+It has been evaluated on a monoscopic display in a study designed for minimally invasive surgery, and it can also incorporate color-based cues that use visual language to further communicate depth to the user~\cite{Ozgur2017}.
 
 \subsubsection{Computer Vision-Enabled Techniques} \label{sec:ComputerVisionEnabledTechnqiue}
 In computer vision, several methods are used to highlight salient features in an image. This is normally done by highlighting various salient factors within an image. 
@@ -1143,7 +1145,7 @@ Currently, there are many unknowns that exist in this space.
 
 X-ray vision has been applied across a wide range of domains where visualizing hidden or internal structures is valuable. Medical research has been a central focus, where overlays of anatomical structures can support diagnosis and guide surgical procedures by allowing clinicians to perceive organs, tissues, and bones in situ~\cite{Bichlmeier2007, Blum2012, Bajura1992}. While demonstrations have shown promise, challenges remain around depth perception and real-time performance, as highlighted in comparative evaluations of iso-surfaces, direct volume rendering, and alternative rendering effects~\cite{Sielhorst2006, Bichlmeier2007}. Outside of medicine, construction and maintenance tasks also benefit, with researchers exploring techniques for seeing into walls or underground pipe networks. Early work by Feiner et al.~\cite{Feiner1995} focused on gradually revealing occluded structures, and more recent studies (e.g., Eren et al.~\cite{Eren2013,Eren2018}, shown in \autoref{fig:Eren2013}) have evaluated different visualization methods for accurately perceiving underground utilities.
 
-Beyond these domains, X-ray vision concepts have been investigated in security, navigation, and education. In security, transparency effects and perspective-corrected projections have been used to augment situational awareness, though evaluations suggest togglable, more occlusive effects may be most effective~\cite{Kameda2004, Tsuda2005, Ohta2010}. Navigation and tourism applications demonstrate how seeing through structures or into the past can improve wayfinding and enrich cultural experiences, with evaluations showing reduced cognitive load compared to traditional maps~\cite{Dey2011, Maia2016, Yamamoto2014}. In education, while the effects of X-ray vision itself remain underexplored, augmented reality has been shown to increase engagement and may support long-term retention in domains like anatomy~\cite{Akpan2019, Santos2015}.
+Beyond the medical and constuction domains, X-ray vision concepts have been investigated in security, navigation, and education. In security, transparency effects and perspective-corrected projections have been used to augment situational awareness, though evaluations suggest togglable, more occlusive effects may be most effective~\cite{Kameda2004, Tsuda2005, Ohta2010}. Navigation and tourism applications demonstrate how seeing through structures or into the past can improve wayfinding and enrich cultural experiences, with evaluations showing reduced cognitive load compared to traditional maps~\cite{Dey2011, Maia2016, Yamamoto2014}. In education, while the effects of X-ray vision itself remain underexplored, augmented reality has been shown to increase engagement and may support long-term retention in domains like anatomy~\cite{Akpan2019, Santos2015}.
 
 Entertainment provides a final but growing space for X-ray vision. While formal research is limited~\cite{Guo2023}, several commercial AR games such as Microsoft’s RoboRaid and Dr. Grordborts Invaders (shown in \autoref{fig:DrGrordbortsInvaders}) have experimented with the concept, using it to merge real and virtual environments in playful, interactive ways. These applications highlight both the versatility of X-ray vision across domains and the ongoing challenges of designing visualization techniques that are perceptually effective, intuitive, and computationally feasible.
 
@@ -1455,7 +1457,7 @@ Gruenefeld et al.~\cite{Gruenefeld2020} performed depth perception studies using
 The grid effect, placed on the ground within the X-ray able space and a perpendicular wall facing the viewer, could be used to approximate a relationship between the wall and the object. In contrast, the cut-out visualization provided a hole in the wall, which the user could look through to see where the object was on the other side, against a baseline that pointed participants to the object with a red arrow and displayed a perpendicular line going from the far point of the arrow to the bottom of the visualization. 
 Gruenefeld et al.'s~\cite{Gruenefeld2020} found that the weakest of the depth cues were the cut-out. This was because the cues did not convey a clear depth indications to the user~\cite{Gruenefeld2020}, because the grid effect provided a clear indication of depth, allowing the users to count the amount of grid squares between the object and the wall they had a better sense of depth.
 
-Another set of studies published by Martin-Gomez et al.~\cite{MartinGomez2021} studied the difference between four \glspl{X-ray Visualization} (None (Superimposition), virtual hole, ghosting, and Random Dot) on both \gls{vst} \gls{ar} and \gls{ost} \gls{ar} devices in the near field. 
+Another set of studies published by Martin-Gomez et al.~\cite{MartinGomez2021} studied the difference between four \glspl{X-ray Visualization} (Virtual hole, ghosting, and Random Dot) along with a base line condition that superimposed the data. This reserach utalized both \gls{vst} \gls{ar} and \gls{ost} \gls{ar} devices in the near field. 
 They found that users better utilized \gls{X-ray Vision} on a \gls{vst} \gls{ar} headset than on an \gls{ost} \gls{ar} device.
 This prompted another study investigating different rendering techniques for \gls{X-ray Vision} (shading, hatching, ghosting) and brightness levels, finding that bright, clear objects work best in \gls{ost} \gls{ar}.
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.10)  16 NOV 2025 23:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.10)  25 NOV 2025 22:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -908,8 +908,8 @@ Package pdftex.def Info: unisaLogo.jpg  used on input line 154.
 pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.203             I
-                   nspiring the visualizations developed in this dissertatio... [1]
+l.202 
+       [1]
 
 [2]
 \openout2 = `Acknowledgments/acknowledgements.aux'.
@@ -1105,7 +1105,7 @@ Package pdftex.def Info: Chapter1/Images/HannaEtAlAutopsyHoloLensExample.PNG  us
 <Chapter1/Images/HolographicOverlaySystem.png, id=1160, 677.53125pt x 516.93124pt>
 File: Chapter1/Images/HolographicOverlaySystem.png Graphic file (type png)
 <use Chapter1/Images/HolographicOverlaySystem.png>
-Package pdftex.def Info: Chapter1/Images/HolographicOverlaySystem.png  used on input line 191.
+Package pdftex.def Info: Chapter1/Images/HolographicOverlaySystem.png  used on input line 194.
 (pdftex.def)             Requested size: 341.43436pt x 260.5079pt.
 
 
@@ -1115,7 +1115,7 @@ Package pdftex.def Info: Chapter1/Images/HolographicOverlaySystem.png  used on i
 <Chapter1/Images/VolumeRendering.png, id=1190, 329.73187pt x 268.00125pt>
 File: Chapter1/Images/VolumeRendering.png Graphic file (type png)
 <use Chapter1/Images/VolumeRendering.png>
-Package pdftex.def Info: Chapter1/Images/VolumeRendering.png  used on input line 239.
+Package pdftex.def Info: Chapter1/Images/VolumeRendering.png  used on input line 242.
 (pdftex.def)             Requested size: 341.43436pt x 277.52061pt.
 
 
@@ -1125,30 +1125,30 @@ Package pdftex.def Info: Chapter1/Images/VolumeRendering.png  used on input line
 <Chapter1/Images/DiagramX-rayVisionMoreDetail.png, id=1215, 1924.94156pt x 508.90125pt>
 File: Chapter1/Images/DiagramX-rayVisionMoreDetail.png Graphic file (type png)
 <use Chapter1/Images/DiagramX-rayVisionMoreDetail.png>
-Package pdftex.def Info: Chapter1/Images/DiagramX-rayVisionMoreDetail.png  used on input line 328.
+Package pdftex.def Info: Chapter1/Images/DiagramX-rayVisionMoreDetail.png  used on input line 331.
 (pdftex.def)             Requested size: 426.79134pt x 112.82832pt.
 
 
 [10 <./Chapter1/Images/DiagramX-rayVisionMoreDetail.png>]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 406.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 409.
  (c:/texlive/2025/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 
 [11{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
-Overfull \hbox (51.54834pt too wide) in paragraph at lines 480--484
+Overfull \hbox (51.54834pt too wide) in paragraph at lines 483--487
 \T1/lmr/m/n/12 (ISMAR-Adjunct), 483^^U486. https://doi.org/10.1109/ISMAR-Adjunct54149.2021.00114 
  []
 
 
-Overfull \hbox (21.82443pt too wide) in paragraph at lines 487--491
+Overfull \hbox (21.82443pt too wide) in paragraph at lines 490--494
 \T1/lmr/m/n/12 8 (pp. 123^^U139). Springer In-ter-na-tional Pub-lish-ing. https://doi.org/10.1007/$\OT1/lmr/m/n/12 978 \OMS/lmsy/m/n/12 ^^@
  []
 
 
 
 [12{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
-Overfull \hbox (38.4759pt too wide) in paragraph at lines 516--520
+Overfull \hbox (38.4759pt too wide) in paragraph at lines 519--523
 \T1/lmr/m/n/12 Syd-ney, Aus-tralia, 2023, pp. 769-771, doi: 10.1109/ISMAR-Adjunct60411.2023.00168. 
  []
 
@@ -1395,119 +1395,119 @@ LaTeX Warning: Citation `Phillips2022' on page 54 undefined on input line 924.
 
 
 [54 <./Chapter2/Images/JustTunneling.png>]
-<Chapter2/Images/RealWorldOverlays.jpg, id=2616, 4516.875pt x 1467.98438pt>
+
+[55]
+<Chapter2/Images/RealWorldOverlays.jpg, id=2622, 4516.875pt x 1467.98438pt>
 File: Chapter2/Images/RealWorldOverlays.jpg Graphic file (type jpg)
 <use Chapter2/Images/RealWorldOverlays.jpg>
-Package pdftex.def Info: Chapter2/Images/RealWorldOverlays.jpg  used on input line 948.
+Package pdftex.def Info: Chapter2/Images/RealWorldOverlays.jpg  used on input line 951.
 (pdftex.def)             Requested size: 426.79134pt x 138.69838pt.
 
 
-[55]
-<Chapter2/Images/ImagesFromOtherWorks/Heinrich2022.png, id=2642, 617.30624pt x 229.60782pt>
+[56 <./Chapter2/Images/RealWorldOverlays.jpg>]
+<Chapter2/Images/ImagesFromOtherWorks/Heinrich2022.png, id=2653, 617.30624pt x 229.60782pt>
 File: Chapter2/Images/ImagesFromOtherWorks/Heinrich2022.png Graphic file (type png)
 <use Chapter2/Images/ImagesFromOtherWorks/Heinrich2022.png>
-Package pdftex.def Info: Chapter2/Images/ImagesFromOtherWorks/Heinrich2022.png  used on input line 968.
+Package pdftex.def Info: Chapter2/Images/ImagesFromOtherWorks/Heinrich2022.png  used on input line 974.
 (pdftex.def)             Requested size: 426.79134pt x 158.74838pt.
 
 
-[56 <./Chapter2/Images/RealWorldOverlays.jpg>]
-<Chapter2/Images/OzgurEtAl.png, id=2665, 617.30624pt x 207.77625pt>
+[57 <./Chapter2/Images/ImagesFromOtherWorks/Heinrich2022.png>]
+<Chapter2/Images/OzgurEtAl.png, id=2672, 617.30624pt x 207.77625pt>
 File: Chapter2/Images/OzgurEtAl.png Graphic file (type png)
 <use Chapter2/Images/OzgurEtAl.png>
-Package pdftex.def Info: Chapter2/Images/OzgurEtAl.png  used on input line 1004.
+Package pdftex.def Info: Chapter2/Images/OzgurEtAl.png  used on input line 1010.
 (pdftex.def)             Requested size: 426.79134pt x 143.65425pt.
 
 
-[57 <./Chapter2/Images/ImagesFromOtherWorks/Heinrich2022.png>]
-<Chapter2/Images/ComputerVisionEffectsAndTransperency.jpg, id=2685, 4483.75125pt x 930.47626pt>
+[58 <./Chapter2/Images/OzgurEtAl.png>]
+<Chapter2/Images/ComputerVisionEffectsAndTransperency.jpg, id=2692, 4483.75125pt x 930.47626pt>
 File: Chapter2/Images/ComputerVisionEffectsAndTransperency.jpg Graphic file (type jpg)
 <use Chapter2/Images/ComputerVisionEffectsAndTransperency.jpg>
-Package pdftex.def Info: Chapter2/Images/ComputerVisionEffectsAndTransperency.jpg  used on input line 1032.
+Package pdftex.def Info: Chapter2/Images/ComputerVisionEffectsAndTransperency.jpg  used on input line 1034.
 (pdftex.def)             Requested size: 426.79134pt x 88.56653pt.
 
 
-[58 <./Chapter2/Images/OzgurEtAl.png>]
-<Chapter2/Images/KalkofenEtAlSystem.png, id=2712, 617.30624pt x 291.33844pt>
+[59 <./Chapter2/Images/ComputerVisionEffectsAndTransperency.jpg>]
+<Chapter2/Images/KalkofenEtAlSystem.png, id=2721, 617.30624pt x 291.33844pt>
 File: Chapter2/Images/KalkofenEtAlSystem.png Graphic file (type png)
 <use Chapter2/Images/KalkofenEtAlSystem.png>
-Package pdftex.def Info: Chapter2/Images/KalkofenEtAlSystem.png  used on input line 1056.
+Package pdftex.def Info: Chapter2/Images/KalkofenEtAlSystem.png  used on input line 1058.
 (pdftex.def)             Requested size: 426.79134pt x 201.42827pt.
 
 
-[59 <./Chapter2/Images/ComputerVisionEffectsAndTransperency.jpg>]
-<Chapter2/Images/ComparisionsOFVisionInTheLiturature.pdf, id=2734, 748.7975pt x 498.86375pt>
+[60 <./Chapter2/Images/KalkofenEtAlSystem.png>]
+<Chapter2/Images/ComparisionsOFVisionInTheLiturature.pdf, id=2741, 748.7975pt x 498.86375pt>
 File: Chapter2/Images/ComparisionsOFVisionInTheLiturature.pdf Graphic file (type pdf)
 <use Chapter2/Images/ComparisionsOFVisionInTheLiturature.pdf>
-Package pdftex.def Info: Chapter2/Images/ComparisionsOFVisionInTheLiturature.pdf  used on input line 1085.
+Package pdftex.def Info: Chapter2/Images/ComparisionsOFVisionInTheLiturature.pdf  used on input line 1087.
 (pdftex.def)             Requested size: 426.79134pt x 284.34007pt.
 
 
-[60 <./Chapter2/Images/KalkofenEtAlSystem.png>]
-
 [61 <./Chapter2/Images/ComparisionsOFVisionInTheLiturature.pdf>]
-<Chapter2/Images/ImagesFromOtherWorks/Eren2018.png, id=2772, 577.40718pt x 254.45062pt>
+
+[62]
+<Chapter2/Images/ImagesFromOtherWorks/Eren2018.png, id=2776, 577.40718pt x 254.45062pt>
 File: Chapter2/Images/ImagesFromOtherWorks/Eren2018.png Graphic file (type png)
 <use Chapter2/Images/ImagesFromOtherWorks/Eren2018.png>
-Package pdftex.def Info: Chapter2/Images/ImagesFromOtherWorks/Eren2018.png  used on input line 1139.
+Package pdftex.def Info: Chapter2/Images/ImagesFromOtherWorks/Eren2018.png  used on input line 1141.
 (pdftex.def)             Requested size: 426.79134pt x 188.08473pt.
 
 
-[62]
-
 [63 <./Chapter2/Images/ImagesFromOtherWorks/Eren2018.png>]
-<Chapter2/Images/ImagesFromOtherWorks/DrGrordbortsInvaders.jpg, id=2807, 1445.4pt x 813.0375pt>
+<Chapter2/Images/ImagesFromOtherWorks/DrGrordbortsInvaders.jpg, id=2804, 1445.4pt x 813.0375pt>
 File: Chapter2/Images/ImagesFromOtherWorks/DrGrordbortsInvaders.jpg Graphic file (type jpg)
 <use Chapter2/Images/ImagesFromOtherWorks/DrGrordbortsInvaders.jpg>
-Package pdftex.def Info: Chapter2/Images/ImagesFromOtherWorks/DrGrordbortsInvaders.jpg  used on input line 1152.
+Package pdftex.def Info: Chapter2/Images/ImagesFromOtherWorks/DrGrordbortsInvaders.jpg  used on input line 1154.
 (pdftex.def)             Requested size: 426.79134pt x 240.06729pt.
-<Chapter2/Images/DispalyModesUsedForXRayVis.png, id=2808, 885.3075pt x 228.855pt>
-File: Chapter2/Images/DispalyModesUsedForXRayVis.png Graphic file (type png)
-<use Chapter2/Images/DispalyModesUsedForXRayVis.png>
-Package pdftex.def Info: Chapter2/Images/DispalyModesUsedForXRayVis.png  used on input line 1168.
-(pdftex.def)             Requested size: 426.79134pt x 110.32755pt.
 
 
 [64 <./Chapter2/Images/ImagesFromOtherWorks/DrGrordbortsInvaders.jpg>]
+<Chapter2/Images/DispalyModesUsedForXRayVis.png, id=2814, 885.3075pt x 228.855pt>
+File: Chapter2/Images/DispalyModesUsedForXRayVis.png Graphic file (type png)
+<use Chapter2/Images/DispalyModesUsedForXRayVis.png>
+Package pdftex.def Info: Chapter2/Images/DispalyModesUsedForXRayVis.png  used on input line 1170.
+(pdftex.def)             Requested size: 426.79134pt x 110.32755pt.
 \enitdp@titemize=\count418
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 1206.
+(Font)              <10.95> on input line 1208.
 
 
 [65 <./Chapter2/Images/DispalyModesUsedForXRayVis.png>]
-<Chapter2/Images/ARTypesAndVisUsage.png, id=2840, 885.3075pt x 248.42813pt>
+<Chapter2/Images/ARTypesAndVisUsage.png, id=2837, 885.3075pt x 248.42813pt>
 File: Chapter2/Images/ARTypesAndVisUsage.png Graphic file (type png)
 <use Chapter2/Images/ARTypesAndVisUsage.png>
-Package pdftex.def Info: Chapter2/Images/ARTypesAndVisUsage.png  used on input line 1435.
+Package pdftex.def Info: Chapter2/Images/ARTypesAndVisUsage.png  used on input line 1437.
 (pdftex.def)             Requested size: 426.79134pt x 119.76347pt.
 
 
 [66 <./Chapter2/Images/ARTypesAndVisUsage.png>]
-<Chapter2/Images/LitRevewDeviceFrequencyPlotBar.pdf, id=2856, 1445.4pt x 743.77875pt>
+<Chapter2/Images/LitRevewDeviceFrequencyPlotBar.pdf, id=2855, 1445.4pt x 743.77875pt>
 File: Chapter2/Images/LitRevewDeviceFrequencyPlotBar.pdf Graphic file (type pdf)
 <use Chapter2/Images/LitRevewDeviceFrequencyPlotBar.pdf>
-Package pdftex.def Info: Chapter2/Images/LitRevewDeviceFrequencyPlotBar.pdf  used on input line 1470.
+Package pdftex.def Info: Chapter2/Images/LitRevewDeviceFrequencyPlotBar.pdf  used on input line 1472.
 (pdftex.def)             Requested size: 426.79134pt x 219.61711pt.
 
 
-[67 <./Chapter2/Images/LitRevewDeviceFrequencyPlotBar.pdf>]
-<Chapter2/Images/LitReviewDevicesBeingUsed.png, id=2885, 901.11656pt x 593.21625pt>
+[67]
+<Chapter2/Images/LitReviewDevicesBeingUsed.png, id=2881, 901.11656pt x 593.21625pt>
 File: Chapter2/Images/LitReviewDevicesBeingUsed.png Graphic file (type png)
 <use Chapter2/Images/LitReviewDevicesBeingUsed.png>
-Package pdftex.def Info: Chapter2/Images/LitReviewDevicesBeingUsed.png  used on input line 1491.
+Package pdftex.def Info: Chapter2/Images/LitReviewDevicesBeingUsed.png  used on input line 1493.
 (pdftex.def)             Requested size: 426.79134pt x 280.96599pt.
 
 
-[68]
+[68 <./Chapter2/Images/LitRevewDeviceFrequencyPlotBar.pdf>]
 
 [69 <./Chapter2/Images/LitReviewDevicesBeingUsed.png (PNG copy)>]
 
 [70]
-Overfull \hbox (10.01505pt too wide) in paragraph at lines 1498--1498
+Overfull \hbox (10.01505pt too wide) in paragraph at lines 1500--1500
 []\T1/lmr/bx/n/17.28 Perception and Depth Per-cep-tion tasks in Aug-
  []
 
 
-Overfull \hbox (8.64935pt too wide) in paragraph at lines 1498--1498
+Overfull \hbox (8.64935pt too wide) in paragraph at lines 1500--1500
 \T1/lmr/bx/n/17.28 mented Re-al-ity (AR) and Vir-tual Re-al-ity (VR)
  []
 
@@ -1518,14 +1518,14 @@ Overfull \hbox (8.64935pt too wide) in paragraph at lines 1498--1498
 ]
 
 [72]
-Overfull \hbox (1.89066pt too wide) in paragraph at lines 1567--1567
+Overfull \hbox (1.89066pt too wide) in paragraph at lines 1569--1569
 []\T1/lmr/bx/n/14.4 Depth Per-cep-tion User Stud-ies on Oc-u-lar See Through
  []
 
 <Chapter2/Images/ImagesFromOtherWorks/Swan2007ExperimentalSetup.png, id=2938, 995.21812pt x 365.86688pt>
 File: Chapter2/Images/ImagesFromOtherWorks/Swan2007ExperimentalSetup.png Graphic file (type png)
 <use Chapter2/Images/ImagesFromOtherWorks/Swan2007ExperimentalSetup.png>
-Package pdftex.def Info: Chapter2/Images/ImagesFromOtherWorks/Swan2007ExperimentalSetup.png  used on input line 1575.
+Package pdftex.def Info: Chapter2/Images/ImagesFromOtherWorks/Swan2007ExperimentalSetup.png  used on input line 1577.
 (pdftex.def)             Requested size: 426.79134pt x 156.90099pt.
 
 
@@ -1533,7 +1533,7 @@ Package pdftex.def Info: Chapter2/Images/ImagesFromOtherWorks/Swan2007Experiment
 <Chapter2/Images/ImagesFromOtherWorks/swan2015.png, id=2964, 617.30624pt x 261.22594pt>
 File: Chapter2/Images/ImagesFromOtherWorks/swan2015.png Graphic file (type png)
 <use Chapter2/Images/ImagesFromOtherWorks/swan2015.png>
-Package pdftex.def Info: Chapter2/Images/ImagesFromOtherWorks/swan2015.png  used on input line 1610.
+Package pdftex.def Info: Chapter2/Images/ImagesFromOtherWorks/swan2015.png  used on input line 1612.
 (pdftex.def)             Requested size: 426.79134pt x 180.6088pt.
 
 
@@ -1541,7 +1541,7 @@ Package pdftex.def Info: Chapter2/Images/ImagesFromOtherWorks/swan2015.png  used
 <Chapter2/Images/ImagesFromOtherWorks/Singh2018_Modified.png, id=2996, 1129.21875pt x 617.30624pt>
 File: Chapter2/Images/ImagesFromOtherWorks/Singh2018_Modified.png Graphic file (type png)
 <use Chapter2/Images/ImagesFromOtherWorks/Singh2018_Modified.png>
-Package pdftex.def Info: Chapter2/Images/ImagesFromOtherWorks/Singh2018_Modified.png  used on input line 1637.
+Package pdftex.def Info: Chapter2/Images/ImagesFromOtherWorks/Singh2018_Modified.png  used on input line 1639.
 (pdftex.def)             Requested size: 426.79134pt x 233.31662pt.
 
 
@@ -1551,7 +1551,7 @@ Package pdftex.def Info: Chapter2/Images/ImagesFromOtherWorks/Singh2018_Modified
 <Chapter2/Images/ImagesFromOtherWorks/AlKalbani2019.png, id=3028, 433.62pt x 376.40625pt>
 File: Chapter2/Images/ImagesFromOtherWorks/AlKalbani2019.png Graphic file (type png)
 <use Chapter2/Images/ImagesFromOtherWorks/AlKalbani2019.png>
-Package pdftex.def Info: Chapter2/Images/ImagesFromOtherWorks/AlKalbani2019.png  used on input line 1668.
+Package pdftex.def Info: Chapter2/Images/ImagesFromOtherWorks/AlKalbani2019.png  used on input line 1670.
 (pdftex.def)             Requested size: 426.79134pt x 370.49525pt.
 
 
@@ -3899,7 +3899,7 @@ Here is how much of TeX's memory you used:
 pdfTeX warning (dest): name{Hfootnote.27} has been referenced but does not exist, replaced by a fixed one
 
 <c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on main.pdf (374 pages, 291747026 bytes).
+Output written on main.pdf (374 pages, 291748383 bytes).
 PDF statistics:
  7378 PDF objects out of 7423 (max. 8388607)
  5923 compressed objects within 60 object streams
